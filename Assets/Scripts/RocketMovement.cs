@@ -13,6 +13,14 @@ public class RocketMovement : MonoBehaviour
     private Rigidbody2D _myRigidBody;
     private AudioSource _audioSource;
     
+    // State
+    private enum State
+    {
+        Alive, Dying, Transcending 
+    }
+
+    private State state = State.Alive;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -22,21 +30,29 @@ public class RocketMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    { 
+        if (state != State.Alive) { return; } 
         Thrust();
         Rotate();   
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+        if (state != State.Alive) { return; } 
+
         switch (other.gameObject.tag)
         {
             case "Friendly":
                 break;
             case "Fuel":
                 break;
+            case "EndZone":
+                state = State.Transcending;
+                print("End Level");
+                break;
             default:
-                Die();
+                state = State.Dying;
+                Invoke(nameof(Die),1f);
                 break;
         }
     }
