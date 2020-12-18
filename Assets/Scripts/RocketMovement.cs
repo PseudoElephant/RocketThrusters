@@ -19,7 +19,7 @@ public class RocketMovement : MonoBehaviour
         Alive, Dying, Transcending 
     }
 
-    private State state = State.Alive;
+    private State _state = State.Alive;
     
     // Start is called before the first frame update
     void Start()
@@ -29,16 +29,16 @@ public class RocketMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     { 
-        if (state != State.Alive) { return; } 
+        if (_state != State.Alive) { return; } 
         Thrust();
         Rotate();   
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (state != State.Alive) { return; } 
+        if (_state != State.Alive) { return; } 
 
         switch (other.gameObject.tag)
         {
@@ -47,11 +47,11 @@ public class RocketMovement : MonoBehaviour
             case "Fuel":
                 break;
             case "EndZone":
-                state = State.Transcending;
+                _state = State.Transcending;
                 print("End Level");
                 break;
             default:
-                state = State.Dying;
+                _state = State.Dying;
                 Invoke(nameof(Die),1f);
                 break;
         }
@@ -95,8 +95,8 @@ public class RocketMovement : MonoBehaviour
         // Thrust
         if (Input.GetKey(KeyCode.Space))
         {
-            
-            _myRigidBody.AddRelativeForce(Vector3.up*thrustPush);
+            float forceToAdd = thrustPush;
+            _myRigidBody.AddRelativeForce(Vector3.up*forceToAdd);
 
             if (!_audioSource.isPlaying)
             {

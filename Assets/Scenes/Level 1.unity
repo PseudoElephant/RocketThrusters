@@ -819,6 +819,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 276760472, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
+      propertyPath: thrustPush
+      value: 110
+      objectReference: {fileID: 0}
     - target: {fileID: 3288813374665978311, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_Name
       value: RocketHolder
