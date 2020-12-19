@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 276760472}
   m_Layer: 0
   m_Name: RocketHolder
-  m_TagString: Untagged
+  m_TagString: Friendly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationValue: 230
-  thrustPush: 110
+  thrustPush: 50
 --- !u!1 &3947642080154878553
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,7 +175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5822125812978479225}
   - component: {fileID: 626612049676657107}
-  - component: {fileID: 7660071705581488809}
+  - component: {fileID: 1887156427}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -191,7 +191,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3947642080154878553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.38, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6759820513864990740}
@@ -237,7 +237,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a7e2180b38779894ead3204057414f21, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 286b7557dae024b018216be652a91669, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -248,8 +248,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7660071705581488809
-BoxCollider2D:
+--- !u!60 &1887156427
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -261,7 +261,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.8277395}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -271,6 +271,62 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2.344521}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.29375002, y: -1.825}
+      - {x: 0.30625, y: -1.81875}
+      - {x: 0.3125, y: -1.69375}
+      - {x: 0.35625002, y: -1.725}
+      - {x: 0.5375, y: -1.8312501}
+      - {x: 0.575, y: -1.85}
+      - {x: 0.69375, y: -1.8875}
+      - {x: 0.77500004, y: -1.8937501}
+      - {x: 0.83750004, y: -1.8875}
+      - {x: 0.86875004, y: -1.85625}
+      - {x: 0.86875004, y: -1.7625}
+      - {x: 0.83750004, y: -1.6750001}
+      - {x: 0.77500004, y: -1.55625}
+      - {x: 0.70625, y: -1.44375}
+      - {x: 0.6625, y: -1.375}
+      - {x: 0.50625, y: -1.15625}
+      - {x: 0.34375, y: -0.95}
+      - {x: 0.3125, y: -0.9125}
+      - {x: 0.3125, y: 1.36875}
+      - {x: 0.30625, y: 1.4}
+      - {x: 0.26250002, y: 1.54375}
+      - {x: 0.2, y: 1.71875}
+      - {x: 0.15, y: 1.8375}
+      - {x: 0.125, y: 1.90625}
+      - {x: 0.05, y: 2}
+      - {x: -0.03125, y: 2}
+      - {x: -0.0625, y: 1.975}
+      - {x: -0.112500004, y: 1.9}
+      - {x: -0.15625, y: 1.8125}
+      - {x: -0.24375, y: 1.575}
+      - {x: -0.3125, y: 1.36875}
+      - {x: -0.3125, y: 1.18125}
+      - {x: -0.30625, y: 1.1750001}
+      - {x: -0.30625, y: -0.91875}
+      - {x: -0.32500002, y: -0.93125004}
+      - {x: -0.44375, y: -1.075}
+      - {x: -0.675, y: -1.40625}
+      - {x: -0.77500004, y: -1.56875}
+      - {x: -0.83750004, y: -1.69375}
+      - {x: -0.86875004, y: -1.7687501}
+      - {x: -0.86875004, y: -1.8375}
+      - {x: -0.8625, y: -1.8625001}
+      - {x: -0.83750004, y: -1.8875}
+      - {x: -0.71875, y: -1.8937501}
+      - {x: -0.625, y: -1.875}
+      - {x: -0.51875, y: -1.8312501}
+      - {x: -0.31875, y: -1.7062501}
+      - {x: -0.30625, y: -1.80625}
+      - {x: -0.29375002, y: -1.81875}
+      - {x: -0.16875, y: -1.84375}
+      - {x: -0.18125, y: -1.85625}
+      - {x: -0.24375, y: -1.96875}
+      - {x: -0.25, y: -2}
+      - {x: 0.26250002, y: -2}
+      - {x: 0.23125, y: -1.93125}
+      - {x: 0.18125, y: -1.85}
+      - {x: 0.15625, y: -1.825}
