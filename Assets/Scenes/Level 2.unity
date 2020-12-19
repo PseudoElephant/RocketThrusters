@@ -1316,7 +1316,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 276760472, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: velocityDeathThreshHold
+<<<<<<< HEAD
       value: 1.5
+=======
+      value: 10
+>>>>>>> ac3881aa0878c29907152ea9ef463906dca6f359
       objectReference: {fileID: 0}
     - target: {fileID: 3288813374665978311, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_Name
@@ -1386,7 +1390,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.8834469}
+  m_Offset: {x: 0, y: -1.9645333}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1397,5 +1401,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 0.23310614}
+  m_Size: {x: 2, y: 0.39527893}
   m_EdgeRadius: 0
+--- !u!70 &4100725340979993794
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4100725340979993792}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.48653173}
+  m_Size: {x: 0.6331291, y: 3.0269365}
+  m_Direction: 0
