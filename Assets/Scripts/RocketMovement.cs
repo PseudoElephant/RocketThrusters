@@ -9,9 +9,11 @@ public class RocketMovement : MonoBehaviour
 // Parameters
     [SerializeField] private float rotationValue;
     [SerializeField] private float thrustPush;
+    [SerializeField] private float velocityDeathThreshHold = Mathf.Epsilon;
     // Cache
     private Rigidbody2D _myRigidBody;
     private AudioSource _audioSource;
+    private BoxCollider2D _feet;
     
     // State
     private enum State
@@ -26,6 +28,7 @@ public class RocketMovement : MonoBehaviour
     {
         _myRigidBody = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
+        _feet = GetComponentInChildren<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -36,11 +39,28 @@ public class RocketMovement : MonoBehaviour
         Rotate();   
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        print("Standing Up");
+    }
+
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (_state != State.Alive) { return; } 
+        if (_state != State.Alive)
+        {
+            return;
+        }
 
-        switch (other.gameObject.tag)
+        // Assuming Death
+        String colliderTag = "";
+        
+        // If player is landing
+        if (_feet.IsTouching(other.collider))
+        {
+            colliderTag = _myRigidBody.velocity.magnitude < velocityDeathThreshHold ? other.gameObject.tag : "";
+        }
+
+        switch (colliderTag)
         {
             case "Friendly":
                 break;
@@ -51,6 +71,8 @@ public class RocketMovement : MonoBehaviour
                 print("End Level");
                 break;
             default:
+                // Feet Touching
+                
                 _state = State.Dying;
                 Invoke(nameof(Die),1f);
                 break;
