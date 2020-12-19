@@ -56,8 +56,8 @@ public class RocketMovement : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        // Activates in platform state
-        if (_feet.IsTouching(other) && Mathf.Round(_myRigidBody.velocity.magnitude) == 0)
+        // Activates in platform state (could check for velocity)
+        if (_feet.IsTouching(other))
         {
             _inPlatform = true;
         }
