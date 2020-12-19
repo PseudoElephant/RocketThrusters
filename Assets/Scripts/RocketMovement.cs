@@ -14,13 +14,14 @@ public class RocketMovement : MonoBehaviour
     private Rigidbody2D _myRigidBody;
     private AudioSource _audioSource;
     private BoxCollider2D _feet;
+    private CapsuleCollider2D _nose;
     
     // State
     private enum State
     {
         Alive, Dying, Transcending 
     }
-
+    private bool _inPlatform = false;
     private State _state = State.Alive;
     
     // Start is called before the first frame update
@@ -29,6 +30,7 @@ public class RocketMovement : MonoBehaviour
         _myRigidBody = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
         _feet = GetComponentInChildren<BoxCollider2D>();
+        _nose = GetComponentInChildren<CapsuleCollider2D>();
     }
 
     // Update is called once per frame
@@ -41,7 +43,30 @@ public class RocketMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("Standing Up");
+        if (_state != State.Alive)
+        {
+            return;
+        }
+        // If player is landing
+        if ((_feet.IsTouching(other) && _myRigidBody.velocity.magnitude > velocityDeathThreshHold) || _nose.IsTouching(other))
+        {
+            InvokeDeath();
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        // Activates in platform state
+        if (_feet.IsTouching(other) && Mathf.Round(_myRigidBody.velocity.magnitude) == 0)
+        {
+            _inPlatform = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        // Deactivates in platform state
+        _inPlatform = false;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -52,14 +77,9 @@ public class RocketMovement : MonoBehaviour
         }
 
         // Assuming Death
-        String colliderTag = "";
+        String colliderTag = _feet.IsTouching(other.collider) ? other.gameObject.tag :  "";
         
-        // If player is landing
-        if (_feet.IsTouching(other.collider))
-        {
-            colliderTag = _myRigidBody.velocity.magnitude < velocityDeathThreshHold ? other.gameObject.tag : "";
-        }
-
+        
         switch (colliderTag)
         {
             case "Friendly":
@@ -72,14 +92,18 @@ public class RocketMovement : MonoBehaviour
                 break;
             default:
                 // Feet Touching
-                
-                _state = State.Dying;
-                Invoke(nameof(Die),1f);
+              InvokeDeath();
                 break;
         }
     }
-    
 
+    private void InvokeDeath()
+    {
+        _state = State.Dying;
+        _myRigidBody.AddForce(Vector2.up*thrustPush);
+        _myRigidBody.angularVelocity = thrustPush;
+        Invoke(nameof(Die),1f);
+    }
     private void Die()
     {
        Destroy(gameObject);
@@ -89,10 +113,13 @@ public class RocketMovement : MonoBehaviour
     // Input Layer (No Multilayer)
     private void Rotate()
     {
+        // Only if it has not landed
+        if (_inPlatform) { return; }
         // Freeze before getting control
         _myRigidBody.freezeRotation = true;
         
         float rotationSpeed = rotationValue * Time.deltaTime;
+        
         // Rotate Left
         if (Input.GetKey(KeyCode.A))
         {
