@@ -130,6 +130,7 @@ public class RocketMovement : MonoBehaviour
         _state = State.Dying;
         _myRigidBody.AddForce(Vector2.up*thrustPush);
         _myRigidBody.angularVelocity = thrustPush;
+        ResetSoundAndFX();
         Invoke(nameof(Die),1f);
     }
     private void Die()
@@ -228,17 +229,21 @@ public class RocketMovement : MonoBehaviour
         }
         else
         {
-            if (_audioSource.isPlaying)
-            {
-                _audioSource.Stop();
-            }
-            
-            // Stop Trail
-            if (thrustVFX == null || thrustVFX.particleCount <= 0) return;
-            thrustVFX.Stop(true,ParticleSystemStopBehavior.StopEmitting);
-            thrustVFX = null;
-
+            ResetSoundAndFX();
         }
+    }
+
+    private void ResetSoundAndFX()
+    {
+        if (_audioSource.isPlaying)
+        {
+            _audioSource.Stop();
+        }
+
+        // Stop Trail
+        if (thrustVFX == null || thrustVFX.particleCount <= 0) return;
+        thrustVFX.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+        thrustVFX = null;
     }
 
 
