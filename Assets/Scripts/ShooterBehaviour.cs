@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class ShooterBehaviour : MonoBehaviour
 {
+// Parameters
     [SerializeField] private GameObject target;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private float bulletSpeed;
-    private Transform targetTransform;
     [SerializeField, Range(0f,10f)] float shootSpeed;
     [SerializeField] float treshHoldAngle;
+    
+    // Cache
+    private Transform targetTransform;
     private Transform parentTransform;
 
     // Start is called before the first frame update
@@ -32,6 +35,7 @@ public class ShooterBehaviour : MonoBehaviour
     void Shoot()
     {
         GameObject ob = Instantiate(bulletPrefab, parentTransform.position, transform.rotation);
-        ob.GetComponent<Rigidbody2D>().AddRelativeForce(Vector3.up*bulletSpeed);
+        float rot = (transform.rotation.eulerAngles.z + 90f) % 360 * Mathf.Deg2Rad;
+        ob.GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Cos(rot)*bulletSpeed,Mathf.Sin(rot)*bulletSpeed);
     }
 }
