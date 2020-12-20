@@ -10,6 +10,7 @@ public class ShooterBehaviour : MonoBehaviour
     [SerializeField] private float bulletSpeed;
     [SerializeField, Range(0f,10f)] float shootSpeed;
     [SerializeField] float treshHoldAngle;
+    [SerializeField] float timeBeforeFirstShot;
     
     // Cache
     private Transform targetTransform;
@@ -18,7 +19,7 @@ public class ShooterBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Shoot", 0, shootSpeed);
+        InvokeRepeating("Shoot", timeBeforeFirstShot, shootSpeed);
         targetTransform = target.GetComponent<Transform>();
         parentTransform = GetComponentInParent<Transform>();
     }

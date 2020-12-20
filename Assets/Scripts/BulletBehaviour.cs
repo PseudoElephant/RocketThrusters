@@ -17,8 +17,9 @@ public class BulletBehaviour : MonoBehaviour
         
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
+        Debug.Log("Hit a Wall Baby!");
         Destroy(gameObject);
     }
 }
