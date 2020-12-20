@@ -6,8 +6,11 @@
     <e p="D:\RocketThruster2Dv2\RocketThruster2Dv2" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="BulletBehaviour.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="RocketMovement.cs" t="Include" />
+          <e p="SawBehaviour.cs" t="Include" />
+          <e p="ShooterBehaviour.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

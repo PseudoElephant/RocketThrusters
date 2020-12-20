@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class ShooterBehaviour : MonoBehaviour
 {
-    [SerializeField] GameObject target;
+    [SerializeField] private GameObject target;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private float bulletSpeed;
     private Transform targetTransform;
     [SerializeField, Range(0f,10f)] float shootSpeed;
     [SerializeField] float treshHoldAngle;
@@ -21,13 +23,15 @@ public class ShooterBehaviour : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float angleToLookAt = Mathf.Atan(targetTransform.position.x - parentTransform.position.x / targetTransform.position.y - parentTransform.position.y);
-        float angleAdd = (transform.rotation.z + angleToLookAt) / 2f;
-        transform.Rotate(0, 0, angleAdd * Time.deltaTime * 100, Space.Self);
+        var dir = Camera.main.WorldToScreenPoint(target.transform.position) - Camera.main.WorldToScreenPoint(parentTransform.position);
+        // Fix -90 deg
+        float angleToLookAt = -Mathf.Atan2(dir.x, dir.y) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angleToLookAt, Vector3.forward);
     }
 
     void Shoot()
     {
-        
+        GameObject ob = Instantiate(bulletPrefab, parentTransform.position, transform.rotation);
+        ob.GetComponent<Rigidbody2D>().AddRelativeForce(Vector3.up*bulletSpeed);
     }
 }
