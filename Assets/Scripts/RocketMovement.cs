@@ -36,7 +36,7 @@ public class RocketMovement : MonoBehaviour
     private ParticleSystem thrustVFX;
     
     // Constants
-    const float TrailOffset = 2.5f;
+    const float TrailOffset = 2.25f;
     
     // Start is called before the first frame update
     void Start()
