@@ -1224,7 +1224,7 @@ Transform:
   - {fileID: 635459960}
   - {fileID: 397667907}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1281136560
 GameObject:
@@ -1685,7 +1685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2560522571079036583, guid: 48994d934c2504d4f9d808003a345464, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2560522571079036583, guid: 48994d934c2504d4f9d808003a345464, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1718,7 +1718,7 @@ PrefabInstance:
       objectReference: {fileID: 9029533846138034008, guid: c40be6b7b1318114ea200a608ab6ed0b, type: 3}
     - target: {fileID: 276760472, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: angleThreshHold
-      value: 57.92
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1887156427, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
@@ -2040,6 +2040,46 @@ PrefabInstance:
     - target: {fileID: 8570104071029326877, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570104072243446847, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: editorData._bezierPath.points.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570104072243446847, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: editorData._bezierPath.perAnchorNormalsAngle.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570104072243446847, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: editorData._bezierPath.points.Array.data[5].x
+      value: 2.837915
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570104072243446847, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: editorData._bezierPath.points.Array.data[5].y
+      value: 1.7896203
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570104072243446847, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: editorData._bezierPath.points.Array.data[6].x
+      value: 2.3830786
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570104072243446847, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: editorData._bezierPath.points.Array.data[6].y
+      value: 2.3544152
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570104072243446847, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: editorData._bezierPath.points.Array.data[2].x
+      value: 0.44106644
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570104072243446847, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: editorData._bezierPath.points.Array.data[2].y
+      value: -0.811178
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570104072243446847, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: editorData._bezierPath.points.Array.data[4].x
+      value: 3.7733192
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570104072243446847, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: editorData._bezierPath.points.Array.data[4].y
+      value: 0.9310115
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
