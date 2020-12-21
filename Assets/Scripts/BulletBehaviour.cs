@@ -19,7 +19,6 @@ public class BulletBehaviour : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("Hit a Wall Baby!");
         Destroy(gameObject);
     }
 }

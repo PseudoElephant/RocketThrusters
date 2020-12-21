@@ -9,8 +9,9 @@ public class ShooterBehaviour : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private float bulletSpeed;
     [SerializeField, Range(0f,10f)] float shootSpeed;
-    [SerializeField] float treshHoldAngle;
-    [SerializeField] float timeBeforeFirstShot;
+    [SerializeField] float minAngle;
+    [SerializeField] float maxAngle;
+    [SerializeField] float attackRadius;
     
     // Cache
     private Transform targetTransform;
@@ -19,7 +20,7 @@ public class ShooterBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Shoot", timeBeforeFirstShot, shootSpeed);
+        InvokeRepeating("Shoot", shootSpeed, shootSpeed);
         targetTransform = target.GetComponent<Transform>();
         parentTransform = GetComponentInParent<Transform>();
     }
