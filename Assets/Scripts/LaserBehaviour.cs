@@ -21,14 +21,14 @@ public class LaserBehaviour : MonoBehaviour
         {
             if (startOn)
             {
-                InvokeRepeating("DisableLaser", timeBetweenActivations, timeBetweenActivations * 2);
-                InvokeRepeating("EnableLaser", timeBetweenActivations + timeActive, timeBetweenActivations * 2);
+                InvokeRepeating(nameof(DisableLaser), timeBetweenActivations, timeBetweenActivations * 2);
+                InvokeRepeating(nameof(EnableLaser), timeBetweenActivations + timeActive, timeBetweenActivations * 2);
             }
             else
             {
                 DisableLaser();
-                InvokeRepeating("EnableLaser", timeBetweenActivations, timeBetweenActivations * 2);
-                InvokeRepeating("DisableLaser", timeBetweenActivations + timeActive, timeBetweenActivations * 2);
+                InvokeRepeating(nameof(EnableLaser), timeBetweenActivations, timeBetweenActivations * 2);
+                InvokeRepeating(nameof(DisableLaser), timeBetweenActivations + timeActive, timeBetweenActivations * 2);
             }
         }
     }
@@ -57,6 +57,21 @@ public class LaserBehaviour : MonoBehaviour
         {
             endVFX.transform.localPosition = new Vector3(0, hit.distance - endVFXOffset, 0);
             lineRenderer.SetPosition(1, new Vector3(0,hit.distance,0));
+
+            // Kill Player TODO:Maybe not as scalable
+            if (hit.collider.CompareTag("Player"))
+            {
+                // Delete if rocket
+                RocketMovement rocket = hit.collider.gameObject.GetComponentInParent<RocketMovement>();
+                if (rocket)
+                {
+                    rocket.InvokeDeath();
+                }
+                else
+                {
+                    Destroy(hit.collider.gameObject);
+                }
+            }
         } else
         {
             endVFX.transform.localPosition = new Vector3(0, maxLength - endVFXOffset, 0);

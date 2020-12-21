@@ -125,7 +125,7 @@ public class RocketMovement : MonoBehaviour
         _normFloor = other.GetContact(0).normal;
     }
 
-    private void InvokeDeath()
+    public void InvokeDeath()
     {
         _state = State.Dying;
         _myRigidBody.AddForce(Vector2.up*thrustPush);
