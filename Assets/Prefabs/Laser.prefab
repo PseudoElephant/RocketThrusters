@@ -5065,6 +5065,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1991670469070419028}
   - component: {fileID: 1991670469070419027}
+  - component: {fileID: 1490386244}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -5105,13 +5106,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alwaysActive: 0
   startOn: 0
-  timeActive: 5
-  timeBetweenActivations: 5
+  timeActive: 0.5
+  timeBetweenActivations: 0.5
   transformFirePoint: {fileID: 1991670469760787377}
   lineRenderer: {fileID: 1991670468050642408}
   maxLength: 50
   endVFX: {fileID: 1991670468988861158}
   endVFXOffset: 0.2
+--- !u!114 &1490386244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991670469070419029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e725adc8c3140b8b2f723bd835d4bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateRight: 0
+  rotationSpeed: 3.29
 --- !u!1 &1991670469355599246
 GameObject:
   m_ObjectHideFlags: 0
@@ -19602,7 +19617,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991670470075280591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1991670469355599245}

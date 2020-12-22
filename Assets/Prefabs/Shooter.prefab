@@ -97,8 +97,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   bulletPrefab: {fileID: 3113875139092627871, guid: 6e153ed0bd873d64abc99297c8e3aeb3, type: 3}
-  shootSpeed: 1.7
-  treshHoldAngle: 0
+  bulletSpeed: 20
+  shootSpeed: 2.5
+  minAngle: 0
+  maxAngle: 0
+  attackRadius: 0
 --- !u!1 &2560522571079036580
 GameObject:
   m_ObjectHideFlags: 0

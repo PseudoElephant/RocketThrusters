@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 276760472}
   m_Layer: 0
   m_Name: RocketHolder
-  m_TagString: Friendly
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67,7 +67,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b919e304815a4e64ca5bc567e34e5483, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.43
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -166,8 +166,8 @@ MonoBehaviour:
   rotationValue: 230
   thrustPush: 50
   velocityDeathThreshHold: 8
-  angleThreshHold: 30
-  thrustVfXprefab: {fileID: 1178912501427565648, guid: 22760bf6119388b468ad233cefd2d1ab, type: 3}
+  angleThreshHold: 15
+  thrustVfXprefab: {fileID: 9029533846138034008, guid: c40be6b7b1318114ea200a608ab6ed0b, type: 3}
 --- !u!1 &3947642080154878553
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 4100725340979993794}
   m_Layer: 0
   m_Name: Rocket
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -196,7 +196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3947642080154878553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6759820513864990740}
@@ -242,7 +242,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 286b7557dae024b018216be652a91669, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8065643e1bad8452e802325e540a8b5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -270,7 +270,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 4}
+    oldSize: {x: 1.22, y: 4.8}
     newSize: {x: 3.2, y: 6.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -278,63 +278,27 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.29375002, y: -1.825}
-      - {x: 0.30625, y: -1.81875}
-      - {x: 0.3125, y: -1.69375}
-      - {x: 0.35625002, y: -1.725}
-      - {x: 0.5375, y: -1.8312501}
-      - {x: 0.575, y: -1.85}
-      - {x: 0.69375, y: -1.8875}
-      - {x: 0.77500004, y: -1.8937501}
-      - {x: 0.83750004, y: -1.8875}
-      - {x: 0.86875004, y: -1.85625}
-      - {x: 0.86875004, y: -1.7625}
-      - {x: 0.83750004, y: -1.6750001}
-      - {x: 0.77500004, y: -1.55625}
-      - {x: 0.70625, y: -1.44375}
-      - {x: 0.6625, y: -1.375}
-      - {x: 0.50625, y: -1.15625}
-      - {x: 0.34375, y: -0.95}
-      - {x: 0.3125, y: -0.9125}
-      - {x: 0.3125, y: 1.36875}
-      - {x: 0.30625, y: 1.4}
-      - {x: 0.26250002, y: 1.54375}
-      - {x: 0.2, y: 1.71875}
-      - {x: 0.15, y: 1.8375}
-      - {x: 0.125, y: 1.90625}
-      - {x: 0.05, y: 2}
-      - {x: -0.03125, y: 2}
-      - {x: -0.0625, y: 1.975}
-      - {x: -0.112500004, y: 1.9}
-      - {x: -0.15625, y: 1.8125}
-      - {x: -0.24375, y: 1.575}
-      - {x: -0.3125, y: 1.36875}
-      - {x: -0.3125, y: 1.18125}
-      - {x: -0.30625, y: 1.1750001}
-      - {x: -0.30625, y: -0.91875}
-      - {x: -0.32500002, y: -0.93125004}
-      - {x: -0.44375, y: -1.075}
-      - {x: -0.675, y: -1.40625}
-      - {x: -0.77500004, y: -1.56875}
-      - {x: -0.83750004, y: -1.69375}
-      - {x: -0.86875004, y: -1.7687501}
-      - {x: -0.86875004, y: -1.8375}
-      - {x: -0.8625, y: -1.8625001}
-      - {x: -0.83750004, y: -1.8875}
-      - {x: -0.71875, y: -1.8937501}
-      - {x: -0.625, y: -1.875}
-      - {x: -0.51875, y: -1.8312501}
-      - {x: -0.31875, y: -1.7062501}
-      - {x: -0.30625, y: -1.80625}
-      - {x: -0.29375002, y: -1.81875}
-      - {x: -0.16875, y: -1.84375}
-      - {x: -0.18125, y: -1.85625}
-      - {x: -0.24375, y: -1.96875}
-      - {x: -0.25, y: -2}
-      - {x: 0.26250002, y: -2}
-      - {x: 0.23125, y: -1.93125}
-      - {x: 0.18125, y: -1.85}
-      - {x: 0.15625, y: -1.825}
+    - - {x: 0.61, y: -2.07}
+      - {x: 0.61, y: -0.26999998}
+      - {x: 0.48999998, y: -0.07}
+      - {x: 0.41, y: -0.049999997}
+      - {x: 0.32, y: -0.19}
+      - {x: 0.31, y: 1.87}
+      - {x: 0.21, y: 2.12}
+      - {x: 0.06, y: 2.3999999}
+      - {x: -0.07, y: 2.3999999}
+      - {x: -0.26999998, y: 1.99}
+      - {x: -0.31, y: 1.77}
+      - {x: -0.32, y: -0.19999999}
+      - {x: -0.39999998, y: -0.04}
+      - {x: -0.61, y: -0.17}
+      - {x: -0.61, y: -2.09}
+      - {x: -0.26, y: -2.25}
+      - {x: -0.32, y: -2.3999999}
+      - {x: 0.29, y: -2.3999999}
+      - {x: 0.29999998, y: -2.3899999}
+      - {x: 0.29, y: -2.35}
+      - {x: 0.58, y: -2.1}
 --- !u!61 &4100725340979993793
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -348,18 +312,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.9645333}
+  m_Offset: {x: 0, y: -2.3788896}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 4}
+    oldSize: {x: 1.22, y: 4.8}
     newSize: {x: 3.2, y: 6.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 0.39527893}
+  m_Size: {x: 1.2313385, y: 0.31120682}
   m_EdgeRadius: 0
 --- !u!70 &4100725340979993794
 CapsuleCollider2D:

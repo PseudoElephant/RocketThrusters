@@ -493,8 +493,11 @@ MonoBehaviour:
       points:
       - {x: -1.1966665, y: 0.18646565, z: 0}
       - {x: 0.49744564, y: 1.2915474, z: 0}
-      - {x: 0.51796454, y: -0.81697756, z: 0}
+      - {x: 0.44106644, y: -0.811178, z: 0}
       - {x: 2.0004969, y: 0.0041332236, z: 0}
+      - {x: 3.7733192, y: 0.9310115, z: 0}
+      - {x: 2.837915, y: 1.7896203, z: 0}
+      - {x: 2.3830786, y: 2.3544152, z: 0}
       isClosed: 0
       space: 1
       controlMode: 0
@@ -504,6 +507,7 @@ MonoBehaviour:
         m_Center: {x: 0, y: 0, z: 0}
         m_Extent: {x: 2, y: 0.14433756, z: 0}
       perAnchorNormalsAngle:
+      - 0
       - 0
       - 0
       globalNormalsAngle: 0
