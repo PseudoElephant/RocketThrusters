@@ -9,6 +9,10 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="BulletBehaviour.cs" t="Include" />
+          <e p="EndPlatform" t="Include">
+            <e p="MoveEndPlatform.cs" t="Include" />
+            <e p="MoveEndPlatformIndividual.cs" t="Include" />
+          </e>
           <e p="LaserBehaviour.cs" t="Include" />
           <e p="RocketMovement.cs" t="Include" />
           <e p="SawBehaviour.cs" t="Include" />
