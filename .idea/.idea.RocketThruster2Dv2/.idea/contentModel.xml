@@ -7,16 +7,21 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="ShooterEditor.cs" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
-          <e p="BulletBehaviour.cs" t="Include" />
           <e p="EndPlatform" t="Include">
             <e p="MoveEndPlatform.cs" t="Include" />
             <e p="MoveEndPlatformIndividual.cs" t="Include" />
           </e>
-          <e p="LaserBehaviour.cs" t="Include" />
+          <e p="Enemies" t="Include">
+            <e p="BulletBehaviour.cs" t="Include" />
+            <e p="LaserBehaviour.cs" t="Include" />
+            <e p="ShooterBehaviour.cs" t="Include" />
+          </e>
           <e p="RocketMovement.cs" t="Include" />
           <e p="SawBehaviour.cs" t="Include" />
-          <e p="ShooterBehaviour.cs" t="Include" />
         </e>
         <e p="Vendor" t="Include">
           <e p="PathCreator" t="Include">

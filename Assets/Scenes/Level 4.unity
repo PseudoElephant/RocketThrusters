@@ -1171,6 +1171,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 277442317}
     m_Modifications:
+    - target: {fileID: 1991670469070419027, guid: abd1dbd638e334148bf503c79f59a639, type: 3}
+      propertyPath: timeActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991670469070419027, guid: abd1dbd638e334148bf503c79f59a639, type: 3}
+      propertyPath: timeBetweenActivations
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991670469070419027, guid: abd1dbd638e334148bf503c79f59a639, type: 3}
+      propertyPath: startOn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1991670469070419028, guid: abd1dbd638e334148bf503c79f59a639, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.080723
@@ -2543,6 +2555,18 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 430168854}
+    - target: {fileID: 2560522570366968452, guid: 48994d934c2504d4f9d808003a345464, type: 3}
+      propertyPath: ViewAngle
+      value: 171
+      objectReference: {fileID: 0}
+    - target: {fileID: 2560522570366968452, guid: 48994d934c2504d4f9d808003a345464, type: 3}
+      propertyPath: AttackRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2560522570366968452, guid: 48994d934c2504d4f9d808003a345464, type: 3}
+      propertyPath: AngleOffset
+      value: 91
+      objectReference: {fileID: 0}
     - target: {fileID: 2560522571079036580, guid: 48994d934c2504d4f9d808003a345464, type: 3}
       propertyPath: m_Name
       value: Shooter

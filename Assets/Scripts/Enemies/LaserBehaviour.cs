@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,22 +16,48 @@ public class LaserBehaviour : MonoBehaviour
     [SerializeField] float endVFXOffset;
     [SerializeField] private float laserHitStrength;
     
+    // State
+    private bool _isActive = true;
     // Start is called before the first frame update
     void Start()
     {
         if(!alwaysActive)
         {
+            StartCoroutine(LaserToggle());
+        }
+    }
+    
+    // Coroutines
+    // COULD USE DELEGATES FOR FUNCTION CALLBACKS 
+    IEnumerator LaserToggle()
+    {
+        
+        // Disables Laser or not
+        if (!startOn) {   DisableLaser(); }
+        
+        // While IsActive or Destroyed
+        while (_isActive)
+        {
             if (startOn)
             {
-                InvokeRepeating(nameof(DisableLaser), timeBetweenActivations, timeBetweenActivations * 2);
-                InvokeRepeating(nameof(EnableLaser), timeBetweenActivations + timeActive, timeBetweenActivations * 2);
+                // Time Between Activations
+                yield return new WaitForSecondsRealtime(timeBetweenActivations);
+                EnableLaser();
+                // Time Active
+                yield return new WaitForSecondsRealtime(timeActive);
+                DisableLaser();
             }
             else
             {
+                // Time Active
+                yield return new WaitForSecondsRealtime(timeActive);
                 DisableLaser();
-                InvokeRepeating(nameof(EnableLaser), timeBetweenActivations, timeBetweenActivations * 2);
-                InvokeRepeating(nameof(DisableLaser), timeBetweenActivations + timeActive, timeBetweenActivations * 2);
+                // Time Between Activations
+                yield return new WaitForSecondsRealtime(timeBetweenActivations);
+                EnableLaser();
             }
+
+            
         }
     }
 
