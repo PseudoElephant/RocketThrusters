@@ -38,6 +38,7 @@ public class RocketMovement : MonoBehaviour
     // Constants
     const float TrailOffset = 2.25f;
     
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -71,7 +72,8 @@ public class RocketMovement : MonoBehaviour
         // If player is landing
         if ((_feet.IsTouching(other) && _myRigidBody.velocity.magnitude > velocityDeathThreshHold) || _nose.IsTouching(other))
         {
-            InvokeDeath();
+            // Launch Diagonal TODO: IMPROVE IMPULSE
+            InvokeDeath(Vector2.one);
         }
     }
 
@@ -115,7 +117,7 @@ public class RocketMovement : MonoBehaviour
                 break;
             default:
                 // Feet Touching
-              InvokeDeath();
+              InvokeDeath(Vector2.up*thrustPush);
                 break;
         }
     }
@@ -125,10 +127,12 @@ public class RocketMovement : MonoBehaviour
         _normFloor = other.GetContact(0).normal;
     }
 
-    public void InvokeDeath()
+    // Death
+    public void InvokeDeath(Vector2 force)
     {
         _state = State.Dying;
-        _myRigidBody.AddForce(Vector2.up*thrustPush);
+        // Adding death push
+        _myRigidBody.AddForce(force);
         _myRigidBody.angularVelocity = thrustPush;
         ResetSoundAndFX();
         Invoke(nameof(Die),1f);

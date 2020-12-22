@@ -4784,8 +4784,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 23231519
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -4880,12 +4880,12 @@ LineRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 23231519
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 11.76, z: 0}
+  - {x: 0, y: 30, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -4991,7 +4991,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5009,8 +5009,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 145833855
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 52bf0e527b7e844c7967843aadf39742, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5065,7 +5065,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1991670469070419028}
   - component: {fileID: 1991670469070419027}
-  - component: {fileID: 1490386244}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -5113,20 +5112,7 @@ MonoBehaviour:
   maxLength: 50
   endVFX: {fileID: 1991670468988861158}
   endVFXOffset: 0.2
---- !u!114 &1490386244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1991670469070419029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8e725adc8c3140b8b2f723bd835d4bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateRight: 0
-  rotationSpeed: 3.29
+  laserHitStrength: 100
 --- !u!1 &1991670469355599246
 GameObject:
   m_ObjectHideFlags: 0
@@ -9911,8 +9897,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 23231519
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -14723,8 +14709,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 23231519
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -19565,8 +19551,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 23231519
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 1
   m_SortMode: 0

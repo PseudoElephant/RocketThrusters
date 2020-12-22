@@ -13,6 +13,7 @@ public class LaserBehaviour : MonoBehaviour
     [SerializeField] float maxLength;
     [SerializeField] GameObject endVFX;
     [SerializeField] float endVFXOffset;
+    [SerializeField] private float laserHitStrength;
     
     // Start is called before the first frame update
     void Start()
@@ -65,7 +66,7 @@ public class LaserBehaviour : MonoBehaviour
                 RocketMovement rocket = hit.collider.gameObject.GetComponentInParent<RocketMovement>();
                 if (rocket)
                 {
-                    rocket.InvokeDeath();
+                    rocket.InvokeDeath(direction*laserHitStrength);
                 }
                 else
                 {

@@ -20,10 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b060c06-7002-4850-97b1-26dde03e9b81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/GradientBackground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/GradientBackground.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GradientBackground.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/GradientBackground.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/EndPlatform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/EndPlatform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Laser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Laser.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RocketHolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/RocketHolder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Saw_Big.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Saw_Big.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Saw_Moving.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Saw_Moving.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Shooter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Shooter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 3/Main Camera Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 3/Main Camera Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 3_Profiles/Main Camera Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 3_Profiles/Main Camera Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 4.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LaserBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LaserBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShooterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShooterBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,11 +57,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/BulletBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ShooterBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LaserBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EndPlatform/MoveEndPlatformIndividual.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EndPlatform/MoveEndPlatform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LaserBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BulletBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShooterBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -100,7 +115,7 @@
       <workItem from="1608332531348" duration="2503000" />
       <workItem from="1608407395263" duration="15197000" />
       <workItem from="1608489311306" duration="1112000" />
-      <workItem from="1608590048065" duration="3743000" />
+      <workItem from="1608590048065" duration="9832000" />
     </task>
     <servers />
   </component>
@@ -125,10 +140,14 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="591" y="83" key="RiderGenerateDialog" timestamp="1608593046168">
+    <state x="591" y="83" key="RiderGenerateDialog" timestamp="1608626659755">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="591" y="83" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1608593046168" />
+    <state x="591" y="83" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1608626659755" />
+    <state x="188" y="117" width="1200" height="584" key="VCS.FileHistoryDialog" timestamp="1608623044748">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="188" y="117" width="1200" height="584" key="VCS.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1608623044748" />
     <state x="451" y="146" width="670" height="58" key="search.everywhere.popup" timestamp="1608519631058">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
