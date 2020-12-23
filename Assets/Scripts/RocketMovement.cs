@@ -66,7 +66,8 @@ public class RocketMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (_state != State.Alive)
+       
+        if (_state != State.Alive || other.CompareTag("Trigger"))
         {
             return;
         }

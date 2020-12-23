@@ -2,13 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class LaserBehaviour : MonoBehaviour
 {
     // Public To Be Worked From The Editor
     //[Header("Laser Emission")]
-    [HideInInspector]
-    public  bool alwaysActive;
+   [HideInInspector]
+    public  bool useBursts;
     [HideInInspector]
     public bool startOn;
     [HideInInspector]
@@ -31,7 +32,7 @@ public class LaserBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(!alwaysActive)
+        if(useBursts)
         {
             StartCoroutine(LaserToggle());
         }

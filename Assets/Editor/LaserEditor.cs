@@ -15,9 +15,9 @@ using UnityEngine;
             style.fontStyle = FontStyle.Bold;
             style.richText = true;
             GUILayout.Label("\n<color=white>Laser Emission</color>",style);
-            laser.alwaysActive = EditorGUILayout.Toggle("alwaysActive",laser.alwaysActive);
+            laser.useBursts = EditorGUILayout.Toggle("useBursts",laser.useBursts);
             
-            if (laser.alwaysActive)
+            if (laser.useBursts)
             {
                 laser.startOn = EditorGUILayout.Toggle("startOn", laser.startOn);
                 laser.timeActive = EditorGUILayout.FloatField("timeActive", laser.timeActive);
