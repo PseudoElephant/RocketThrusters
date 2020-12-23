@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SawBehaviour : MonoBehaviour
+public class RotateBehaviour : MonoBehaviour
 {
     public bool rotateRight;
 

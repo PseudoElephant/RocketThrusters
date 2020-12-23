@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8309165332380208877}
   - component: {fileID: 8309165332380208866}
-  - component: {fileID: 8309165332380208876}
   - component: {fileID: 8309165332380208879}
+  - component: {fileID: -122967576908440198}
   m_Layer: 0
   m_Name: Saw_Big
   m_TagString: Untagged
@@ -84,20 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8309165332380208876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8309165332380208867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8e725adc8c3140b8b2f723bd835d4bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateRight: 0
-  rotationSpeed: 2.9
 --- !u!60 &8309165332380208879
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -225,3 +211,17 @@ PolygonCollider2D:
       - {x: 0.275, y: -0.14999999}
       - {x: 0.275, y: 0.12}
       - {x: 0.175, y: 0.22999999}
+--- !u!114 &-122967576908440198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8309165332380208867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17574056f80e1421bad1544a263ca18a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateRight: 0
+  rotationSpeed: 3
