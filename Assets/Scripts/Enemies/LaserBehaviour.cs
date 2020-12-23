@@ -5,15 +5,20 @@ using UnityEngine;
 
 public class LaserBehaviour : MonoBehaviour
 {
+    [Header("Laser Emission")]
     [SerializeField] bool alwaysActive;
     [SerializeField] bool startOn;
     [SerializeField] float timeActive;
     [SerializeField] float timeBetweenActivations;
+    
+    [Header("Laser FX's")]
     [SerializeField] Transform transformFirePoint;
     [SerializeField] LineRenderer lineRenderer;
     [SerializeField] float maxLength;
     [SerializeField] GameObject endVFX;
     [SerializeField] float endVFXOffset;
+    
+    [Header("Laser Interaction")]
     [SerializeField] private float laserHitStrength;
     
     // State

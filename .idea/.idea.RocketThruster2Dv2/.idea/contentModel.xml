@@ -22,6 +22,7 @@
           </e>
           <e p="RocketMovement.cs" t="Include" />
           <e p="SawBehaviour.cs" t="Include" />
+          <e p="TriggerBehaviour.cs" t="Include" />
         </e>
         <e p="Vendor" t="Include">
           <e p="PathCreator" t="Include">

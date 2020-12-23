@@ -13,11 +13,14 @@ using Vector3 = UnityEngine.Vector3;
 public class RocketMovement : MonoBehaviour
 {
 // Parameters
+    [Header("Rocket Movement")]
     [SerializeField] private float rotationValue;
     [SerializeField] private float thrustPush;
     [SerializeField] private float velocityDeathThreshHold = Mathf.Epsilon;
+    [Range(0,360)]
     [SerializeField] private float angleThreshHold = 30;
     // Fx
+    [Header("Rocket FX's")]
     [SerializeField] private GameObject thrustVfXprefab;
     // Cache
     private Rigidbody2D _myRigidBody;
@@ -33,7 +36,7 @@ public class RocketMovement : MonoBehaviour
     private bool _inPlatform = false;
     private State _state = State.Alive;
     private Vector2 _normFloor;
-    private ParticleSystem thrustVFX;
+    private ParticleSystem _thrustVFX;
     
     // Constants
     const float TrailOffset = 2.25f;
@@ -224,7 +227,7 @@ public class RocketMovement : MonoBehaviour
             }
 
             // Start Trail
-            if (thrustVFX == null)
+            if (_thrustVFX == null)
             {
                 StartTrail();
             }
@@ -245,9 +248,9 @@ public class RocketMovement : MonoBehaviour
         }
 
         // Stop Trail
-        if (thrustVFX == null || thrustVFX.particleCount <= 0) return;
-        thrustVFX.Stop(true, ParticleSystemStopBehavior.StopEmitting);
-        thrustVFX = null;
+        if (_thrustVFX == null || _thrustVFX.particleCount <= 0) return;
+        _thrustVFX.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+        _thrustVFX = null;
     }
 
 
@@ -255,7 +258,7 @@ public class RocketMovement : MonoBehaviour
     {
         GameObject temp = Instantiate(thrustVfXprefab, transform);
         temp.transform.localPosition = new Vector3(0,-TrailOffset,0);
-        thrustVFX  = temp.GetComponent<ParticleSystem>();
+        _thrustVFX  = temp.GetComponent<ParticleSystem>();
         
     }
 

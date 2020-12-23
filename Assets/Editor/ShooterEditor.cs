@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
@@ -6,6 +7,8 @@ using UnityEditor;
 [CustomEditor (typeof (ShooterBehaviour))]
 public class ShooterEditor : Editor
 {
+ 
+
     private void OnSceneGUI()
     {
         ShooterBehaviour shooter = (ShooterBehaviour)target;
