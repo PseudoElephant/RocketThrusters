@@ -20,11 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b060c06-7002-4850-97b1-26dde03e9b81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/LaserEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/LaserEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Editor/ShooterEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/ShooterEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 4.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Saw_Moving.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Saw_Moving.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SandBox.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SandBox.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +41,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@4.1.4/Runtime/SpriteShapeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/701F6580-ABAD-44CF-B237-A543DCD0D94B/e9/c8b87057/Editor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@4.1.4/Runtime/BezierUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimatorPathCreator.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -48,11 +55,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ShooterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/ShooterEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/LaserEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/LevelLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimatorPathCreator.cs" />
       </list>
     </option>
   </component>
@@ -106,7 +115,8 @@
       <workItem from="1608407395263" duration="15197000" />
       <workItem from="1608489311306" duration="1112000" />
       <workItem from="1608590048065" duration="10533000" />
-      <workItem from="1608675242270" duration="6387000" />
+      <workItem from="1608675242270" duration="7200000" />
+      <workItem from="1608705654875" duration="12952000" />
     </task>
     <servers />
   </component>

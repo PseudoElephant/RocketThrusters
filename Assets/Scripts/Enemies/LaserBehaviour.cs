@@ -5,11 +5,16 @@ using UnityEngine;
 
 public class LaserBehaviour : MonoBehaviour
 {
-    [Header("Laser Emission")]
-    [SerializeField] bool alwaysActive;
-    [SerializeField] bool startOn;
-    [SerializeField] float timeActive;
-    [SerializeField] float timeBetweenActivations;
+    // Public To Be Worked From The Editor
+    //[Header("Laser Emission")]
+    [HideInInspector]
+    public  bool alwaysActive;
+    [HideInInspector]
+    public bool startOn;
+    [HideInInspector]
+    public float timeActive;
+    [HideInInspector]
+    public float timeBetweenActivations;
     
     [Header("Laser FX's")]
     [SerializeField] Transform transformFirePoint;

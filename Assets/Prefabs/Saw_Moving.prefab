@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 8570104072058883126}
   - component: {fileID: 8570104072058883128}
   - component: {fileID: 8570104072058883131}
-  - component: {fileID: 8570104072058883130}
+  - component: {fileID: 7491553293934976818}
   m_Layer: 0
   m_Name: Saw_Body
   m_TagString: Untagged
@@ -430,7 +430,7 @@ PolygonCollider2D:
       - {x: 0.275, y: -0.14999999}
       - {x: 0.275, y: 0.12}
       - {x: 0.175, y: 0.22999999}
---- !u!114 &8570104072058883130
+--- !u!114 &7491553293934976818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -439,12 +439,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 8570104072058883127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
+  m_Script: {fileID: 11500000, guid: 08aba3b2ebef11f4ca6b83d77920b823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pathCreator: {fileID: 8570104072243446847}
   endOfPathInstruction: 1
-  speed: 0.5
+  animationMovement:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  timeStep: 0.2
 --- !u!1 &8570104072243446845
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,7 +494,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8570104072243446845}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.099987, y: 0.30000114, z: 0}
+  m_LocalPosition: {x: -17.099981, y: 0.30000114, z: 0}
   m_LocalScale: {x: 10.021, y: 10.021, z: 10.021}
   m_Children: []
   m_Father: {fileID: 8570104071029326877}
