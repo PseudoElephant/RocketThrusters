@@ -1,5 +1,4 @@
 ﻿using UnityEditor;
-using UnityEditor;
 using UnityEngine;
 
 [CustomEditor(typeof(LaserBehaviour))]
@@ -17,7 +16,7 @@ using UnityEngine;
             style.richText = true;
             GUILayout.Label("\n<color=white>Laser Emission</color>",style);
             laser.alwaysActive = EditorGUILayout.Toggle("alwaysActive",laser.alwaysActive);
-
+            
             if (laser.alwaysActive)
             {
                 laser.startOn = EditorGUILayout.Toggle("startOn", laser.startOn);

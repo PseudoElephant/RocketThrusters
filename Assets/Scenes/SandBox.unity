@@ -263,11 +263,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6759820513864990740, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -51.6
+      value: -43.5
       objectReference: {fileID: 0}
     - target: {fileID: 6759820513864990740, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 27.9
+      value: 25.6
       objectReference: {fileID: 0}
     - target: {fileID: 6759820513864990740, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_LocalPosition.z
@@ -330,11 +330,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7672697448237446114, guid: d4085916727210b4aa6d84bca3512997, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -51.6
+      value: -43.5
       objectReference: {fileID: 0}
     - target: {fileID: 7672697448237446114, guid: d4085916727210b4aa6d84bca3512997, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 27.9
+      value: 25.6
       objectReference: {fileID: 0}
     - target: {fileID: 7672697448237446114, guid: d4085916727210b4aa6d84bca3512997, type: 3}
       propertyPath: m_LocalPosition.z
@@ -393,6 +393,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7491553293934976818, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: animationMovement.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491553293934976818, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: animationMovement.m_Curve.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491553293934976818, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: animationMovement.m_Curve.Array.data[1].inSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491553293934976818, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: animationMovement.m_Curve.Array.data[1].outSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491553293934976818, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: animationMovement.m_Curve.Array.data[1].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491553293934976818, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: animationMovement.m_Curve.Array.data[0].inSlope
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491553293934976818, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: animationMovement.m_Curve.Array.data[0].outSlope
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491553293934976818, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
+      propertyPath: timeStep
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 8570104071029326874, guid: 0faf4140d13b444889a6a0758556997d, type: 3}
       propertyPath: m_Name
       value: Saw_Moving (1)
@@ -528,15 +560,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2560522570366968452, guid: 48994d934c2504d4f9d808003a345464, type: 3}
       propertyPath: AttackRadius
-      value: 5.82
+      value: 7.13
       objectReference: {fileID: 0}
     - target: {fileID: 2560522570366968452, guid: 48994d934c2504d4f9d808003a345464, type: 3}
       propertyPath: ViewAngle
-      value: 102
+      value: 158
       objectReference: {fileID: 0}
     - target: {fileID: 2560522570366968452, guid: 48994d934c2504d4f9d808003a345464, type: 3}
       propertyPath: AngleOffset
-      value: 94
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 2560522570366968452, guid: 48994d934c2504d4f9d808003a345464, type: 3}
       propertyPath: target
@@ -603,13 +635,17 @@ PrefabInstance:
       propertyPath: maxLength
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 1991670469070419027, guid: abd1dbd638e334148bf503c79f59a639, type: 3}
+      propertyPath: laserHitStrength
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1991670469070419028, guid: abd1dbd638e334148bf503c79f59a639, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29
+      value: -19.55
       objectReference: {fileID: 0}
     - target: {fileID: 1991670469070419028, guid: abd1dbd638e334148bf503c79f59a639, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 6.17
       objectReference: {fileID: 0}
     - target: {fileID: 1991670469070419028, guid: abd1dbd638e334148bf503c79f59a639, type: 3}
       propertyPath: m_LocalPosition.z

@@ -13,15 +13,13 @@ public class ShooterEditor : Editor
     {
         ShooterBehaviour shooter = (ShooterBehaviour)target;
         Handles.color = Color.white;
-        Handles.DrawWireArc(shooter.transform.position, Vector3.forward, Vector3.up, 360, shooter.AttackRadius);
+        //Handles.DrawWireArc(shooter.transform.position, Vector3.forward, Vector3.up, 360, shooter.AttackRadius);
         float angleA = (-(shooter.ViewAngle) / 2) - (shooter.AngleOffset - 90f);
         float angleB = ((shooter.ViewAngle) / 2) - (shooter.AngleOffset - 90f);
         Vector3 viewAngleA = DirFromAngle(angleA);
         Vector3 viewAngleB = DirFromAngle(angleB);
 
-        float viewAngle = Vector2.Angle(viewAngleA, viewAngleB);
-        Handles.color = Color.red;
-        Handles.DrawWireArc(shooter.transform.position, Vector3.forward, viewAngleB, viewAngle, shooter.AttackRadius);
+        Handles.DrawWireArc(shooter.transform.position, Vector3.forward, viewAngleB, shooter.ViewAngle, shooter.AttackRadius);
         Handles.DrawLine(shooter.transform.position, shooter.transform.position + viewAngleA * shooter.AttackRadius);
         Handles.DrawLine(shooter.transform.position, shooter.transform.position + viewAngleB * shooter.AttackRadius);
     }
