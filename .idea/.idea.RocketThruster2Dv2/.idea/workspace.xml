@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b060c06-7002-4850-97b1-26dde03e9b81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/LaserEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/LaserEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/GradientBackground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/GradientBackground.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/FallingBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/FallingBlock.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/FloatingEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/FloatingEditor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SandBox.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SandBox.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloatingBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloatingBehaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +53,6 @@
         <option value="$PROJECT_DIR$/Assets/LevelLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimatorPathCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/FloatingBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/FloatingEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/SpawnerEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
@@ -66,6 +61,8 @@
         <option value="$PROJECT_DIR$/Assets/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Sound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FloatingBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/FloatingEditor.cs" />
       </list>
     </option>
   </component>

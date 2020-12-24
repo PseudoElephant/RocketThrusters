@@ -12,14 +12,17 @@ public class FloatingEditor : Editor
 
         if (GUILayout.Button("Generate Unit Circle"))
         {
-            floating.Frequency = new Vector2(1, 1);
-            floating.Amplitude = new Vector2(1, 1);
+            floating.xFrequency = 1;
+            floating.yFrequency = 1;
+            floating.xAmplitud = 1;
+            floating.yAmplitud = 1;
+
         }
 
         base.OnInspectorGUI();
 
-        floating.Frequency = EditorGUILayout.Vector2Field("Speed", floating.Frequency);
-        floating.Amplitude = EditorGUILayout.Vector2Field("Amplitude", floating.Amplitude);
+        //floating.Frequency = EditorGUILayout.Vector2Field("Speed", floating.Frequency);
+        //floating.Amplitude = EditorGUILayout.Vector2Field("Amplitude", floating.Amplitude);
   
     }
 }

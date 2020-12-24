@@ -15,6 +15,10 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="AnimatorPathCreator.cs" t="Include" />
+          <e p="Cable" t="Include">
+            <e p="CableBridge.cs" t="Include" />
+            <e p="RopeBridge.cs" t="Include" />
+          </e>
           <e p="EndPlatform" t="Include">
             <e p="MoveEndPlatform.cs" t="Include" />
             <e p="MoveEndPlatformIndividual.cs" t="Include" />
