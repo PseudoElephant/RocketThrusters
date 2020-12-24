@@ -66,7 +66,7 @@ public class RocketMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-       
+       // TODO : Improve Collision Management
         if (_state != State.Alive || other.CompareTag("Trigger"))
         {
             return;
@@ -83,7 +83,12 @@ public class RocketMovement : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-       
+        // TODO : Improve Collision Management
+        if (_state != State.Alive || other.CompareTag("Trigger"))
+        {
+            return;
+        }
+
         // Activates in platform state (could check for velocity)
         if (_feet.IsTouching(other))
         {

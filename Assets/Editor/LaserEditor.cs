@@ -24,6 +24,7 @@ using UnityEngine;
                 laser.timeBetweenActivations = EditorGUILayout.FloatField("timeBetweenActivations", laser.timeBetweenActivations);
                 
             }
-            
+
+     
         }
     }

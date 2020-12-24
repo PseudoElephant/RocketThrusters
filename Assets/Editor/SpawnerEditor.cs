@@ -17,6 +17,7 @@ public class SpawnerEditor : Editor
 
     public override void OnInspectorGUI()
     {
+        
         SpawnerBehaviour spawner = (SpawnerBehaviour) target;
             
         // Editor Parameters
@@ -75,5 +76,7 @@ public class SpawnerEditor : Editor
             EditorGUILayout.Separator();
             spawner.spawnRadius = EditorGUILayout.FloatField("Spawn Radius", spawner.spawnRadius);
         }
+        // Redraw Scene
+        UnityEditor.SceneView.lastActiveSceneView.Repaint();
     }
 }
