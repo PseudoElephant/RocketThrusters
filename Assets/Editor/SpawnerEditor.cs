@@ -76,6 +76,7 @@ public class SpawnerEditor : Editor
             EditorGUILayout.Separator();
             spawner.spawnRadius = EditorGUILayout.FloatField("Spawn Radius", spawner.spawnRadius);
         }
+
         // Redraw Scene
         UnityEditor.SceneView.lastActiveSceneView.Repaint();
     }

@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class FloatingBehaviour : MonoBehaviour
 {
-   public  float xFrequency;
-   public  float yFrequency;
-   public float xAmplitud;
-   public float yAmplitud;
-    
+    [HideInInspector, SerializeField]
+    public Vector2 Frequency;
+    [HideInInspector, SerializeField]
+    public Vector2 Amplitude;
+
     private Vector3 posOffset;
     private Vector3 temp;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +23,9 @@ public class FloatingBehaviour : MonoBehaviour
     public void Update()
     {
         temp = posOffset;
-        temp.y  += Mathf.Sin (Time.fixedTime * Mathf.PI * yFrequency) * yAmplitud;
-        temp.x  += Mathf.Cos (Time.fixedTime * Mathf.PI * xFrequency) * xAmplitud;
+        temp.y  += Mathf.Sin (Time.fixedTime * Mathf.PI * Frequency.y) * Amplitude.y;
+        temp.x  += Mathf.Cos (Time.fixedTime * Mathf.PI * Frequency.x) * Amplitude.x;
         transform.position = temp;
-
-
     }
 
 }
