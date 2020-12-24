@@ -20,12 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b060c06-7002-4850-97b1-26dde03e9b81" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Editor/LaserEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/LaserEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/SpawnerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/SpawnerEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Laser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Laser.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/GradientBackground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/GradientBackground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/FallingBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/FallingBlock.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SandBox.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SandBox.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,13 +56,16 @@
         <option value="$PROJECT_DIR$/Assets/Editor/ShooterEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/LevelLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimatorPathCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/FloatingBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/FloatingEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/LaserEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/SpawnerEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/LaserEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Sound.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/AudioManager.cs" />
       </list>
     </option>
   </component>
@@ -118,7 +122,7 @@
       <workItem from="1608675242270" duration="7200000" />
       <workItem from="1608705654875" duration="13314000" />
       <workItem from="1608748827967" duration="11617000" />
-      <workItem from="1608776469288" duration="2442000" />
+      <workItem from="1608776469288" duration="6459000" />
     </task>
     <servers />
   </component>

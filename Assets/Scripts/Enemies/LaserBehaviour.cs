@@ -18,9 +18,9 @@ public class LaserBehaviour : MonoBehaviour
     public float timeBetweenActivations;
     
     [Header("Laser FX's")]
-    [SerializeField] Transform transformFirePoint;
-    [SerializeField] LineRenderer lineRenderer;
-    [SerializeField] float maxLength;
+    public Transform transformFirePoint;
+    public LineRenderer lineRenderer;
+    public float maxLength;
     [SerializeField] GameObject endVFX;
     [SerializeField] float endVFXOffset;
     

@@ -30,7 +30,9 @@
           <e p="SpawnerBehaviour.cs" t="Include" />
           <e p="TriggerBehaviour.cs" t="Include" />
           <e p="Utility" t="Include">
+            <e p="AudioManager.cs" t="Include" />
             <e p="LevelLoader.cs" t="Include" />
+            <e p="Sound.cs" t="Include" />
           </e>
         </e>
         <e p="Vendor" t="Include">
