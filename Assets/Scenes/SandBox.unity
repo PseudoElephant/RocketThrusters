@@ -259,15 +259,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3288813374665978311, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6759820513864990740, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -80.3
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 6759820513864990740, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 52.2
+      value: 9.7
       objectReference: {fileID: 0}
     - target: {fileID: 6759820513864990740, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_LocalPosition.z
@@ -330,11 +330,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7672697448237446114, guid: d4085916727210b4aa6d84bca3512997, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -80.3
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 7672697448237446114, guid: d4085916727210b4aa6d84bca3512997, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 52.2
+      value: 9.700001
       objectReference: {fileID: 0}
     - target: {fileID: 7672697448237446114, guid: d4085916727210b4aa6d84bca3512997, type: 3}
       propertyPath: m_LocalPosition.z
@@ -816,11 +816,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2560522570366968452, guid: 48994d934c2504d4f9d808003a345464, type: 3}
       propertyPath: AttackRadius
-      value: 7.13
+      value: 9.19
       objectReference: {fileID: 0}
     - target: {fileID: 2560522570366968452, guid: 48994d934c2504d4f9d808003a345464, type: 3}
       propertyPath: ViewAngle
-      value: 158
+      value: 145
       objectReference: {fileID: 0}
     - target: {fileID: 2560522570366968452, guid: 48994d934c2504d4f9d808003a345464, type: 3}
       propertyPath: AngleOffset
@@ -976,14 +976,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabSpawnList:
   - {fileID: 4371197517931152133, guid: 0143698c1997e304f9633d3b73af02aa, type: 3}
+  spawnRadius: 5.82
   selectRandomlyFromList: 0
   specificSpawnIndex: 0
   minSpawnAmmount: 1
-  maxSpawnAmmount: 2
-  constantTimeBetweenSpawns: 0
-  timeBetweenSpawns: 0
-  minTimeBetweenSpawns: 3
-  maxTimeBetweenSpawns: 10
+  maxSpawnAmmount: 3
+  constantTimeBetweenGroupSpawns: 1
+  timeBetweenGroupSpawns: 3
+  minTimeBetweenGroupSpawns: 0
+  maxTimeBetweenGroupSpawns: 0
+  constantTimeBetweenIndividualSpawns: 0
+  timeBetweenIndividualSpawns: 0.5
+  minTimeBetweenIndividualSpawns: 0.1
+  maxTimeBetweenIndividualSpawns: 1
   spawning: 1
 --- !u!4 &1540982374
 Transform:
@@ -993,7 +998,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540982372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.82903, y: 17.506233, z: -5.2614655}
+  m_LocalPosition: {x: -8.83, y: 9.93, z: -5.2614655}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

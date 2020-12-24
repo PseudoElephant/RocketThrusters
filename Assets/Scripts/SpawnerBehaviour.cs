@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class SpawnerBehaviour : MonoBehaviour
 {
-   [SerializeField]
+    [SerializeField]
     GameObject[] prefabSpawnList;
+    [HideInInspector]
+    public float spawnRadius;
     [HideInInspector]
     public bool selectRandomlyFromList;
     [HideInInspector]
@@ -16,15 +18,22 @@ public class SpawnerBehaviour : MonoBehaviour
     [HideInInspector]
     public int maxSpawnAmmount;
     [HideInInspector]
-    public bool constantTimeBetweenSpawns;
+    public bool constantTimeBetweenGroupSpawns;
     [HideInInspector]
-    public float timeBetweenSpawns;
+    public float timeBetweenGroupSpawns;
     [HideInInspector]
-    public float minTimeBetweenSpawns;
+    public float minTimeBetweenGroupSpawns;
     [HideInInspector]
-    public float maxTimeBetweenSpawns;
- 
-    
+    public float maxTimeBetweenGroupSpawns;
+    [HideInInspector]
+    public bool constantTimeBetweenIndividualSpawns;
+    [HideInInspector]
+    public float timeBetweenIndividualSpawns;
+    [HideInInspector]
+    public float minTimeBetweenIndividualSpawns;
+    [HideInInspector]
+    public float maxTimeBetweenIndividualSpawns;
+   
     // State
     [HideInInspector]
     public bool spawning = true;
@@ -40,25 +49,39 @@ public class SpawnerBehaviour : MonoBehaviour
         while (spawning)
         {
            
-// Time Between Spawns
-            if (constantTimeBetweenSpawns)
+            // Time Between Spawns
+            if (constantTimeBetweenGroupSpawns)
             {
-                yield return new WaitForSecondsRealtime(timeBetweenSpawns);
+                yield return new WaitForSecondsRealtime(timeBetweenGroupSpawns);
             }
             else
             {
-                yield return new WaitForSecondsRealtime(Random.Range(minTimeBetweenSpawns,maxTimeBetweenSpawns));
+                yield return new WaitForSecondsRealtime(Random.Range(minTimeBetweenGroupSpawns,maxTimeBetweenGroupSpawns));
             }
-// Spawning
-            int spawnAmount = Random.Range(minSpawnAmmount, maxSpawnAmmount);
+
+            // Spawning
+            int spawnAmount = Random.Range(minSpawnAmmount, maxSpawnAmmount + 1); //To account for exclusiveness;
             int index = specificSpawnIndex;
             for (int i = 0; i < spawnAmount; i++)
             {
-                if (selectRandomlyFromList){index = Random.Range(0, prefabSpawnList.Length); }
+                if (selectRandomlyFromList) {
+                    index = Random.Range(0, prefabSpawnList.Length);
+                }
 
-                Instantiate(prefabSpawnList[index],transform.position,Quaternion.identity);
+                Vector2 randomPoint = Random.insideUnitCircle;
+                Vector3 position = new Vector3(randomPoint.x, randomPoint.y, 0) * spawnRadius;
+
+                Instantiate(prefabSpawnList[index], transform.position+position, Quaternion.Euler(Vector3.forward * Random.Range(0,360)));
+
+                if (constantTimeBetweenIndividualSpawns)
+                {
+                    yield return new WaitForSecondsRealtime(timeBetweenIndividualSpawns);
+                }
+                else
+                {
+                    yield return new WaitForSecondsRealtime(Random.Range(minTimeBetweenIndividualSpawns, maxTimeBetweenIndividualSpawns));
+                }
             }
-
         }
     }
 }
