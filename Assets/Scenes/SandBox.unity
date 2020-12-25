@@ -259,11 +259,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3288813374665978311, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6759820513864990740, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.3
+      value: -1.64
       objectReference: {fileID: 0}
     - target: {fileID: 6759820513864990740, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_LocalPosition.y
@@ -330,7 +330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7672697448237446114, guid: d4085916727210b4aa6d84bca3512997, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.300001
+      value: -1.6400009
       objectReference: {fileID: 0}
     - target: {fileID: 7672697448237446114, guid: d4085916727210b4aa6d84bca3512997, type: 3}
       propertyPath: m_LocalPosition.y
@@ -473,6 +473,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6410497454676924937, guid: 0735a7e18e0843a4d8801befc5096229, type: 3}
   m_PrefabInstance: {fileID: 6410497455407815639}
   m_PrefabAsset: {fileID: 0}
+--- !u!120 &1078442924 stripped
+LineRenderer:
+  m_CorrespondingSourceObject: {fileID: 5495368569511371744, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
+  m_PrefabInstance: {fileID: 1204648300}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1154758601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 505579990694462026, guid: 2631e848cf46c26438e5912126c67013, type: 3}
@@ -487,11 +492,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5495368569511371745, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
       propertyPath: perlinNoise
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495368569511371745, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
+      propertyPath: segmentLength
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495368569511371745, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
+      propertyPath: lineWidth
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495368569511371745, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
+      propertyPath: contraintFactor
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495368569511371745, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
+      propertyPath: ropeSegLen
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 5495368569511371747, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
       propertyPath: m_Name
       value: Cable
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495368569511371747, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5495368569511371758, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
       propertyPath: m_LocalPosition.x
@@ -536,6 +561,14 @@ PrefabInstance:
     - target: {fileID: 5495368569511371758, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495368570429009209, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495368570429009209, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.47
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
@@ -879,6 +912,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1819875462273062347, guid: 5077dfe06e55f964ba6dda2696fae594, type: 3}
   m_PrefabInstance: {fileID: 1819875461964328372}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2032035263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2032035265}
+  - component: {fileID: 2032035264}
+  m_Layer: 0
+  m_Name: HangedByCable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2032035264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032035263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70cc2ac55e113da4c80191ebc63991c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineRenderer: {fileID: 1078442924}
+--- !u!4 &2032035265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032035263}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.317462, y: -12.031021, z: -385.7352}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &505579991689835907
 PrefabInstance:
   m_ObjectHideFlags: 0

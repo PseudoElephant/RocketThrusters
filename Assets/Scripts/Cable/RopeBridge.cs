@@ -49,8 +49,10 @@ public class RopeBridge : MonoBehaviour
     private void FixedUpdate()
     {
         this.Simulate();
+      
     }
 
+    
     private void Simulate()
     {
         // SIMULATION
@@ -83,7 +85,9 @@ public class RopeBridge : MonoBehaviour
         {
             this.ApplyConstraint();
         }
+        
     }
+    
 
     private void ApplyConstraint()
     {
@@ -93,7 +97,7 @@ public class RopeBridge : MonoBehaviour
         this.ropeSegments[0] = firstSegment;
 
 
-        //Constrant to Second Point 
+        //Constrant to Second Point  ( If we remove this the end block contrain is eliminated ) 
         RopeSegment endSegment = this.ropeSegments[this.ropeSegments.Count - 1];
         endSegment.posNow = this.EndPoint.position;
         this.ropeSegments[this.ropeSegments.Count - 1] = endSegment;
