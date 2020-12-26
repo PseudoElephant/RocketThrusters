@@ -146,6 +146,7 @@ public class RocketMovement : MonoBehaviour
         ResetSoundAndFX();
         Invoke(nameof(Die),1f);
     }
+
     private void Die()
     {
        Destroy(gameObject);

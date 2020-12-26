@@ -70,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 145833855
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: de45fb877d7aa4ade9c4c1f3cbcee62a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -99,9 +99,9 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3113875139092627871, guid: 6e153ed0bd873d64abc99297c8e3aeb3, type: 3}
   bulletSpeed: 4
   shootSpeed: 2.5
-  minAngle: -90
-  maxAngle: 90
-  attackRadius: 100
+  ViewAngle: 180
+  AngleOffset: 0
+  AttackRadius: 0
 --- !u!1 &2560522571079036580
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,7 +126,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2560522571079036580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.47, y: 0.31, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.7797, y: 1.7797, z: 1.7797}
   m_Children:
   - {fileID: 2560522570366968453}
@@ -203,7 +203,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 145833855
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c1f16362dab474c348a3bea0cc31db54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

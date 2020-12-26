@@ -49,7 +49,6 @@ public class RopeBridge : MonoBehaviour
     private void FixedUpdate()
     {
         this.Simulate();
-      
     }
 
     
