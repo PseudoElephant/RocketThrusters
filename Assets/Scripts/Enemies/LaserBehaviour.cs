@@ -8,31 +8,32 @@ public class LaserBehaviour : MonoBehaviour
 {
     // Public To Be Worked From The Editor
     //[Header("Laser Emission")]
-   [HideInInspector]
-    public  bool useBursts;
-    [HideInInspector]
-    public bool startOn;
-    [HideInInspector]
-    public float timeActive;
-    [HideInInspector]
-    public float timeBetweenActivations;
+    public bool StartOn;
+    public float TimeActive;
+    public float TimeBetweenActivations;
     
-    [Header("Laser FX's")]
-    public Transform transformFirePoint;
-    public LineRenderer lineRenderer;
-    public float maxLength;
-    [SerializeField] GameObject endVFX;
-    [SerializeField] float endVFXOffset;
+    public Transform TransformFirePoint;
+    public LineRenderer LineRenderer;
+    public float MaxLength;
+    public GameObject EndVFX;
+    public float EndVFXOffset;
     
-    [Header("Laser Interaction")]
-    [SerializeField] private float laserHitStrength;
+    public float LaserHitStrength;
+    public LaserEmission EmissionType;
+
+    public enum LaserEmission
+    {
+        ConstantEmission,
+        BurstEmission
+    }
     
     // State
     private bool _isActive = true;
+
     // Start is called before the first frame update
     void Start()
     {
-        if(useBursts)
+        if(EmissionType == LaserEmission.BurstEmission)
         {
             StartCoroutine(LaserToggle());
         }
@@ -44,27 +45,27 @@ public class LaserBehaviour : MonoBehaviour
     {
         
         // Disables Laser or not
-        if (!startOn) {   DisableLaser(); }
+        if (!StartOn) {   DisableLaser(); }
         
         // While IsActive or Destroyed
         while (_isActive)
         {
-            if (startOn)
+            if (StartOn)
             {
                 // Time Between Activations
-                yield return new WaitForSecondsRealtime(timeBetweenActivations);
+                yield return new WaitForSecondsRealtime(TimeBetweenActivations);
                 EnableLaser();
                 // Time Active
-                yield return new WaitForSecondsRealtime(timeActive);
+                yield return new WaitForSecondsRealtime(TimeActive);
                 DisableLaser();
             }
             else
             {
                 // Time Active
-                yield return new WaitForSecondsRealtime(timeActive);
+                yield return new WaitForSecondsRealtime(TimeActive);
                 DisableLaser();
                 // Time Between Activations
-                yield return new WaitForSecondsRealtime(timeBetweenActivations);
+                yield return new WaitForSecondsRealtime(TimeBetweenActivations);
                 EnableLaser();
             }
 
@@ -75,7 +76,7 @@ public class LaserBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!lineRenderer.enabled)
+        if(!LineRenderer.enabled)
         {
             return;
         }
@@ -85,17 +86,17 @@ public class LaserBehaviour : MonoBehaviour
 
     void UpdateLaser()
     {
-        lineRenderer.SetPosition(0, transformFirePoint.localPosition);
+        LineRenderer.SetPosition(0, TransformFirePoint.localPosition);
         
         float rot = (transform.rotation.eulerAngles.z + 90f) % 360 * Mathf.Deg2Rad;
         Vector2 direction = new Vector2(Mathf.Cos(rot), Mathf.Sin(rot));
 
-        RaycastHit2D hit = Physics2D.Raycast(transformFirePoint.position, direction, maxLength);
+        RaycastHit2D hit = Physics2D.Raycast(TransformFirePoint.position, direction, MaxLength);
 
         if(hit)
         {
-            endVFX.transform.localPosition = new Vector3(0, hit.distance - endVFXOffset, 0);
-            lineRenderer.SetPosition(1, new Vector3(0,hit.distance,0));
+            EndVFX.transform.localPosition = new Vector3(0, hit.distance - EndVFXOffset, 0);
+            LineRenderer.SetPosition(1, new Vector3(0,hit.distance,0));
 
             // Kill Player TODO:Maybe not as scalable
             if (hit.collider.CompareTag("Player"))
@@ -104,7 +105,7 @@ public class LaserBehaviour : MonoBehaviour
                 RocketMovement rocket = hit.collider.gameObject.GetComponentInParent<RocketMovement>();
                 if (rocket)
                 {
-                    rocket.InvokeDeath(direction*laserHitStrength);
+                    rocket.InvokeDeath(direction*LaserHitStrength);
                 }
                 else
                 {
@@ -113,14 +114,14 @@ public class LaserBehaviour : MonoBehaviour
             }
         } else
         {
-            endVFX.transform.localPosition = new Vector3(0, maxLength - endVFXOffset, 0);
-            lineRenderer.SetPosition(1, new Vector3(0, maxLength, 0));
+            EndVFX.transform.localPosition = new Vector3(0, MaxLength - EndVFXOffset, 0);
+            LineRenderer.SetPosition(1, new Vector3(0, MaxLength, 0));
         }
     }
 
     void EnableLaser()
     {
-        lineRenderer.enabled = true;
+        LineRenderer.enabled = true;
 
         //Turn On Particles
         ParticleSystem[] particleSystems = GetComponentsInChildren<ParticleSystem>();
@@ -132,7 +133,7 @@ public class LaserBehaviour : MonoBehaviour
 
     void DisableLaser()
     {
-        lineRenderer.enabled = false;
+        LineRenderer.enabled = false;
 
         //Turn Off All Particles
         ParticleSystem[] particleSystems = GetComponentsInChildren<ParticleSystem>();

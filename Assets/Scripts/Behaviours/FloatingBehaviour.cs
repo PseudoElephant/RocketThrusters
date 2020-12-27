@@ -4,26 +4,27 @@ using UnityEngine;
 
 public class FloatingBehaviour : MonoBehaviour
 {
-   public  float xFrequency;
-   public  float yFrequency;
-   public float xAmplitud;
-   public float yAmplitud;
+    public MovingBlockType MovingType;
+
+    public Vector2 Frequency;
+    public Vector2 Amplitude;
     
     private Vector3 posOffset;
     private Vector3 locOff;
     private Vector3 temp;
-    
-    // "Bobbing" animation from 1D Perlin noise.
-    public bool perlinNoise = true;
+
+    public enum MovingBlockType
+    {
+        Waves,
+        PerlinNoise
+    }
+
     // Range over which height varies.
-    public float heightScale = 1.0f;
-    
-    public float widthScale = 1.0f;
+    public Vector2 PerlinHeightScale = new Vector2(1f, 1f);
 
     // Distance covered per second along X axis of Perlin plane.
-    public float xScale = 1.0f;
+    public Vector2 PerlinScale = new Vector2(1f, 0.5f);
 
-    public float yScale = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,28 +32,25 @@ public class FloatingBehaviour : MonoBehaviour
         locOff = transform.localPosition;
     }
     
-
     // Update is called once per frame
     public void Update()
     {
-        if (perlinNoise)
+        if (MovingType == MovingBlockType.PerlinNoise)
         {
 
-            float height = heightScale * Mathf.PerlinNoise(Time.time * yScale, 0f);
-            float width = widthScale * Mathf.PerlinNoise(Time.time * xScale + 100f, 0f);
+            float height = PerlinHeightScale.y * Mathf.PerlinNoise(Time.time * PerlinScale.y, 0f);
+            float width = PerlinHeightScale.x * Mathf.PerlinNoise(Time.time * PerlinScale.x + 100f, 0f);
             Vector3 pos = locOff;
             pos.y += height;
             pos.x += width;
             transform.localPosition = pos;
         }
-
         else
         {
             temp = posOffset;
-            temp.y  += Mathf.Sin (Time.fixedTime * Mathf.PI * yFrequency) * yAmplitud;
-            temp.x  += Mathf.Cos (Time.fixedTime * Mathf.PI * xFrequency) * xAmplitud;
+            temp.y  += Mathf.Sin (Time.fixedTime * Mathf.PI * Frequency.y) * Amplitude.y;
+            temp.x  += Mathf.Cos (Time.fixedTime * Mathf.PI * Frequency.x) * Amplitude.x;
             transform.position = temp;      
         }
     }
-
 }

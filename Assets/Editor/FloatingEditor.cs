@@ -8,21 +8,22 @@ public class FloatingEditor : Editor
 {
     public override void OnInspectorGUI()
     {
+        serializedObject.Update();
+
         FloatingBehaviour floating = (FloatingBehaviour) target;
 
-        if (GUILayout.Button("Generate Unit Circle"))
-        {
-            floating.xFrequency = 1;
-            floating.yFrequency = 1;
-            floating.xAmplitud = 1;
-            floating.yAmplitud = 1;
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("MovingType"), new GUIContent("Moving Block Type"));
 
+        if (floating.MovingType == FloatingBehaviour.MovingBlockType.Waves)
+        {
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("Frequency"), new GUIContent("Frequency"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("Amplitude"), new GUIContent("Amplitude"));
+        } else
+        {
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("PerlinScale"), new GUIContent("General Scale"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("PerlinHeightScale"), new GUIContent("Directional Scale"));
         }
 
-        base.OnInspectorGUI();
-
-        //floating.Frequency = EditorGUILayout.Vector2Field("Speed", floating.Frequency);
-        //floating.Amplitude = EditorGUILayout.Vector2Field("Amplitude", floating.Amplitude);
-  
+        serializedObject.ApplyModifiedProperties();
     }
 }

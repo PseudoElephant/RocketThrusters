@@ -26,7 +26,6 @@ public class TriggerBehaviour : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("I've been triggered!");
             triggerEvent.Invoke();
         }
     }

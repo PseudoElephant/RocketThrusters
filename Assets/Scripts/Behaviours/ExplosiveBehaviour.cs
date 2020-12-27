@@ -12,8 +12,8 @@ public class ExplosiveBehaviour : MonoBehaviour
     public float ExplosionStrength;
 
     public GameObject ExplosionParticles;
-    public CircleCollider2D ProximityTrigger;
 
+    private CircleCollider2D[] _proximityTrigger;
     private ExplosionStage _explosionStage;
     private CircleCollider2D _explosionCollider;
     private float _timeBeforeDestroyingParticles;
@@ -39,6 +39,10 @@ public class ExplosiveBehaviour : MonoBehaviour
         //Init Some Vars
         _explosionCollider = GetComponent<CircleCollider2D>();
         _explosionCollider.radius = ExplosionRadius;
+        _explosionCollider.enabled = false;
+
+        //TODO: Make a better method that guarantuess I am grabbing the circular collider of the children
+        _proximityTrigger = GetComponentsInChildren<CircleCollider2D>();
 
         //Start Explosion
         if(Type == ExplosionType.TimeDetonated)
@@ -46,7 +50,12 @@ public class ExplosiveBehaviour : MonoBehaviour
             StartCoroutine(StartExplosion());
         } else if (Type == ExplosionType.ProximityTriggered)
         {
-            ProximityTrigger.radius = ProximityActivationRadius;
+            _proximityTrigger[1].radius = ProximityActivationRadius;
+        }
+
+        if (Type != ExplosionType.ProximityTriggered)
+        {
+            _proximityTrigger[1].enabled = false;
         }
     }
 
