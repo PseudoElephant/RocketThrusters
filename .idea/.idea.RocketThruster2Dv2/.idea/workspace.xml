@@ -20,10 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b060c06-7002-4850-97b1-26dde03e9b81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterV2.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterV2.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SandBox.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SandBox.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cable/RopeBridge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cable/RopeBridge.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/ExplosiveEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/ExplosiveEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/ExplosiveBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/ExplosiveBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/SpawnerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/SpawnerBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/BulletBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/BulletBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Vendor/PathCreator/Core/Editor/Helper/PathHandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Vendor/PathCreator/Core/Editor/Helper/PathHandle.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +74,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Cable/RopeBridge.cs" />
         <option value="$PROJECT_DIR$/Assets/Rope.cs" />
         <option value="$PROJECT_DIR$/Assets/Weight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/ExplosiveEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Vendor/PathCreator/Core/Editor/Helper/PathHandle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/SpawnerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/ExplosiveBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterV2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BulletBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -125,6 +138,7 @@
       <workItem from="1608705654875" duration="13314000" />
       <workItem from="1608748827967" duration="11617000" />
       <workItem from="1608776469288" duration="6459000" />
+      <workItem from="1609193104759" duration="9306000" />
     </task>
     <servers />
   </component>

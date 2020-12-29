@@ -4,12 +4,12 @@ using UnityEditor;
 [CustomEditor (typeof(ExplosiveBehaviour))]
 public class ExplosiveEditor : Editor
 {
-    private bool showExplosionDetails = true;
-    SerializedProperty particleSystem;
+    private bool _showExplosionDetails = true;
+    private SerializedProperty _particleSystem;
 
     private void OnEnable()
     {
-        particleSystem = serializedObject.FindProperty("ExplosionParticles");
+        _particleSystem = serializedObject.FindProperty("ExplosionParticles");
     }
 
     private void OnSceneGUI()
@@ -73,12 +73,12 @@ public class ExplosiveEditor : Editor
         }
 
         EditorGUILayout.Separator();
-        EditorGUILayout.PropertyField(particleSystem, new GUIContent("Explosion Particles"));
+        EditorGUILayout.PropertyField(_particleSystem, new GUIContent("Explosion Particles"));
 
         EditorGUILayout.Separator();
-        showExplosionDetails = EditorGUILayout.Foldout(showExplosionDetails, "Explosion Details");
+        _showExplosionDetails = EditorGUILayout.Foldout(_showExplosionDetails, "Explosion Details");
 
-        if (showExplosionDetails)
+        if (_showExplosionDetails)
         {
             EditorGUILayout.PropertyField(serializedObject.FindProperty("FuseTime"), new GUIContent("Fuse Time"));
             EditorGUILayout.PropertyField(serializedObject.FindProperty("ExplosionDuration"), new GUIContent("Explosion Duration"));

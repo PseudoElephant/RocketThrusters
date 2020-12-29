@@ -8,15 +8,21 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Editor" t="Include">
+          <e p="ExplosiveEditor.cs" t="Include" />
           <e p="FloatingEditor.cs" t="Include" />
           <e p="LaserEditor.cs" t="Include" />
           <e p="ShooterEditor.cs" t="Include" />
           <e p="SpawnerEditor.cs" t="Include" />
         </e>
-        <e p="HangedByCable.cs" t="Include" />
-        <e p="Rope.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AnimatorPathCreator.cs" t="Include" />
+          <e p="Behaviours" t="Include">
+            <e p="ExplosiveBehaviour.cs" t="Include" />
+            <e p="FloatingBehaviour.cs" t="Include" />
+            <e p="RotateBehaviour.cs" t="Include" />
+            <e p="SpawnerBehaviour.cs" t="Include" />
+            <e p="TriggerBehaviour.cs" t="Include" />
+          </e>
           <e p="Cable" t="Include">
             <e p="CableBridge.cs" t="Include" />
             <e p="RopeBridge.cs" t="Include" />
@@ -29,17 +35,17 @@
             <e p="BulletBehaviour.cs" t="Include" />
             <e p="LaserBehaviour.cs" t="Include" />
             <e p="ShooterBehaviour.cs" t="Include" />
+            <e p="ShooterV2.cs" t="Include" />
           </e>
-          <e p="FloatingBehaviour.cs" t="Include" />
+          <e p="HangedByCable.cs" t="Include" />
           <e p="RocketMovement.cs" t="Include" />
-          <e p="RotateBehaviour.cs" t="Include" />
-          <e p="SpawnerBehaviour.cs" t="Include" />
-          <e p="TriggerBehaviour.cs" t="Include" />
+          <e p="Rope.cs" t="Include" />
           <e p="Utility" t="Include">
             <e p="AudioManager.cs" t="Include" />
             <e p="LevelLoader.cs" t="Include" />
             <e p="Sound.cs" t="Include" />
           </e>
+          <e p="Weight.cs" t="Include" />
         </e>
         <e p="Vendor" t="Include">
           <e p="PathCreator" t="Include">
@@ -87,7 +93,6 @@
             </e>
           </e>
         </e>
-        <e p="Weight.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

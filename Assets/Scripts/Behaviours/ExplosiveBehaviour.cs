@@ -18,19 +18,20 @@ public class ExplosiveBehaviour : MonoBehaviour
     private CircleCollider2D _explosionCollider;
     private float _timeBeforeDestroyingParticles;
 
+    
     public enum ExplosionType
     {
         TimeDetonated,
-        RemotleyDetonated,
+        RemotelyDetonated,
         ProximityTriggered,
     }
 
     private enum ExplosionStage
     {
-        waiting,
-        fuseActivated,
-        exploding,
-        dead
+        Waiting,
+        FuseActivated,
+        Exploding,
+        Dead
     }
 
     // Start is called before the first frame update
@@ -69,11 +70,11 @@ public class ExplosiveBehaviour : MonoBehaviour
     {
         switch (_explosionStage)
         {
-            case ExplosionStage.fuseActivated:
+            case ExplosionStage.FuseActivated:
                 break;
-            case ExplosionStage.exploding:
+            case ExplosionStage.Exploding:
                 break;
-            case ExplosionStage.dead:
+            case ExplosionStage.Dead:
                 break;
         }
     }
@@ -82,16 +83,16 @@ public class ExplosiveBehaviour : MonoBehaviour
     private IEnumerator StartExplosion()
     {
         //Fuse is on waiting for explosion
-        _explosionStage = ExplosionStage.fuseActivated;
+        _explosionStage = ExplosionStage.FuseActivated;
 
         yield return new WaitForSecondsRealtime(FuseTime);
-        _explosionStage = ExplosionStage.exploding;
+        _explosionStage = ExplosionStage.Exploding;
         SpawnParticles();
         _explosionCollider.enabled = true;
 
         //Explosion in progress waiting for it to end
         yield return new WaitForSecondsRealtime(ExplosionDuration);
-        _explosionStage = ExplosionStage.dead;
+        _explosionStage = ExplosionStage.Dead;
         StopParticles();
         _explosionCollider.enabled = false;
     }
@@ -100,6 +101,8 @@ public class ExplosiveBehaviour : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(_timeBeforeDestroyingParticles);
         Destroy(ExplosionParticles);
+        // Destroying bomb
+        Destroy(gameObject);
     }
 
     private void SpawnParticles()
@@ -141,4 +144,5 @@ public class ExplosiveBehaviour : MonoBehaviour
     {
         StartCoroutine(StartExplosion());
     }
+
 }

@@ -28,8 +28,7 @@ public class SpawnerBehaviour : MonoBehaviour
     {
         StartCoroutine(Spawn());
     }
-
-    //TODO: DisableSpawning Method?
+    
     IEnumerator Spawn()
     {
         while (_spawning)
@@ -69,5 +68,25 @@ public class SpawnerBehaviour : MonoBehaviour
                 }
             }
         }
+    }
+    
+    // Helper Methods
+
+    public void EnableSpawner()
+    {
+        StopCoroutine(Spawn());
+        _spawning = true;
+        StartCoroutine(Spawn());
+    }
+    public void DisableSpawner()
+    {
+        _spawning = false;
+    }   
+    public void ToggleSpawner()
+    {
+        if (_spawning)
+            DisableSpawner();
+        else
+            EnableSpawner();
     }
 }

@@ -207,7 +207,7 @@ namespace PathCreationEditor
                 int id = GUIUtility.GetControlID(hash, FocusType.Passive);
                 int numIts = 0;
 
-                // This is a bit of a shot in the dark at fixing a reported bug that I've been unable to reproduce.
+                // This is a bit of a shot in the dark at fixing a reported vug that I've been unable to reproduce.
                 // The problem is that multiple handles are being selected when just one is clicked on.
                 // I assume this is because they're somehow being assigned the same id.
                 while (idHash.Contains(id)) {
