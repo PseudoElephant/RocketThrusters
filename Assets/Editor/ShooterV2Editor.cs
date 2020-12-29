@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEditor;
 using UnityEngine;
-using UnityEditor;
 
-[CustomEditor (typeof (ShooterBehaviour))]
-public class ShooterEditor : Editor
+[CustomEditor(typeof(ShooterV2))]
+public class ShooterV2Editor : Editor
 {
     private void OnSceneGUI()
     {
-        ShooterBehaviour shooter = (ShooterBehaviour) target;
+        ShooterV2 shooter = (ShooterV2) target;
         Handles.color = Color.white;
         //Handles.DrawWireArc(shooter.transform.position, Vector3.forward, Vector3.up, 360, shooter.AttackRadius);
         float angleA = (-(shooter.viewAngle) / 2) - (shooter.angleOffset);
