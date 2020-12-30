@@ -1,19 +1,15 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Numerics;
-using UnityEditor.U2D.Path;
+using System.CodeDom;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 using Utility;
-using Matrix4x4 = UnityEngine.Matrix4x4;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
+using UnityEngine.InputSystem;
 
 public class RocketMovement : MonoBehaviour
 {
-// Parameters
+    // Parameters
     [Header("Rocket Movement")]
     [SerializeField] private float rotationValue;
     [SerializeField] private float thrustPush;
@@ -42,7 +38,41 @@ public class RocketMovement : MonoBehaviour
     // Constants
     const float TrailOffset = 2.25f;
     
-    
+    private InputMaster controls;
+
+    private bool _thrusting = false;
+    private float _movementDir;
+
+    private void Awake()
+    {
+        controls = new InputMaster();
+        
+        //Thrust
+        controls.Rocket.Thrust.started += ctx => _thrusting = true;
+        controls.Rocket.Thrust.canceled += ctx => _thrusting = false;
+        
+        //Rotate
+        controls.Rocket.Rotate.performed += ctx => _movementDir = ctx.ReadValue<float>();
+        controls.Rocket.Rotate.canceled += ctc => _movementDir = 0;
+    }
+
+    private void OnEnable()
+    {
+        controls.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Disable();
+    }
+
+    private void FixedUpdate()
+    {
+        if (_state != State.Alive) { return; } 
+        Thrust();
+        Rotate(_movementDir);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,19 +82,8 @@ public class RocketMovement : MonoBehaviour
         _nose = GetComponentInChildren<CapsuleCollider2D>();
 
         StartTrail();
-   
-
     }
-
-    // Update is called once per frame
-    void FixedUpdate()
-    { 
-        if (_state != State.Alive) { return; } 
-        Thrust();
-        Rotate();
-      
-    }
-
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         // TODO : Improve Collision Management
@@ -157,10 +176,11 @@ public class RocketMovement : MonoBehaviour
        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    // Input Layer (No Multilayer)
-    private void Rotate()
+    // // Input Layer (No Multilayer)
+    private void Rotate(float dir)
     {
-   
+        if (_state != State.Alive) { return; } 
+        
         // Freeze before getting control
         _myRigidBody.freezeRotation = true;
         
@@ -178,7 +198,7 @@ public class RocketMovement : MonoBehaviour
         Vector2 right = MathUtility.RotateVectorBy(_normFloor, angleThreshHold);
         
         // Rotate Left
-        if (Input.GetKey(KeyCode.A))
+        if (dir < 0)
         {
             // Only if it has not landed
             if (_inPlatform)
@@ -192,12 +212,12 @@ public class RocketMovement : MonoBehaviour
             {
                 transform.Rotate(Vector3.forward*rotationSpeed);
                 //  _myRigidBody.angularVelocity = new Vector3(0,0,rotationValue);
-
+    
             }
         }
         
         // Rotate Right
-        else if (Input.GetKey(KeyCode.D))
+        else if (dir > 0)
         {
           
             // Only if it has not landed
@@ -213,7 +233,7 @@ public class RocketMovement : MonoBehaviour
             {
                 transform.Rotate(Vector3.back*rotationSpeed);
                 //  _myRigidBody.angularVelocity = new Vector3(0,0,rotationValue);
-
+    
             }
         }
         
@@ -223,8 +243,10 @@ public class RocketMovement : MonoBehaviour
 
     private void Thrust()
     {
+        if (_state != State.Alive) { return; } 
+        
         // Thrust
-        if (Input.GetKey(KeyCode.Space))
+        if (_thrusting)
         {
             float forceToAdd = thrustPush;
             _myRigidBody.AddRelativeForce(Vector3.up*forceToAdd);
@@ -239,8 +261,6 @@ public class RocketMovement : MonoBehaviour
             {
                 StartTrail();
             }
-
-           
         }
         else
         {
