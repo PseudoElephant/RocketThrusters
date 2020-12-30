@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ExplosiveBehaviour : MonoBehaviour
@@ -13,7 +14,7 @@ public class ExplosiveBehaviour : MonoBehaviour
 
     public GameObject ExplosionParticles;
 
-    private CircleCollider2D[] _proximityTrigger;
+    private CircleCollider2D _proximityTrigger;
     private ExplosionStage _explosionStage;
     private CircleCollider2D _explosionCollider;
     private float _timeBeforeDestroyingParticles;
@@ -41,9 +42,8 @@ public class ExplosiveBehaviour : MonoBehaviour
         _explosionCollider = GetComponent<CircleCollider2D>();
         _explosionCollider.radius = ExplosionRadius;
         _explosionCollider.enabled = false;
-
-        //TODO: Make a better method that guarantuess I am grabbing the circular collider of the children
-        _proximityTrigger = GetComponentsInChildren<CircleCollider2D>();
+        
+        _proximityTrigger = GetProximityTrigger();
 
         //Start Explosion
         if(Type == ExplosionType.TimeDetonated)
@@ -51,12 +51,12 @@ public class ExplosiveBehaviour : MonoBehaviour
             StartCoroutine(StartExplosion());
         } else if (Type == ExplosionType.ProximityTriggered)
         {
-            _proximityTrigger[1].radius = ProximityActivationRadius;
+            _proximityTrigger.radius = ProximityActivationRadius;
         }
 
         if (Type != ExplosionType.ProximityTriggered)
         {
-            _proximityTrigger[1].enabled = false;
+            _proximityTrigger.enabled = false;
         }
     }
 
@@ -143,6 +143,20 @@ public class ExplosiveBehaviour : MonoBehaviour
     public void StartExplotion()
     {
         StartCoroutine(StartExplosion());
+    }
+
+    //Could produce null pointer exception
+    private CircleCollider2D GetProximityTrigger()
+    {
+        CircleCollider2D[] colliders = GetComponentsInChildren<CircleCollider2D>();
+        
+        foreach (CircleCollider2D collider in colliders)
+        {
+            if (collider != _explosionCollider)
+                return collider;
+        }
+
+        return null;
     }
 
 }

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utility;
 
 public class ShooterBehaviour : MonoBehaviour
 {
@@ -28,9 +29,7 @@ public class ShooterBehaviour : MonoBehaviour
     void Start()
     {
         //Starting min/max angles
-
-        // TODO Refactor to coroutine
-        InvokeRepeating(nameof(Shoot), shootSpeed, shootSpeed);
+        StartCoroutine(ShootingRoutine());
         _targetTransform = target.GetComponent<Transform>();
         _parentTransform = GetComponentInParent<Transform>();
     }
@@ -46,7 +45,7 @@ public class ShooterBehaviour : MonoBehaviour
         
         //Only Clamp If Angle is less than 360
         Quaternion proxRot = Quaternion.AngleAxis(angleToLookAt, Vector3.forward);
-        float rot = mod(proxRot.eulerAngles.z - angleOffset,360);
+        float rot = MathUtility.Mod(proxRot.eulerAngles.z - angleOffset,360);
 
         if (rot < viewAngle / 2 || rot > 360 - viewAngle / 2)
         {
@@ -63,31 +62,29 @@ public class ShooterBehaviour : MonoBehaviour
         // Only shoot if target is within range
         if (Vector2.Distance(_parentTransform.position, _targetTransform.position) > attackRadius || !_inAngle)
         {
-            return; 
+            return;
         }
-        
+
         // Calculate Direction
         GameObject ob = Instantiate(bulletPrefab, _parentTransform.position, transform.rotation);
         float rot = (transform.rotation.eulerAngles.z + 90f) % 360 * Mathf.Deg2Rad;
         // Update Velocity And Target
         Vector2 normDirectionTowardsTarget = new Vector2(Mathf.Cos(rot) * bulletSpeed, Mathf.Sin(rot) * bulletSpeed);
-    
-        
-        
+
+
+
         ob.GetComponent<Rigidbody2D>().velocity = normDirectionTowardsTarget;
-        BulletBehaviour bullet =  ob.GetComponent<BulletBehaviour>();
+        BulletBehaviour bullet = ob.GetComponent<BulletBehaviour>();
         bullet.Target = target;
         bullet.Speed = bulletSpeed;
     }
-    
-    // Helper Methods
-    private Vector3 DirFromAngle(float angleDeg)
+
+    IEnumerator ShootingRoutine()
     {
-        return new Vector3(Mathf.Sin((angleDeg + 0f) * Mathf.Deg2Rad), Mathf.Cos((angleDeg + 0f) * Mathf.Deg2Rad), 0);
+        while (true)
+        {
+            yield return new WaitForSecondsRealtime(shootSpeed);
+            Shoot();
+        }
     }
-    
-    private float mod(float x, float m) {
-        return (x%m + m)%m;
-    }
- 
 }

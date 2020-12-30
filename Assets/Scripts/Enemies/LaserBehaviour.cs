@@ -97,8 +97,7 @@ public class LaserBehaviour : MonoBehaviour
         {
             EndVFX.transform.localPosition = new Vector3(0, hit.distance - EndVFXOffset, 0);
             LineRenderer.SetPosition(1, new Vector3(0,hit.distance,0));
-
-            // Kill Player TODO:Maybe not as scalable
+            
             if (hit.collider.CompareTag("Player"))
             {
                 // Delete if rocket

@@ -6,6 +6,7 @@ using UnityEditor.U2D.Path;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
+using Utility;
 using Matrix4x4 = UnityEngine.Matrix4x4;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
@@ -66,17 +67,15 @@ public class RocketMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-       // TODO : Improve Collision Management
+        // TODO : Improve Collision Management
         if (_state != State.Alive || other.CompareTag("Trigger"))
         {
             return;
         }
-
         
         // If player is landing
         if ((_feet.IsTouching(other) && _myRigidBody.velocity.magnitude > velocityDeathThreshHold) || _nose.IsTouching(other))
         {
-            // Launch Diagonal TODO: IMPROVE IMPULSE
             InvokeDeath(Vector2.one);
         }
     }
@@ -147,6 +146,11 @@ public class RocketMovement : MonoBehaviour
         Invoke(nameof(Die),1f);
     }
 
+    public void InvokeDeath()
+    {
+        InvokeDeath(new Vector2(0,0));
+    }
+
     private void Die()
     {
        Destroy(gameObject);
@@ -163,18 +167,15 @@ public class RocketMovement : MonoBehaviour
         float rotationSpeed = rotationValue * Time.deltaTime;
         
         // Limits angle when in ground
-        float angleThreshHoldRad = Mathf.Deg2Rad * angleThreshHold;
         float rotation = Mathf.Deg2Rad*_myRigidBody.rotation;
         // Direction Vector
         Vector2 rotVector = new Vector2(-Mathf.Sin(rotation),Mathf.Cos(rotation));
         
         // Left Bound
-        Vector2 left = new Vector2(Mathf.Cos(-angleThreshHoldRad)*_normFloor.x - Mathf.Sin(-angleThreshHoldRad)*_normFloor.y,
-            Mathf.Cos(-angleThreshHoldRad)*_normFloor.y + Mathf.Sin(-angleThreshHoldRad)*_normFloor.x );
+        Vector2 left = MathUtility.RotateVectorBy(_normFloor, -angleThreshHold);
         
         // Right Bound
-        Vector2 right = new Vector2(Mathf.Cos(angleThreshHoldRad)*_normFloor.x - Mathf.Sin(angleThreshHoldRad)*_normFloor.y,
-            Mathf.Cos(angleThreshHoldRad)*_normFloor.y + Mathf.Sin(angleThreshHoldRad)*_normFloor.x );
+        Vector2 right = MathUtility.RotateVectorBy(_normFloor, angleThreshHold);
         
         // Rotate Left
         if (Input.GetKey(KeyCode.A))

@@ -1,7 +1,6 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-// Todo:  Could Improve Code by adding helper methods in main class
 [CustomEditor(typeof(LaserBehaviour))]
 public class LaserEditor : Editor
 {
@@ -74,7 +73,14 @@ public class LaserEditor : Editor
         }
 
         // Update laser length
-        laser.LineRenderer.SetPosition(1,new Vector3(0,laser.MaxLength,0));
+        UpdateLaser(laser);
+
+        serializedObject.ApplyModifiedProperties();
+    }
+
+    private void UpdateLaser(LaserBehaviour laser)
+    {
+        laser.LineRenderer.SetPosition(1, new Vector3(0, laser.MaxLength, 0));
         float rot = (laser.transform.rotation.eulerAngles.z + 90f) % 360 * Mathf.Deg2Rad;
         Vector2 direction = new Vector2(Mathf.Cos(rot), Mathf.Sin(rot));
         RaycastHit2D hit = Physics2D.Raycast(laser.TransformFirePoint.position, direction, laser.MaxLength);
@@ -83,7 +89,5 @@ public class LaserEditor : Editor
         {
             laser.LineRenderer.SetPosition(1, new Vector3(0, hit.distance, 0));
         }
-
-        serializedObject.ApplyModifiedProperties();
     }
 }

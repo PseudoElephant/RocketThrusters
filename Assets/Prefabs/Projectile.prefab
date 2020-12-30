@@ -123,8 +123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17ae5fa2d2fedb4ab611e8d9fd62d56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followTarget: 0
   maxTime: 10
+  turnTresholdAngle: 1
+  bulletType: 1
 --- !u!50 &3113875139092627870
 Rigidbody2D:
   serializedVersion: 4
