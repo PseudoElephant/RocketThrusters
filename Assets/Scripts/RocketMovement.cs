@@ -172,8 +172,7 @@ public class RocketMovement : MonoBehaviour
 
     private void Die()
     {
-       Destroy(gameObject);
-       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     // // Input Layer (No Multilayer)

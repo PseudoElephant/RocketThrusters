@@ -1177,7 +1177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1253845756418428872, guid: 48994d934c2504d4f9d808003a345464, type: 3}
       propertyPath: bulletSpeed
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1253845756418428872, guid: 48994d934c2504d4f9d808003a345464, type: 3}
       propertyPath: angleOffset

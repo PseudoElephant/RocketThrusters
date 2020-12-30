@@ -20,15 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b060c06-7002-4850-97b1-26dde03e9b81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/ShooterV2Editor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/ShooterV2Editor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/ShooterEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/ShooterEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Shooter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Shooter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SandBox.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SandBox.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterV2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterV2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectile Follow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectile Follow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +55,6 @@
         <option value="$PROJECT_DIR$/Assets/FloatingBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/SpawnerEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/LaserEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/AudioManager.cs" />
@@ -81,6 +75,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterV2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/ShooterEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
       </list>
     </option>
   </component>
@@ -139,6 +134,7 @@
       <workItem from="1608748827967" duration="11617000" />
       <workItem from="1608776469288" duration="6459000" />
       <workItem from="1609193104759" duration="21572000" />
+      <workItem from="1609301923087" duration="401000" />
     </task>
     <servers />
   </component>
