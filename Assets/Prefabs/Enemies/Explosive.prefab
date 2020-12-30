@@ -97,14 +97,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70df274b8b6e543679d997f7d5e17fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 0
+  Type: 1
   ProximityActivationRadius: 6.33
   FuseTime: 2
   ExplosionRadius: 15.01
   ExplosionDuration: 0.5
   ExplosionStrength: 100
   ExplosionParticles: {fileID: 7174951200048039222, guid: 05d826e23022e4455b49efffd5082161, type: 3}
-  ProximityTrigger: {fileID: 2637076314935951673}
 --- !u!58 &2637076313997668662
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -196,3 +195,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  type: 0
+  time: 0
+  singleUse: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  multipleContacts: 0

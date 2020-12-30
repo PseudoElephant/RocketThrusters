@@ -12,6 +12,7 @@
           <e p="LaserEditor.cs" t="Include" />
           <e p="ShooterEditor.cs" t="Include" />
           <e p="SpawnerEditor.cs" t="Include" />
+          <e p="TriggerEditor.cs" t="Include" />
         </e>
         <e p="Input" t="Include">
           <e p="InputMaster.cs" t="Include" />
