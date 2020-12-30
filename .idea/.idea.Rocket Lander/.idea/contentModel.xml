@@ -50,6 +50,7 @@
           </e>
           <e p="Weight.cs" t="Include" />
         </e>
+        <e p="SoftBodyCreation.cs" t="Include" />
         <e p="Vendor" t="Include">
           <e p="PathCreator" t="Include">
             <e p="Core" t="Include">

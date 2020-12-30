@@ -21,12 +21,13 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/blob_enemy" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33028301-34ad-418f-94ca-32928268b109" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rocket Lander/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rocket Lander/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rocket Lander/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rocket Lander/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +54,7 @@
         <option value="$PROJECT_DIR$/Assets/Input/InputMaster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/TriggerEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/SoftBodyCreation.cs" />
       </list>
     </option>
   </component>
@@ -112,7 +114,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/blob_enemy" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -127,9 +141,9 @@
       <screen x="0" y="23" width="2560" height="1364" />
     </state>
     <state x="1043" y="177" key="SettingsEditor/0.23.2560.1364@0.23.2560.1364" timestamp="1609356396686" />
-    <state x="943" y="333" width="672" height="678" key="search.everywhere.popup" timestamp="1609295987101">
+    <state x="943" y="333" width="672" height="678" key="search.everywhere.popup" timestamp="1609363810091">
       <screen x="0" y="23" width="2560" height="1364" />
     </state>
-    <state x="943" y="333" width="672" height="678" key="search.everywhere.popup/0.23.2560.1364@0.23.2560.1364" timestamp="1609295987101" />
+    <state x="943" y="333" width="672" height="678" key="search.everywhere.popup/0.23.2560.1364@0.23.2560.1364" timestamp="1609363810091" />
   </component>
 </project>
