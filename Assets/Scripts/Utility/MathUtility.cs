@@ -42,7 +42,7 @@ namespace Utility
         /// </summary>
         /// <param name="angleDeg"></param>
         /// <returns></returns>
-        private Vector3 NormDirFromAngle(float angleDeg)
+        public static Vector3 NormDirFromAngle(float angleDeg)
         {
             return new Vector3(Mathf.Sin((angleDeg + 0f) * Mathf.Deg2Rad), Mathf.Cos((angleDeg + 0f) * Mathf.Deg2Rad), 0);
         }
@@ -52,7 +52,7 @@ namespace Utility
         /// </summary>
         /// <param name="angleDeg"></param>
         /// <returns></returns>
-        private Vector2 NormDirFromAngle2D(float angleDeg)
+        public static Vector2 NormDirFromAngle2D(float angleDeg)
         {
             return new Vector2(Mathf.Sin((angleDeg + 0f) * Mathf.Deg2Rad), Mathf.Cos((angleDeg + 0f) * Mathf.Deg2Rad));
         }

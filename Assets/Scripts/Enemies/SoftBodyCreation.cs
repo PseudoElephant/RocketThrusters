@@ -13,27 +13,33 @@ public class SoftBodyCreation : MonoBehaviour
     private GameObject[] _vertices;
     private Vector3[] _meshVertices;
     private int[] _meshTriangle;
+    private float _radiusCollider;
+    private int _offsetConnection;
 
     // Cache
     private MeshFilter _mesh;
-    private PolygonCollider2D _polygonCollider2D;
     
     
     // Start is called before the first frame update
     private void Awake()
     {
         _mesh = GetComponent<MeshFilter>();
-        _polygonCollider2D = GetComponent<PolygonCollider2D>();
-
+        
     }
 
     void Start()
     {
-
+        //Setting Perfect Spheres
+        float angle = 360 / (2*(numVertices+0f));
+        _radiusCollider = distFromCenter * Mathf.Sin(angle * Mathf.Deg2Rad);;
+        vertexPrefab.GetComponent<CircleCollider2D>().radius = _radiusCollider;
+        GetComponent<CircleCollider2D>().radius = _radiusCollider;
+        _offsetConnection = numVertices / 4;
+        
+        //Calling Methods
         GenerateVertices();
         JoinVertices();
         CreateMesh();
-
     }
 
     // Update is called once per frame
@@ -41,7 +47,6 @@ public class SoftBodyCreation : MonoBehaviour
     {
         // Update Vertices
         UpdateVertices();
-        UpdatePolygonCollider();
     }
 
     private void GenerateVertices()
@@ -73,16 +78,21 @@ public class SoftBodyCreation : MonoBehaviour
             // Create Diamonds
             SpringJoint2D[] springs = _vertices[i].GetComponents<SpringJoint2D>();
 
-            if (springs.Length == 3)
+            if (springs.Length == 4)
             {
                 // Right
-                springs[0].connectedBody = _vertices[MathUtility.Mod(i + 2, numVertices)].GetComponent<Rigidbody2D>();
+                springs[0].connectedBody = _vertices[MathUtility.Mod(i + _offsetConnection, numVertices)].GetComponent<Rigidbody2D>();
+                
                 // Center
                 springs[1].connectedBody = GetComponent<Rigidbody2D>();
                 springs[1].autoConfigureDistance = false;
                 springs[1].distance = distFromCenter;
+                
                 // Left
-                springs[2].connectedBody = _vertices[MathUtility.Mod(i - 2, numVertices)].GetComponent<Rigidbody2D>();
+                springs[2].connectedBody = _vertices[MathUtility.Mod(i - _offsetConnection, numVertices)].GetComponent<Rigidbody2D>();
+                
+                //Across
+                springs[3].connectedBody = _vertices[MathUtility.Mod(i - _offsetConnection*2, numVertices)].GetComponent<Rigidbody2D>();
             }
             
             HingeJoint2D hinge =  _vertices[i].GetComponent<HingeJoint2D>();
@@ -103,7 +113,10 @@ public class SoftBodyCreation : MonoBehaviour
         for (int i = 1; i < numVertices + 1; i++)
         {
             // Set Vertices
-            vertices[i] = _vertices[i-1].transform.localPosition;
+            Vector3 posVertex = _vertices[i - 1].transform.localPosition;
+            Vector3 newPos = ((posVertex.magnitude + _radiusCollider) / posVertex.magnitude) * posVertex;
+            
+            vertices[i] = newPos;
             
             // Set Triangles
             triangles[i * 3 - 3] = 0;
@@ -122,29 +135,19 @@ public class SoftBodyCreation : MonoBehaviour
 
     private void UpdateVertices()
     {
-        
-       _mesh.mesh.Clear(true);
-        _meshVertices[0] =  Vector3.zero;
+        _mesh.mesh.Clear(true);
+        _meshVertices[0] = Vector3.zero;
         for (int i = 1; i < numVertices + 1; i++)
         {
             // Set Vertices
-            _meshVertices[i] = _vertices[i-1].transform.localPosition;
-            
+            Vector3 posVertex = _vertices[i - 1].transform.localPosition;
+            Vector3 newPos = ((posVertex.magnitude + _radiusCollider) / posVertex.magnitude) * posVertex;
+
+            _meshVertices[i] = newPos;
         }
 
         var mesh = _mesh.mesh;
         mesh.vertices = _meshVertices;
         mesh.triangles = _meshTriangle;
-    }
-
-    private void UpdatePolygonCollider()
-    {
-        Vector2[] points = new Vector2[numVertices];
-        for(int i = 1;i < _meshVertices.Length;i++)
-        {
-            points[i - 1] = _meshVertices[i];
-        }
-
-        _polygonCollider2D.points = points;
     }
 }
