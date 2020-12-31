@@ -14,7 +14,9 @@
           <e p="LaserEditor.cs" t="Include" />
           <e p="ShooterEditor.cs" t="Include" />
           <e p="SpawnerEditor.cs" t="Include" />
+          <e p="TriggerEditor.cs" t="Include" />
         </e>
+        <e p="GenerateMesh.cs" t="Include" />
         <e p="Input" t="Include">
           <e p="InputMaster.cs" t="Include" />
         </e>
@@ -39,6 +41,7 @@
             <e p="BulletBehaviour.cs" t="Include" />
             <e p="LaserBehaviour.cs" t="Include" />
             <e p="ShooterBehaviour.cs" t="Include" />
+            <e p="SoftBodyCreation.cs" t="Include" />
           </e>
           <e p="HangedByCable.cs" t="Include" />
           <e p="RocketMovement.cs" t="Include" />

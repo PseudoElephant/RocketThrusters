@@ -20,9 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b060c06-7002-4850-97b1-26dde03e9b81" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SandBox 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SandBox 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/SoftBody/SoftBodyCenter.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/SoftBody/SoftBodyCenter.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/SoftBody/SoftBodyVertex.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/SoftBody/SoftBodyVertex.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SoftBodyCreation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/SoftBodyCreation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SoftBodyCreation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/SoftBodyCreation.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +38,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/GenerateMesh.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/6e/c57a44e7/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@4.1.4/Runtime/SpriteShapeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/ed/6993de9d/LayerMask.cs" root0="SKIP_HIGHLIGHTING" />
@@ -79,6 +85,8 @@
         <option value="$PROJECT_DIR$/Assets/Editor/ShooterEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/TriggerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/GenerateMesh.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/SoftBodyCreation.cs" />
       </list>
     </option>
   </component>
@@ -89,8 +97,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502052" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3002736" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3501144" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30053395" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -103,10 +111,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14200">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21632">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="14200" />
+      <option name="pid" value="21632" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -140,6 +148,7 @@
       <workItem from="1608776469288" duration="6459000" />
       <workItem from="1609193104759" duration="21572000" />
       <workItem from="1609301923087" duration="11029000" />
+      <workItem from="1609367124231" duration="13929000" />
     </task>
     <servers />
   </component>
@@ -164,38 +173,38 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="288" key="GridCell.Tab.0.bottom" timestamp="1609314787065">
+    <state width="1342" height="283" key="GridCell.Tab.0.bottom" timestamp="1609378094029">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609314787065" />
-    <state width="1493" height="288" key="GridCell.Tab.0.center" timestamp="1609314787064">
+    <state width="1342" height="283" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609378094029" />
+    <state width="1342" height="283" key="GridCell.Tab.0.center" timestamp="1609378094029">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609314787064" />
-    <state width="1493" height="288" key="GridCell.Tab.0.left" timestamp="1609314787064">
+    <state width="1342" height="283" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609378094029" />
+    <state width="1342" height="283" key="GridCell.Tab.0.left" timestamp="1609378094029">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609314787064" />
-    <state width="1493" height="288" key="GridCell.Tab.0.right" timestamp="1609314787064">
+    <state width="1342" height="283" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609378094029" />
+    <state width="1342" height="283" key="GridCell.Tab.0.right" timestamp="1609378094029">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609314787064" />
-    <state width="1493" height="288" key="GridCell.Tab.1.bottom" timestamp="1609314787066">
+    <state width="1342" height="283" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609378094029" />
+    <state width="1342" height="283" key="GridCell.Tab.1.bottom" timestamp="1609378136632">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609314787066" />
-    <state width="1493" height="288" key="GridCell.Tab.1.center" timestamp="1609314787065">
+    <state width="1342" height="283" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609378136632" />
+    <state width="1342" height="283" key="GridCell.Tab.1.center" timestamp="1609378136632">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1609314787065" />
-    <state width="1493" height="288" key="GridCell.Tab.1.left" timestamp="1609314787065">
+    <state width="1342" height="283" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1609378136632" />
+    <state width="1342" height="283" key="GridCell.Tab.1.left" timestamp="1609378136632">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1609314787065" />
-    <state width="1493" height="288" key="GridCell.Tab.1.right" timestamp="1609314787066">
+    <state width="1342" height="283" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1609378136632" />
+    <state width="1342" height="283" key="GridCell.Tab.1.right" timestamp="1609378136632">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="288" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1609314787066" />
+    <state width="1342" height="283" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1609378136632" />
     <state width="1493" height="288" key="GridCell.Tab.2.bottom" timestamp="1609314787068">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -236,9 +245,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="188" y="117" width="1200" height="584" key="VCS.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1608623044748" />
-    <state x="451" y="146" width="670" height="58" key="search.everywhere.popup" timestamp="1608847321854">
+    <state x="451" y="146" width="672" height="160" key="search.everywhere.popup" timestamp="1609371496322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="451" y="146" width="670" height="58" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608847321853" />
+    <state x="451" y="146" width="672" height="160" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1609371496322" />
   </component>
 </project>
