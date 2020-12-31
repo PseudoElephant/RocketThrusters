@@ -20,13 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b060c06-7002-4850-97b1-26dde03e9b81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MeshUpdater.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MeshUpdater.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BlobBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BlobBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SandBox 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SandBox 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Code/MeshLink/SpriteMeshLink.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Code/MeshLink/SpriteMeshLink.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Demo/StickyDemo/Scripts/Sticky.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Demo/StickyDemo/Scripts/Sticky.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Editor/Bodies/JelloSpringBodyEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Editor/Bodies/JelloSpringBodyEditor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +87,9 @@
         <option value="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Demo/StickyDemo/Scripts/Sticky.cs" />
         <option value="$PROJECT_DIR$/Assets/MeshUpdater.cs" />
         <option value="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Code/MeshLink/SpriteMeshLink.cs" />
+        <option value="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Editor/Bodies/JelloSpringBodyEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Demo/SpiffyDemoScene/Scripts/PullAndRelease.cs" />
+        <option value="$PROJECT_DIR$/Assets/BlobBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -113,10 +114,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1904">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="1904" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -153,6 +154,7 @@
       <workItem from="1609367124231" duration="14746000" />
       <workItem from="1609394697409" duration="2172000" />
       <workItem from="1609398520479" duration="6513000" />
+      <workItem from="1609428774925" duration="5683000" />
     </task>
     <servers />
   </component>
