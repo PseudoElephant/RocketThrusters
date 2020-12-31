@@ -38,7 +38,9 @@
             <e p="BulletBehaviour.cs" t="Include" />
             <e p="LaserBehaviour.cs" t="Include" />
             <e p="ShooterBehaviour.cs" t="Include" />
+            <e p="SoftBodyCreation.cs" t="Include" />
           </e>
+          <e p="GenerateMesh.cs" t="Include" />
           <e p="HangedByCable.cs" t="Include" />
           <e p="RocketMovement.cs" t="Include" />
           <e p="Rope.cs" t="Include" />
@@ -50,7 +52,6 @@
           </e>
           <e p="Weight.cs" t="Include" />
         </e>
-        <e p="SoftBodyCreation.cs" t="Include" />
         <e p="Vendor" t="Include">
           <e p="PathCreator" t="Include">
             <e p="Core" t="Include">
