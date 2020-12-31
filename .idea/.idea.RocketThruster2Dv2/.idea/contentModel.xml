@@ -20,6 +20,7 @@
         <e p="Input" t="Include">
           <e p="InputMaster.cs" t="Include" />
         </e>
+        <e p="MeshUpdater.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AnimatorPathCreator.cs" t="Include" />
           <e p="Behaviours" t="Include">
@@ -55,6 +56,70 @@
           <e p="Weight.cs" t="Include" />
         </e>
         <e p="Vendor" t="Include">
+          <e p="JelloPhysics" t="Include">
+            <e p="Code" t="Include">
+              <e p="Bodies" t="Include">
+                <e p="JelloBody.cs" t="Include" />
+                <e p="JelloPressureBody.cs" t="Include" />
+                <e p="JelloSpringBody.cs" t="Include" />
+              </e>
+              <e p="JelloAABB.cs" t="Include" />
+              <e p="JelloAttachPoint.cs" t="Include" />
+              <e p="JelloClosedShape.cs" t="Include" />
+              <e p="JelloJoint.cs" t="Include" />
+              <e p="JelloMathTools.cs" t="Include" />
+              <e p="JelloPointMass.cs" t="Include" />
+              <e p="JelloShapeTools.cs" t="Include" />
+              <e p="JelloSpring.cs" t="Include" />
+              <e p="JelloVectorTools.cs" t="Include" />
+              <e p="JelloWorld.cs" t="Include" />
+              <e p="MeshLink" t="Include">
+                <e p="MeshLink.cs" t="Include" />
+                <e p="SpriteMeshLink.cs" t="Include" />
+                <e p="TextureMeshLink.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Demo" t="Include">
+              <e p="SpiffyDemoScene" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="HUDFPS.cs" t="Include" />
+                  <e p="PullAndRelease.cs" t="Include" />
+                </e>
+              </e>
+              <e p="StickyDemo" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="EyeBlink.cs" t="Include" />
+                  <e p="RotateContainer.cs" t="Include" />
+                  <e p="SelectColor.cs" t="Include" />
+                  <e p="SortingOrder.cs" t="Include" />
+                  <e p="Sticky.cs" t="Include" />
+                  <e p="StickyDemoCamera.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Editor" t="Include">
+              <e p="Bodies" t="Include">
+                <e p="JelloBodyEditor.cs" t="Include" />
+                <e p="JelloPressureBodyEditor.cs" t="Include" />
+                <e p="JelloSpringBodyEditor.cs" t="Include" />
+              </e>
+              <e p="JelloEditorUtility.cs" t="Include" />
+              <e p="JelloMenu.cs" t="Include" />
+              <e p="JelloWorldEditor.cs" t="Include" />
+              <e p="MeshLinks" t="Include">
+                <e p="MeshLinkEditor.cs" t="Include" />
+                <e p="SpriteMeshLinkEditor.cs" t="Include" />
+                <e p="TextureMeshLinkEditor.cs" t="Include" />
+              </e>
+              <e p="SubComponentEditors" t="Include">
+                <e p="AttachPointSubComponentEditor.cs" t="Include" />
+                <e p="JointSubComponentEditor.cs" t="Include" />
+                <e p="PointMassSubComponentEditor.cs" t="Include" />
+                <e p="SpringSubComponentEditor.cs" t="Include" />
+                <e p="SubComponentEditor.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="PathCreator" t="Include">
             <e p="Core" t="Include">
               <e p="Editor" t="Include">
