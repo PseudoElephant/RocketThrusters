@@ -29,11 +29,7 @@
     <list default="true" id="33028301-34ad-418f-94ca-32928268b109" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rocket Lander/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rocket Lander/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rocket Lander/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rocket Lander/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GenerateMesh.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GenerateMesh.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/SoftBody/SoftBodyVertex.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/SoftBody/SoftBodyVertex.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/SoftBodyCreation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/SoftBodyCreation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/MathUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/MathUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BlobBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BlobBehaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +57,7 @@
         <option value="$PROJECT_DIR$/Assets/SoftBodyCreation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MathUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/SoftBodyCreation.cs" />
+        <option value="$PROJECT_DIR$/Assets/BlobBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -108,6 +105,7 @@
       <updated>1609288168693</updated>
       <workItem from="1609288170492" duration="8452000" />
       <workItem from="1609382466596" duration="4672000" />
+      <workItem from="1609453597228" duration="2640000" />
     </task>
     <servers />
   </component>
@@ -152,5 +150,24 @@
       <screen x="0" y="23" width="2560" height="1364" />
     </state>
     <state x="943" y="333" width="672" height="678" key="search.everywhere.popup/0.23.2560.1364@0.23.2560.1364" timestamp="1609363810091" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/BlobBehaviour.cs</url>
+          <line>62</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/BlobBehaviour.cs" initialLine="66">
+            <startOffsets>
+              <option value="2039" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2040" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
