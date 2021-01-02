@@ -5103,16 +5103,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 797986448ec3b4a7a9d4bbccecf576cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useBursts: 0
-  startOn: 0
-  timeActive: 0.5
-  timeBetweenActivations: 0.5
-  transformFirePoint: {fileID: 1991670469760787377}
-  lineRenderer: {fileID: 1991670468050642408}
-  maxLength: 50
-  endVFX: {fileID: 1991670468988861158}
-  endVFXOffset: 0.2
-  laserHitStrength: 100
+  StartOn: 0
+  TimeActive: 0
+  TimeBetweenActivations: 0
+  TransformFirePoint: {fileID: 1991670469760787377}
+  LineRenderer: {fileID: 1991670468050642408}
+  MaxLength: 10
+  EndVFX: {fileID: 1991670468988861158}
+  EndVFXOffset: 1
+  LaserHitStrength: 5
+  EmissionType: 0
 --- !u!1 &1991670469355599246
 GameObject:
   m_ObjectHideFlags: 0
