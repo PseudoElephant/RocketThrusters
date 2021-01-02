@@ -19,6 +19,8 @@ public class ShooterBehaviour : MonoBehaviour
     
     public float attackRadius;
     
+    //TODO: Add FirePointOffset
+    
     // Cache
     private Transform _targetTransform;
     private Transform _parentTransform;

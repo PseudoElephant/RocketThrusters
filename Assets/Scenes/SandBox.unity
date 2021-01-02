@@ -823,7 +823,7 @@ GameObject:
   - component: {fileID: 1612050738}
   - component: {fileID: 1612050737}
   - component: {fileID: 1612050740}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: WhiteGround
   m_TagString: Friendly
   m_Icon: {fileID: 0}

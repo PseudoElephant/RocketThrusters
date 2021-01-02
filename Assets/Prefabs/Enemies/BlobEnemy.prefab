@@ -1,0 +1,1338 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8756667991799673082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8756667991799673077}
+  - component: {fileID: 8756667991799673086}
+  - component: {fileID: -1070734962220545693}
+  - component: {fileID: -1406825819006555268}
+  - component: {fileID: 8756667991799673074}
+  - component: {fileID: 8756667991799673075}
+  - component: {fileID: 8756667991799673072}
+  - component: {fileID: 8756667991799673073}
+  - component: {fileID: -5478049806377871859}
+  m_Layer: 0
+  m_Name: BlobEnemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8756667991799673077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756667991799673082}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38026348, w: 0.9248782}
+  m_LocalPosition: {x: -48.2, y: 2.7, z: -2.9963}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8756667991964568478}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8756667991799673086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756667991799673082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7fa0ce6ca467af409253cdd4a225afa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRadius: 60
+  target: {fileID: 3288813374665978311, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
+  speed: 8000
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  timeBetweenAttacks: 2
+  stickDisabledFrames: 5
+--- !u!114 &-1070734962220545693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756667991799673082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb493e9941ef4d019ea501444d0f364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CalculateNormals: 0
+  CalculateTangents: 0
+  meshLinkType: 1
+  canModifyPivotPoint: 1
+  body: {fileID: 8756667991799673073}
+  pivotOffset: {x: 0, y: 0}
+  offset: {x: -0, y: -0}
+  scale: {x: 1, y: 1}
+  angle: 0
+  vertices:
+  - {x: 0.53499997, y: -0.65999997, z: 0}
+  - {x: 0.805, y: -0.65999997, z: 0}
+  - {x: 0.835, y: -0.64, z: 0}
+  - {x: 0.815, y: -0.53, z: 0}
+  - {x: 0.765, y: -0.37, z: 0}
+  - {x: 1.005, y: -0.26999998, z: 0}
+  - {x: 1.005, y: -0.17999999, z: 0}
+  - {x: 0.875, y: -0.04, z: 0}
+  - {x: 0.875, y: 0.02, z: 0}
+  - {x: 1.005, y: 0.17999999, z: 0}
+  - {x: 1.005, y: 0.24, z: 0}
+  - {x: 0.765, y: 0.37, z: 0}
+  - {x: 0.825, y: 0.63, z: 0}
+  - {x: 0.805, y: 0.65, z: 0}
+  - {x: 0.525, y: 0.69, z: 0}
+  - {x: 0.48499998, y: 0.90999997, z: 0}
+  - {x: 0.45499998, y: 0.94, z: 0}
+  - {x: 0.36499998, y: 0.91999996, z: 0}
+  - {x: 0.205, y: 0.82, z: 0}
+  - {x: 0.024999999, y: 1.03, z: 0}
+  - {x: -0.015, y: 1.03, z: 0}
+  - {x: -0.195, y: 0.83, z: 0}
+  - {x: -0.405, y: 0.94, z: 0}
+  - {x: -0.45499998, y: 0.94, z: 0}
+  - {x: -0.48499998, y: 0.88, z: 0}
+  - {x: -0.525, y: 0.65, z: 0}
+  - {x: -0.79499996, y: 0.65, z: 0}
+  - {x: -0.825, y: 0.63, z: 0}
+  - {x: -0.775, y: 0.38, z: 0}
+  - {x: -1.005, y: 0.24, z: 0}
+  - {x: -1.005, y: 0.19, z: 0}
+  - {x: -0.84499997, y: 0, z: 0}
+  - {x: -1.005, y: -0.19999999, z: 0}
+  - {x: -1.005, y: -0.25, z: 0}
+  - {x: -0.765, y: -0.38, z: 0}
+  - {x: -0.825, y: -0.65, z: 0}
+  - {x: -0.79499996, y: -0.65999997, z: 0}
+  - {x: -0.53499997, y: -0.65999997, z: 0}
+  - {x: -0.45499998, y: -0.96, z: 0}
+  - {x: -0.345, y: -0.91999996, z: 0}
+  - {x: -0.185, y: -0.83, z: 0}
+  - {x: -0.035, y: -1.03, z: 0}
+  - {x: 0.035, y: -1.03, z: 0}
+  - {x: 0.195, y: -0.82, z: 0}
+  - {x: 0.415, y: -0.95, z: 0}
+  - {x: 0.48499998, y: -0.91999996, z: 0}
+  mMeshFilter: {fileID: -5478049806377871859}
+  mMeshRenderer: {fileID: -1406825819006555268}
+  mSortingOrder: 0
+  mSortingLayer: 0
+  sprites:
+  - {fileID: 21300000, guid: 8c45e37ea2870433ca1f2e1346c4d8b3, type: 3}
+  texture: {fileID: 2800000, guid: 8c45e37ea2870433ca1f2e1346c4d8b3, type: 3}
+  selectedSprite: 0
+--- !u!23 &-1406825819006555268
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756667991799673082}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: fddb9749333008849882b7682d471f21, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!50 &8756667991799673074
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756667991799673082}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &8756667991799673075
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756667991799673082}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 558250d1cfea02145a274e17a0f42f44, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.01, y: 2.06}
+    newSize: {x: 2.01, y: 2.06}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.53499997, y: -0.65999997}
+      - {x: 0.805, y: -0.65999997}
+      - {x: 0.835, y: -0.64}
+      - {x: 0.815, y: -0.53}
+      - {x: 0.765, y: -0.37}
+      - {x: 1.005, y: -0.26999998}
+      - {x: 1.005, y: -0.17999999}
+      - {x: 0.875, y: -0.04}
+      - {x: 0.875, y: 0.02}
+      - {x: 1.005, y: 0.17999999}
+      - {x: 1.005, y: 0.24}
+      - {x: 0.765, y: 0.37}
+      - {x: 0.825, y: 0.63}
+      - {x: 0.805, y: 0.65}
+      - {x: 0.525, y: 0.69}
+      - {x: 0.48499998, y: 0.90999997}
+      - {x: 0.45499998, y: 0.94}
+      - {x: 0.36499998, y: 0.91999996}
+      - {x: 0.205, y: 0.82}
+      - {x: 0.024999999, y: 1.03}
+      - {x: -0.015, y: 1.03}
+      - {x: -0.195, y: 0.83}
+      - {x: -0.405, y: 0.94}
+      - {x: -0.45499998, y: 0.94}
+      - {x: -0.48499998, y: 0.88}
+      - {x: -0.525, y: 0.65}
+      - {x: -0.79499996, y: 0.65}
+      - {x: -0.825, y: 0.63}
+      - {x: -0.775, y: 0.38}
+      - {x: -1.005, y: 0.24}
+      - {x: -1.005, y: 0.19}
+      - {x: -0.84499997, y: 0}
+      - {x: -1.005, y: -0.19999999}
+      - {x: -1.005, y: -0.25}
+      - {x: -0.765, y: -0.38}
+      - {x: -0.825, y: -0.65}
+      - {x: -0.79499996, y: -0.65999997}
+      - {x: -0.53499997, y: -0.65999997}
+      - {x: -0.45499998, y: -0.96}
+      - {x: -0.345, y: -0.91999996}
+      - {x: -0.185, y: -0.83}
+      - {x: -0.035, y: -1.03}
+      - {x: 0.035, y: -1.03}
+      - {x: 0.195, y: -0.82}
+      - {x: 0.415, y: -0.95}
+      - {x: 0.48499998, y: -0.91999996}
+--- !u!114 &8756667991799673072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756667991799673082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206b1ee5533bd4c5d9d96fe643ad04a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breakVelocity: 60
+  stickAtPoints: 1
+  stickAtEdges: 1
+  joints: []
+--- !u!114 &8756667991799673073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756667991799673082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b9020143ee645e088cd7f3a50d499c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTransform: {fileID: 8756667991799673077}
+  mBaseShape:
+    mEdgeVertices:
+    - {x: 0.53499997, y: -0.65999997}
+    - {x: 0.805, y: -0.65999997}
+    - {x: 0.835, y: -0.64}
+    - {x: 0.815, y: -0.53}
+    - {x: 0.765, y: -0.37}
+    - {x: 1.005, y: -0.26999998}
+    - {x: 1.005, y: -0.17999999}
+    - {x: 0.875, y: -0.04}
+    - {x: 0.875, y: 0.02}
+    - {x: 1.005, y: 0.17999999}
+    - {x: 1.005, y: 0.24}
+    - {x: 0.765, y: 0.37}
+    - {x: 0.825, y: 0.63}
+    - {x: 0.805, y: 0.65}
+    - {x: 0.525, y: 0.69}
+    - {x: 0.48499998, y: 0.90999997}
+    - {x: 0.45499998, y: 0.94}
+    - {x: 0.36499998, y: 0.91999996}
+    - {x: 0.205, y: 0.82}
+    - {x: 0.024999999, y: 1.03}
+    - {x: -0.015, y: 1.03}
+    - {x: -0.195, y: 0.83}
+    - {x: -0.405, y: 0.94}
+    - {x: -0.45499998, y: 0.94}
+    - {x: -0.48499998, y: 0.88}
+    - {x: -0.525, y: 0.65}
+    - {x: -0.79499996, y: 0.65}
+    - {x: -0.825, y: 0.63}
+    - {x: -0.775, y: 0.38}
+    - {x: -1.005, y: 0.24}
+    - {x: -1.005, y: 0.19}
+    - {x: -0.84499997, y: 0}
+    - {x: -1.005, y: -0.19999999}
+    - {x: -1.005, y: -0.25}
+    - {x: -0.765, y: -0.38}
+    - {x: -0.825, y: -0.65}
+    - {x: -0.79499996, y: -0.65999997}
+    - {x: -0.53499997, y: -0.65999997}
+    - {x: -0.45499998, y: -0.96}
+    - {x: -0.345, y: -0.91999996}
+    - {x: -0.185, y: -0.83}
+    - {x: -0.035, y: -1.03}
+    - {x: 0.035, y: -1.03}
+    - {x: 0.195, y: -0.82}
+    - {x: 0.415, y: -0.95}
+    - {x: 0.48499998, y: -0.91999996}
+    mInternalVertices: []
+    mCenter: {x: 0.039782632, y: 0.025}
+    mTriangles: 1e0000001d0000001c0000001f0000001e0000001c0000001f0000001c00000019000000190000002b0000001f0000002b000000190000000b0000000b000000040000002b00000008000000040000000b00000008000000070000000400000006000000040000000700000006000000050000000400000009000000080000000b000000090000000b0000000a00000004000000000000002b0000000000000004000000030000000100000000000000030000000200000001000000030000002c0000002b000000000000002d0000002c00000000000000120000000b000000190000000b000000120000000e0000000d0000000b0000000e0000000c0000000b0000000d00000012000000110000000e0000000e000000110000000f0000000f00000011000000100000001200000019000000150000001500000013000000120000001500000014000000130000001500000019000000180000001800000016000000150000001800000017000000160000001f0000002b00000025000000220000001f0000002500000022000000200000001f0000002200000021000000200000002500000024000000220000002200000024000000230000002b00000028000000250000002a000000280000002b0000002a0000002900000028000000280000002700000025000000270000002600000025000000190000001c0000001a0000001c0000001b0000001a000000
+    winding: 1
+  mEdgePointMasses:
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.355484, y: 2.6071887}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.163567, y: 2.7971053}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.15631, y: 2.8324232}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.247902, y: 2.896543}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.395985, y: 2.9751012}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.29573, y: 3.2149959}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.359035, y: 3.2789679}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.549915, y: 3.2870383}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.592117, y: 3.3296864}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.61226, y: 3.5348556}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.65446, y: 3.5775037}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.916496, y: 3.501093}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.05673, y: 3.7281044}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.085014, y: 3.7282524}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.312172, y: 3.5597339}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.495354, y: 3.687974}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.537777, y: 3.6881962}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.58768, y: 3.6106744}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.63107, y: 3.4270515}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.906727, y: 3.4497082}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.935158, y: 3.4215724}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.922424, y: 3.1528015}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -49.149067, y: 3.0832765}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -49.184605, y: 3.048107}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -49.163727, y: 2.984357}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -49.030376, y: 2.7927375}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -49.222294, y: 2.6028209}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -49.22955, y: 2.567503}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -49.01816, y: 2.424973}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -49.083168, y: 2.16368}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -49.048, y: 2.1281402}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.800625, y: 2.1056314}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.773674, y: 1.8509284}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.738506, y: 1.8153884}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.47647, y: 1.8917993}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.329205, y: 1.6576798}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.300846, y: 1.6716738}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -48.11604, y: 1.8545563}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.848156, y: 1.6975881}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.798103, y: 1.8033936}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.74768, y: 1.9799086}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.50038, y: 1.9432578}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.450626, y: 1.9924955}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.48461, y: 2.2543066}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.236794, y: 2.3166494}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  - mMass: 4
+    mInverseMass: 0.25
+    mPosition: {x: -47.20814, y: 2.387211}
+    force: {x: 0, y: 0}
+    externalForce: {x: 0, y: 0}
+    persistantForce: {x: 0, y: 0}
+    velocity: {x: 0, y: 0}
+    shapeMatchingMultiplier: 1
+    forceInternal: 0
+    body: {fileID: 8756667991799673073}
+  mInternalPointMasses: []
+  mIsStatic: 0
+  mIsKinematic: 0
+  mIsTrigger: 0
+  mIsAwake: 1
+  mMass: 4
+  mInverseMass: 0.25
+  pivotOffset: {x: 0.039782632, y: 0.025}
+  mAttachPoints:
+  - affectedIndices: 1a000000060000001e000000
+    transformAngle: 296.64102
+    body: {fileID: 8756667991799673073}
+    transform: {fileID: 8756667991799673077}
+    point: {x: NaN, y: NaN}
+    rotate: 1
+    scalars:
+    - NaN
+    - NaN
+    - NaN
+    mAttachedTransform: {fileID: 0}
+  - affectedIndices: 1e0000000600000029000000
+    transformAngle: 345.4
+    body: {fileID: 8756667991799673073}
+    transform: {fileID: 8756667991799673077}
+    point: {x: NaN, y: NaN}
+    rotate: 1
+    scalars:
+    - Infinity
+    - NaN
+    - NaN
+    mAttachedTransform: {fileID: 0}
+  mJoints: []
+  polyCollider: {fileID: 8756667991799673075}
+  affectedByGravity: 1
+  velocity: {x: 0, y: 0}
+  angularVelocity: 0
+  sleepCount: 0
+  gravity: {x: 0, y: -9.81}
+  overrideWorldGravity: 1
+  disabled: 0
+  meshLink: {fileID: -1070734962220545693}
+  mtvModifier: 0
+  mEdgeSprings:
+  - pointMassA: 0
+    pointMassB: 1
+    length: 0.27000004
+    scaledLength: 0.26999998
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 1
+    pointMassB: 2
+    length: 0.03605548
+    scaledLength: 0.03605548
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 2
+    pointMassB: 3
+    length: 0.11180341
+    scaledLength: 0.11180341
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 3
+    pointMassB: 4
+    length: 0.16763052
+    scaledLength: 0.16763052
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 4
+    pointMassB: 5
+    length: 0.26000002
+    scaledLength: 0.26000002
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 5
+    pointMassB: 6
+    length: 0.08999999
+    scaledLength: 0.089999974
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 6
+    pointMassB: 7
+    length: 0.19104972
+    scaledLength: 0.19104972
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 7
+    pointMassB: 8
+    length: 0.06
+    scaledLength: 0.06
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 8
+    pointMassB: 9
+    length: 0.20615527
+    scaledLength: 0.20615527
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 9
+    pointMassB: 10
+    length: 0.060000002
+    scaledLength: 0.060000002
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 10
+    pointMassB: 11
+    length: 0.2729469
+    scaledLength: 0.2729469
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 11
+    pointMassB: 12
+    length: 0.26683328
+    scaledLength: 0.26683328
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 12
+    pointMassB: 13
+    length: 0.028284244
+    scaledLength: 0.028284244
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 13
+    pointMassB: 14
+    length: 0.28284276
+    scaledLength: 0.28284276
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 14
+    pointMassB: 15
+    length: 0.22360677
+    scaledLength: 0.22360682
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 15
+    pointMassB: 16
+    length: 0.04242643
+    scaledLength: 0.04242643
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 16
+    pointMassB: 17
+    length: 0.09219546
+    scaledLength: 0.09219546
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 17
+    pointMassB: 18
+    length: 0.18867959
+    scaledLength: 0.1886796
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 18
+    pointMassB: 19
+    length: 0.27658632
+    scaledLength: 0.27658635
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 19
+    pointMassB: 20
+    length: 0.04
+    scaledLength: 0.04
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 20
+    pointMassB: 21
+    length: 0.26907247
+    scaledLength: 0.26907253
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 21
+    pointMassB: 22
+    length: 0.2370654
+    scaledLength: 0.23706542
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 22
+    pointMassB: 23
+    length: 0.049999982
+    scaledLength: 0.049999952
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 23
+    pointMassB: 24
+    length: 0.06708204
+    scaledLength: 0.06708204
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 24
+    pointMassB: 25
+    length: 0.23345236
+    scaledLength: 0.23345236
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 25
+    pointMassB: 26
+    length: 0.26999998
+    scaledLength: 0.26999998
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 26
+    pointMassB: 27
+    length: 0.036055528
+    scaledLength: 0.036055528
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 27
+    pointMassB: 28
+    length: 0.25495097
+    scaledLength: 0.25495097
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 28
+    pointMassB: 29
+    length: 0.26925826
+    scaledLength: 0.26925826
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 29
+    pointMassB: 30
+    length: 0.049999997
+    scaledLength: 0.050000012
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 30
+    pointMassB: 31
+    length: 0.24839486
+    scaledLength: 0.2483949
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 31
+    pointMassB: 32
+    length: 0.25612497
+    scaledLength: 0.256125
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 32
+    pointMassB: 33
+    length: 0.050000012
+    scaledLength: 0.050000012
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 33
+    pointMassB: 34
+    length: 0.2729469
+    scaledLength: 0.2729469
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 34
+    pointMassB: 35
+    length: 0.27658632
+    scaledLength: 0.27658632
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 35
+    pointMassB: 36
+    length: 0.031622805
+    scaledLength: 0.031622805
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 36
+    pointMassB: 37
+    length: 0.26
+    scaledLength: 0.26
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 37
+    pointMassB: 38
+    length: 0.31048352
+    scaledLength: 0.31048352
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 38
+    pointMassB: 39
+    length: 0.11704699
+    scaledLength: 0.11704699
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 39
+    pointMassB: 40
+    length: 0.18357559
+    scaledLength: 0.18357559
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 40
+    pointMassB: 41
+    length: 0.25
+    scaledLength: 0.25000006
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 41
+    pointMassB: 42
+    length: 0.07
+    scaledLength: 0.07
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 42
+    pointMassB: 43
+    length: 0.26400757
+    scaledLength: 0.2640076
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 43
+    pointMassB: 44
+    length: 0.25553864
+    scaledLength: 0.25553864
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 44
+    pointMassB: 45
+    length: 0.076157734
+    scaledLength: 0.076157734
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  - pointMassA: 45
+    pointMassB: 0
+    length: 0.26476404
+    scaledLength: 0.26476404
+    lengthMultiplier: 1
+    stiffness: 8072.585
+    damping: 111.10658
+  mInternalSprings: []
+  mCustomSprings: []
+  mShapeMatchingOn: 1
+  mDefaultEdgeSpringK: 8072.585
+  mDefaultEdgeSpringDamp: 111.10658
+  mShapeSpringK: 8072.585
+  mShapeSpringDamp: 55.55329
+  mDefaultCustomSpringK: 2690.8618
+  mDefaultCustomSpringDamp: 55.55329
+  mDefaultInternalSpringK: 2690.8618
+  mDefaultInternalSpringDamp: 55.55329
+  mGasAmount: 538.17236
+  mNormalList:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  mEdgeLengthList:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+--- !u!33 &-5478049806377871859
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756667991799673082}
+  m_Mesh: {fileID: 0}
+--- !u!1 &8756667991964568479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8756667991964568478}
+  - component: {fileID: 8756667991964568465}
+  m_Layer: 11
+  m_Name: ExternalCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8756667991964568478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756667991964568479}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8756667991799673077}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &8756667991964568465
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756667991964568479}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.15
