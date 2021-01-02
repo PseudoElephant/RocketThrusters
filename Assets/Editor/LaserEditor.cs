@@ -22,8 +22,9 @@ public class LaserEditor : Editor
 
     public override void OnInspectorGUI()
     {
+        //base.OnInspectorGUI();
         //Get Newest Version
-        serializedObject.Update();
+       serializedObject.Update();
 
         LaserBehaviour laser = (LaserBehaviour) target;
 
@@ -75,11 +76,12 @@ public class LaserEditor : Editor
         // Update laser length
         UpdateLaser(laser);
 
-        serializedObject.ApplyModifiedProperties();
+       serializedObject.ApplyModifiedProperties();
     }
 
     private void UpdateLaser(LaserBehaviour laser)
     {
+        if (laser.LineRenderer == null) return;
         laser.LineRenderer.SetPosition(1, new Vector3(0, laser.MaxLength, 0));
         float rot = (laser.transform.rotation.eulerAngles.z + 90f) % 360 * Mathf.Deg2Rad;
         Vector2 direction = new Vector2(Mathf.Cos(rot), Mathf.Sin(rot));

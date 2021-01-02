@@ -19,6 +19,8 @@ public class RocketMovement : MonoBehaviour
     // Fx
     [Header("Rocket FX's")]
     [SerializeField] private GameObject thrustVfXprefab;
+
+    [SerializeField] private LayerMask groundMask;
     // Cache
     private Rigidbody2D _myRigidBody;
     private AudioSource _audioSource;
@@ -93,7 +95,7 @@ public class RocketMovement : MonoBehaviour
         }
         
         // If player is landing
-        if ((_feet.IsTouching(other) && _myRigidBody.velocity.magnitude > velocityDeathThreshHold) || _nose.IsTouching(other))
+        if ((_feet.IsTouchingLayers(groundMask) && _myRigidBody.velocity.magnitude > velocityDeathThreshHold) || _nose.IsTouching(other) || !_feet.IsTouchingLayers(groundMask))
         {
             InvokeDeath(Vector2.one);
         }
@@ -108,7 +110,7 @@ public class RocketMovement : MonoBehaviour
         }
 
         // Activates in platform state (could check for velocity)
-        if (_feet.IsTouching(other))
+        if (_feet.IsTouchingLayers(groundMask))
         {
             
             _inPlatform = true;

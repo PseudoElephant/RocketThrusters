@@ -42,7 +42,7 @@ namespace Utility
         /// </summary>
         /// <param name="angleDeg"></param>
         /// <returns></returns>
-        private Vector3 NormDirFromAngle(float angleDeg)
+        public static Vector3 NormDirFromAngle(float angleDeg)
         {
             return new Vector3(Mathf.Sin((angleDeg + 0f) * Mathf.Deg2Rad), Mathf.Cos((angleDeg + 0f) * Mathf.Deg2Rad), 0);
         }
@@ -52,9 +52,21 @@ namespace Utility
         /// </summary>
         /// <param name="angleDeg"></param>
         /// <returns></returns>
-        private Vector2 NormDirFromAngle2D(float angleDeg)
+        public static Vector2 NormDirFromAngle2D(float angleDeg)
         {
             return new Vector2(Mathf.Sin((angleDeg + 0f) * Mathf.Deg2Rad), Mathf.Cos((angleDeg + 0f) * Mathf.Deg2Rad));
+        }
+        
+        /// <summary>
+        /// Checks if Value A has a 1 in the B position
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
+        public static bool BinHasInPos(int a,int b)
+        {
+            int tmp = a >> b;
+            return (tmp & 1) == 1;
         }
     }
 }
