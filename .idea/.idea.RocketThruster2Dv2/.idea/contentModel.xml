@@ -9,6 +9,7 @@
       <e p="Assets" t="Include">
         <e p="BlobBehaviour.cs" t="Include" />
         <e p="Editor" t="Include">
+          <e p="BlobEditor.cs" t="Include" />
           <e p="BulletEditor.cs" t="Include" />
           <e p="ExplosiveEditor.cs" t="Include" />
           <e p="FloatingEditor.cs" t="Include" />

@@ -1,5 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using Utility;
 
@@ -8,64 +8,138 @@ public class BlobBehaviour : MonoBehaviour
     public int attackRadius;
     public GameObject target;
     public float speed;
+    public LayerMask groundMask;
+    public int timeBetweenAttacks = 2;
+    public int stickDisabledFrames = 5;
     
     private JelloBody _body;
     private bool _grounded = false;
+    private bool _canAttack = true;
     private Rigidbody2D _rigidbody2D;
+    private Sticky _sticky;
     
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _sticky = GetComponent<Sticky>();
         _body = GetComponent<JelloBody>();
-        _body.JelloCollisionEvent += ProcessCollisionEvent; 
-        StartCoroutine(Attack());
+        _body.JelloCollisionEvent += ProcessCollisionEvent;
+
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        // _grounded = false;
+        // Grounded
+       // _grounded = false;
         //find the direction from the point masses curerrent position to its respective xformed base shape position.
     }
 
     IEnumerator Attack()
     {
-        while (true)
+        _canAttack = false;
+        yield return new WaitForSeconds(timeBetweenAttacks);
+        UpdateGroundState();
+        
+        // Direction
+        if (_grounded && PlayerIsInRange())
         {
-            if (_grounded)
-            {
-                yield return new WaitForSeconds(1);
-                Vector2 direction = (target.transform.position - transform.position).normalized;
-                _body.AddForce(direction * speed);
-                _grounded = false;
-            }
-            else
-            {
-                yield return new WaitForSeconds(1);
-            }
+
+          StartCoroutine(RemoveJointsForFrames(stickDisabledFrames));
+          yield return new WaitForFixedUpdate();
+          //  RemoveAllJoints();
+            Vector2 direction = (target.transform.position - transform.position).normalized;
+            _body.AddForce(direction * speed);
             
-            //_body.AddForce(direction * speed, _body.getInternalPointMass(0).Position, true);
-            //_body.getInternalPointMass(0);
+          
         }
+        else
+        {
+            print("Routine Cancelled");
+        }
+        _canAttack = true;
+
+      
+        
+    
+    }
+
+    private void UpdateGroundState()
+    {
+        foreach (var collision in _body.previousCollisions)
+        {
+            foreach (var contact in collision.contacts)
+            {
+                if (IsInGroundLogic(contact)) return;
+            }
+        }
+
+        _grounded = false;
+    }
+
+    private void RemoveAllJoints()
+    {
+        for (int i = 0; i < _sticky.joints.Count; i++)
+        {
+            _sticky.joints[i].Destroy();
+        }
+    }
+
+    IEnumerator RemoveJointsForFrames(int frames)
+    {
+        for (int i = 0; i < frames; i++)
+        {
+            yield return new WaitForFixedUpdate();
+            RemoveAllJoints();
+            
+        }
+    }
+    private bool PlayerIsInRange()
+    {
+        Vector2 dir = (target.transform.position - transform.position);
+        return dir.magnitude < attackRadius;
     }
     private void ProcessCollisionEvent(JelloCollision jelloCollision)
     {
+        
         //grounded logic
-        if(!_grounded) {
+        if(!_grounded || _canAttack) {
             //loop through each contact in the collision.
             for (int i = 0; i < jelloCollision.contacts.Length; i++)
             {
-                //if the hit point of this contact is below the center of the body, count as grounded.
-                //This works well for the JelloCharacter in the SpiffyDemoScene but may not be the best for all cases.
-                if (jelloCollision.contacts[i].hitPoint.y < transform.position.y)
+                JelloContact contact = jelloCollision.contacts[i];
+                
+                bool isMask = MathUtility.BinHasInPos( groundMask.value,contact.colliderB.gameObject.layer) || 
+                              MathUtility.BinHasInPos( groundMask.value,contact.colliderA.gameObject.layer);
+                
+                if (isMask)
                 {
                     _grounded = true;
+                    // Get out of loop
+                    StartCoroutine(Attack());
+                    return;
                 }
+                _grounded = false;
+                return;
             }
+
         }
     }
-    
 
-    
+    private bool IsInGroundLogic(JelloContact contact)
+    {
+        bool isMask = MathUtility.BinHasInPos( groundMask.value,contact.colliderB.gameObject.layer) || 
+                      MathUtility.BinHasInPos( groundMask.value,contact.colliderA.gameObject.layer);
+                
+        if (isMask)
+        {
+            _grounded = true;
+            // Get out of loop
+            return true;
+        }
+        _grounded = false;
+        return false;
+    }
 
 }

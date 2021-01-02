@@ -56,5 +56,17 @@ namespace Utility
         {
             return new Vector2(Mathf.Sin((angleDeg + 0f) * Mathf.Deg2Rad), Mathf.Cos((angleDeg + 0f) * Mathf.Deg2Rad));
         }
+        
+        /// <summary>
+        /// Checks if Value A has a 1 in the B position
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
+        public static bool BinHasInPos(int a,int b)
+        {
+            int tmp = a >> b;
+            return (tmp & 1) == 1;
+        }
     }
 }
