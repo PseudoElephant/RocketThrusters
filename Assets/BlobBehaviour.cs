@@ -28,14 +28,8 @@ public class BlobBehaviour : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        // Grounded
-       // _grounded = false;
-        //find the direction from the point masses curerrent position to its respective xformed base shape position.
-    }
-
+    
+    
     IEnumerator Attack()
     {
         _canAttack = false;
@@ -109,7 +103,9 @@ public class BlobBehaviour : MonoBehaviour
             for (int i = 0; i < jelloCollision.contacts.Length; i++)
             {
                 JelloContact contact = jelloCollision.contacts[i];
-                
+
+               
+
                 bool isMask = MathUtility.BinHasInPos( groundMask.value,contact.colliderB.gameObject.layer) || 
                               MathUtility.BinHasInPos( groundMask.value,contact.colliderA.gameObject.layer);
                 
@@ -126,6 +122,7 @@ public class BlobBehaviour : MonoBehaviour
 
         }
     }
+
 
     private bool IsInGroundLogic(JelloContact contact)
     {
