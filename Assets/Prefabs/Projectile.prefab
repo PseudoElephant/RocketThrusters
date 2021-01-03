@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxTime: 10
   turnTresholdAngle: 1
-  bulletType: 1
+  bulletType: 0
 --- !u!50 &3113875139092627870
 Rigidbody2D:
   serializedVersion: 4
