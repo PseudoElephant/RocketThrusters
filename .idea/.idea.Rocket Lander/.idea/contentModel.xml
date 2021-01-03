@@ -32,6 +32,7 @@
             <e p="CableBridge.cs" t="Include" />
             <e p="RopeBridge.cs" t="Include" />
           </e>
+          <e p="DeathTrigger.cs" t="Include" />
           <e p="Enemies" t="Include">
             <e p="BlobBehaviour.cs" t="Include" />
             <e p="BulletBehaviour.cs" t="Include" />

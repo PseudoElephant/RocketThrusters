@@ -278,16 +278,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShadowGroup: 0
-  m_HasRenderer: 0
+  m_HasRenderer: 1
   m_UseRendererSilhouette: 1
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_ApplyToSortingLayers: 00000000dfd2feebd3582fb27f3fb10869b8e0251f7c6201
   m_ShapePath:
-  - {x: -0.32167292, y: -2.3535411, z: -0.0005948899}
-  - {x: 2.162564, y: -2.3535411, z: -0.0005948899}
-  - {x: 2.162564, y: 0.19903636, z: -0.0005948899}
-  - {x: -0.32167292, y: 0.19903636, z: -0.0005948899}
-  m_ShapePathHash: 0
+  - {x: -0.45278904, y: -2.7177508, z: -0.0005948899}
+  - {x: -2.3390934, y: -5.456626, z: -0.0005948899}
+  - {x: 2.175813, y: -7.2938185, z: -0.000000113324944}
+  - {x: 5.366309, y: -5.0794077, z: -0.000000113324944}
+  - {x: 7.1449814, y: -1.0538526, z: -0.0005948899}
+  - {x: 3.5598176, y: 0.718841, z: -0.000000113324944}
+  - {x: 0.042538416, y: -0.004920371, z: -0.0005948899}
+  m_ShapePathHash: -451356133
   m_Mesh: {fileID: 0}
-  m_InstanceId: -588278
+  m_InstanceId: 48144

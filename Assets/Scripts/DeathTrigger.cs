@@ -9,4 +9,9 @@ public class DeathTrigger : MonoBehaviour
     { 
         
     }
+
+    private void Start()
+    {
+        GetComponent<SpriteRenderer>().enabled = false;
+    }
 }
