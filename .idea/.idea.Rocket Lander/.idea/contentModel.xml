@@ -24,6 +24,7 @@
             <e p="ExplosiveBehaviour.cs" t="Include" />
             <e p="FloatingBehaviour.cs" t="Include" />
             <e p="RotateBehaviour.cs" t="Include" />
+            <e p="SelfDestructBehaviour.cs" t="Include" />
             <e p="SpawnerBehaviour.cs" t="Include" />
             <e p="TriggerBehaviour.cs" t="Include" />
           </e>
