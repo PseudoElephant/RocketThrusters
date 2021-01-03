@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3237660681578414181}
   - component: {fileID: 3237660681578414178}
   - component: {fileID: 4761082700303570720}
+  - component: {fileID: -667664520275948391}
   m_Layer: 0
   m_Name: MediumRock2
   m_TagString: Untagged
@@ -262,4 +263,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891419629853847a0b4768c4f187448d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useTime: 0
   selfDestructTime: 10
+--- !u!114 &-667664520275948391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3237660681578414179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 0
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000dfd2feebd3582fb27f3fb10869b8e0251f7c6201
+  m_ShapePath:
+  - {x: -0.32167292, y: -2.3535411, z: -0.0005948899}
+  - {x: 2.162564, y: -2.3535411, z: -0.0005948899}
+  - {x: 2.162564, y: 0.19903636, z: -0.0005948899}
+  - {x: -0.32167292, y: 0.19903636, z: -0.0005948899}
+  m_ShapePathHash: 0
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -588278

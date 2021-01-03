@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6529318619074085440}
   - component: {fileID: 6529318619074085441}
   - component: {fileID: -3435018092110543937}
+  - component: {fileID: -9036625045667756373}
   m_Layer: 0
   m_Name: SmallRock2
   m_TagString: Untagged
@@ -263,4 +264,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891419629853847a0b4768c4f187448d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useTime: 0
   selfDestructTime: 10
+--- !u!114 &-9036625045667756373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6529318619074085502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 0
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000dfd2feebd3582fb27f3fb10869b8e0251f7c6201
+  m_ShapePath:
+  - {x: -0.32760853, y: -1.3022741, z: -0.00032916854}
+  - {x: 1.0793276, y: -1.3022741, z: -0.00032916854}
+  - {x: 1.0793276, y: 0.10011041, z: -0.00032916854}
+  - {x: -0.32760853, y: 0.10011041, z: -0.00032916854}
+  m_ShapePathHash: 0
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -588282

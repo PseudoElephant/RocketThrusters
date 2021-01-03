@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4341515949453857824}
   - component: {fileID: 4341515949453857825}
   - component: {fileID: 3706670655140483157}
+  - component: {fileID: 6993694089404242543}
   m_Layer: 0
   m_Name: BigRock
   m_TagString: Untagged
@@ -252,4 +253,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891419629853847a0b4768c4f187448d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useTime: 0
   selfDestructTime: 10
+--- !u!114 &6993694089404242543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4341515949453857826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 0
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000dfd2feebd3582fb27f3fb10869b8e0251f7c6201
+  m_ShapePath:
+  - {x: -1.1662772, y: -3.572313, z: -0.0003001}
+  - {x: 2.1339114, y: -3.572313, z: -0.0003001}
+  - {x: 2.1339114, y: 0.2745912, z: -0.0003001}
+  - {x: -1.1662772, y: 0.2745912, z: -0.0003001}
+  m_ShapePathHash: 0
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -588274

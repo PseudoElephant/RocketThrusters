@@ -22,12 +22,11 @@
     <list default="true" id="5b060c06-7002-4850-97b1-26dde03e9b81" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SandBox 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SandBox 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimatorPathCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimatorPathCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/Some Rocks/MediumRock1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/Some Rocks/MediumRock1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/Some Rocks/SmallRock3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/Some Rocks/SmallRock3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/Some Rocks/TinyRock3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/Some Rocks/TinyRock3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelTesting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelTesting.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/SelfDestructBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/SelfDestructBehaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@4.1.4/Runtime/BezierUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/41/d71b8645/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimatorPathCreator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DeathTrigger.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -95,6 +95,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimatorPathCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/DeathTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/SelfDestructBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -161,7 +163,7 @@
       <workItem from="1609398520479" duration="6513000" />
       <workItem from="1609428774925" duration="5683000" />
       <workItem from="1609541833679" duration="21219000" />
-      <workItem from="1609642117647" duration="3489000" />
+      <workItem from="1609642117647" duration="4755000" />
     </task>
     <servers />
   </component>
