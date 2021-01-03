@@ -18,6 +18,9 @@ public class ShooterBehaviour : MonoBehaviour
     public float angleOffset = 0;
     
     public float attackRadius;
+
+    // Start Shooting
+    private bool _isShooting = true;
     
     //TODO: Add FirePointOffset
     
@@ -26,7 +29,7 @@ public class ShooterBehaviour : MonoBehaviour
     private Transform _parentTransform;
 
     private bool _inAngle = true;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -87,6 +90,40 @@ public class ShooterBehaviour : MonoBehaviour
         {
             yield return new WaitForSecondsRealtime(shootSpeed);
             Shoot();
+        }
+    }
+
+    // Public Interface
+
+    public void EnableShooter()
+    {
+        if (!_isShooting)
+        {
+            StartCoroutine(ShootingRoutine());
+            _isShooting = true;
+        }
+    
+    }
+
+    public void DisableShooter()
+    {
+        if (_isShooting)
+        {
+            StopAllCoroutines();
+            _isShooting = false;
+        }
+ 
+    }
+
+    public void ToggleShooter()
+    {
+        if (_isShooting)
+        {
+            DisableShooter();
+        }
+        else
+        {
+            EnableShooter();
         }
     }
 }
