@@ -94,8 +94,9 @@ public class RocketMovement : MonoBehaviour
             return;
         }
         
-        // If player is landing
-        if ((_feet.IsTouchingLayers(groundMask) && _myRigidBody.velocity.magnitude > velocityDeathThreshHold) || _nose.IsTouching(other) || !_feet.IsTouchingLayers(groundMask))
+        // If player is landing 
+        // || !_feet.IsTouchingLayers(groundMask)
+        if ((_feet.IsTouchingLayers(groundMask) && _myRigidBody.velocity.magnitude > velocityDeathThreshHold) || _nose.IsTouching(other))
         {
             InvokeDeath(Vector2.one);
         }

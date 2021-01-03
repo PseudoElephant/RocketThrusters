@@ -30,6 +30,9 @@ public class LaserBehaviour : MonoBehaviour
     // State
     private bool _isActive = true;
 
+    // If it is working behaviour
+    private bool _isActiveLaser = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -139,6 +142,51 @@ public class LaserBehaviour : MonoBehaviour
         for (int i = 0; i < particleSystems.Length; i++)
         {
             particleSystems[i].Stop();
+        }
+    }
+    
+    // Public Methods
+
+    public void StopLaser()
+    {
+        if (_isActiveLaser)
+        {
+            if (EmissionType == LaserEmission.BurstEmission)
+            {
+                StopAllCoroutines();
+            }
+            DisableLaser();
+            _isActiveLaser = false;
+        }
+
+    }
+
+    public void StartLaser()
+    {
+        if (!_isActiveLaser)
+        {
+            if (EmissionType == LaserEmission.BurstEmission)
+            {
+                StartCoroutine(LaserToggle());
+            }
+            else
+            {
+                EnableLaser();
+            }
+
+            _isActive = true;
+        }
+    }
+
+    public void ToggleLaser()
+    {
+        if (_isActiveLaser)
+        {
+           StopLaser();
+        }
+        else
+        {
+            StartLaser();
         }
     }
 }
