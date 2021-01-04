@@ -23,6 +23,7 @@ public class ShooterBehaviour : MonoBehaviour
     private bool _isShooting = true;
     
     //TODO: Add FirePointOffset
+    public float FirePointOffset;
     
     // Cache
     private Transform _targetTransform;
@@ -71,7 +72,9 @@ public class ShooterBehaviour : MonoBehaviour
         }
 
         // Calculate Direction
-        GameObject ob = Instantiate(bulletPrefab, _parentTransform.position, transform.rotation);
+        Vector3 offsetFirePoint = MathUtility.NormDirFromAngle(transform.rotation.eulerAngles.z) * FirePointOffset;
+        
+        GameObject ob = Instantiate(bulletPrefab, _parentTransform.position+offsetFirePoint, transform.rotation);
         float rot = (transform.rotation.eulerAngles.z + 90f) % 360 * Mathf.Deg2Rad;
         // Update Velocity And Target
         Vector2 normDirectionTowardsTarget = new Vector2(Mathf.Cos(rot) * bulletSpeed, Mathf.Sin(rot) * bulletSpeed);

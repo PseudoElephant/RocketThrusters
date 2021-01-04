@@ -5,9 +5,11 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="CameraAnimatorBehaviour.cs" t="Include" />
         <e p="Editor" t="Include">
           <e p="BlobEditor.cs" t="Include" />
           <e p="BulletEditor.cs" t="Include" />
+          <e p="CameraTriggerEditor.cs" t="Include" />
           <e p="ExplosiveEditor.cs" t="Include" />
           <e p="FloatingEditor.cs" t="Include" />
           <e p="LaserEditor.cs" t="Include" />
@@ -21,6 +23,7 @@
         <e p="Scripts" t="Include">
           <e p="AnimatorPathCreator.cs" t="Include" />
           <e p="Behaviours" t="Include">
+            <e p="CameraTrigger.cs" t="Include" />
             <e p="ExplosiveBehaviour.cs" t="Include" />
             <e p="FloatingBehaviour.cs" t="Include" />
             <e p="RotateBehaviour.cs" t="Include" />
