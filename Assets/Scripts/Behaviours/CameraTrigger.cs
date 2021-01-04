@@ -15,13 +15,10 @@ namespace Behaviours
         public override void Start()
         {
             base.Start();
-            
             UnityEventTools.AddVoidPersistentListener(triggerEvent,SetCamera);
         }
-
         private void SetCamera()
         {
-            print("Activated");
             if (useCustomBlend)
             {
                 cameraAnimator.ZoomTo(targetZoom,zoomTime,zoomCurve);

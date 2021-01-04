@@ -20,14 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b060c06-7002-4850-97b1-26dde03e9b81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/CameraTriggerEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/CameraTriggerEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CameraTrigger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CameraTrigger.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CameraAnimatorBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CameraAnimatorBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/TriggerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/TriggerBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CameraTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CameraTrigger.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,9 +92,9 @@
         <option value="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Demo/StickyDemo/Scripts/Sticky.cs" />
         <option value="$PROJECT_DIR$/Assets/BlobBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/CameraConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/CameraAnimatorBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/CameraTriggerEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/TriggerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/CameraAnimatorBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/CameraTrigger.cs" />
       </list>
     </option>
@@ -169,7 +163,7 @@
       <workItem from="1609428774925" duration="5683000" />
       <workItem from="1609541833679" duration="21219000" />
       <workItem from="1609732642594" duration="5763000" />
-      <workItem from="1609778600359" duration="8158000" />
+      <workItem from="1609778600359" duration="9370000" />
     </task>
     <servers />
   </component>

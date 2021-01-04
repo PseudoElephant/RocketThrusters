@@ -84,6 +84,5 @@ public class CameraAnimatorBehaviour : MonoBehaviour
             durationInBlend = (endTime - startTime);
         }
     }
-
     
     }
