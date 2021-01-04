@@ -77,7 +77,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_4E4A23EB: {r: 0.30153078, g: 0.41275215, b: 0.8301887, a: 1}
-    - Color_8BFAA5AF: {r: 0.26900145, g: 0.83098197, b: 0.8773585, a: 1}
+    - Color_8BFAA5AF: {r: 0.990566, g: 0, b: 0.9888472, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

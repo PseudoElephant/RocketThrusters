@@ -45,6 +45,9 @@
           <e p="Rope.cs" t="Include" />
           <e p="Utility" t="Include">
             <e p="AudioManager.cs" t="Include" />
+            <e p="Camera" t="Include">
+              <e p="DollyCameraBehaviour.cs" t="Include" />
+            </e>
             <e p="LevelLoader.cs" t="Include" />
             <e p="MathUtility.cs" t="Include" />
             <e p="Sound.cs" t="Include" />
