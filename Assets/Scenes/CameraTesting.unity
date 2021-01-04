@@ -245,7 +245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254846078}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4405048, y: -3.7072005, z: 323.26883}
+  m_LocalPosition: {x: -1.4405067, y: -3.7072005, z: 323.26883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1655518253}
@@ -1723,7 +1723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700433576}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4405034, y: -3.7072005, z: 323.26883}
+  m_LocalPosition: {x: -1.4405038, y: -3.7072005, z: 323.26883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 578038195}
@@ -2387,7 +2387,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2407,7 +2407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetTrigger
+      value: ResetTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2431,15 +2431,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Zoom1
+      value: Zoom2
       objectReference: {fileID: 0}
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: singleUse
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -2447,7 +2447,7 @@ PrefabInstance:
       objectReference: {fileID: 1247065018}
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: ResetTrigger
+      value: SetTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2455,7 +2455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: Default
+      value: Zoom1
       objectReference: {fileID: 0}
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -2484,6 +2484,14 @@ PrefabInstance:
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
       value: Zoom2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4750378829557345601, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2598,7 +2606,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_AnimatedTarget: {fileID: 1247065018}
   m_LayerIndex: 0
-  m_ShowDebugText: 0
+  m_ShowDebugText: 1
   m_ChildCameras:
   - {fileID: 1446505156}
   - {fileID: 700433577}
@@ -2807,14 +2815,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247065017}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 037ec93ca613968498470809cdcfa702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stateCamera: {fileID: 1182735160}
-  _zoomCamera: {fileID: 700433577}
-  _defaultCamera: {fileID: 1446505156}
+  _stateCamera: {fileID: 0}
+  _zoomCamera: {fileID: 0}
+  _defaultCamera: {fileID: 0}
 --- !u!1 &1370852893
 GameObject:
   m_ObjectHideFlags: 3
@@ -3421,7 +3429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446505155}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4405038, y: -3.7072005, z: 323.26883}
+  m_LocalPosition: {x: -1.4405048, y: -3.7072005, z: 323.26883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1370852894}
@@ -3764,7 +3772,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -3812,11 +3820,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 30
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: singleUse
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -3833,6 +3841,10 @@ PrefabInstance:
     - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
       value: Zoom1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3994648948782363188, guid: cd24903603b264366a20de269ba2e71e, type: 3}
+      propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4750378829557345601, guid: cd24903603b264366a20de269ba2e71e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3989,15 +4001,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
+  m_ShowDebugText: 1
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
   m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
+  m_BlendUpdateMethod: 0
   m_DefaultBlend:
     m_Style: 1
-    m_Time: 2
+    m_Time: 5
     m_CustomCurve:
       serializedVersion: 2
       m_Curve: []
