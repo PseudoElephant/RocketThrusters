@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b060c06-7002-4850-97b1-26dde03e9b81" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BlobBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BlobBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Code/MeshLink/SpriteMeshLink.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Code/MeshLink/SpriteMeshLink.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Demo/StickyDemo/Scripts/Sticky.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Demo/StickyDemo/Scripts/Sticky.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraTesting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CameraTesting.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,6 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@4.1.4/Runtime/BezierUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/41/d71b8645/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimatorPathCreator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -79,7 +77,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterV2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/ShooterEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/TriggerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/GenerateMesh.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/SoftBodyCreation.cs" />
         <option value="$PROJECT_DIR$/Assets/MeshUpdater.cs" />
@@ -92,6 +89,8 @@
         <option value="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Code/MeshLink/SpriteMeshLink.cs" />
         <option value="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Demo/StickyDemo/Scripts/Sticky.cs" />
         <option value="$PROJECT_DIR$/Assets/BlobBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/TriggerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/CameraAnimatorBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -116,10 +115,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13776">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="13776" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -158,6 +157,7 @@
       <workItem from="1609398520479" duration="6513000" />
       <workItem from="1609428774925" duration="5683000" />
       <workItem from="1609541833679" duration="21219000" />
+      <workItem from="1609732642594" duration="5763000" />
     </task>
     <servers />
   </component>

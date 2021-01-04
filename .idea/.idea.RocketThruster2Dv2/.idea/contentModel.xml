@@ -7,7 +7,7 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="BlobBehaviour.cs" t="Include" />
+        <e p="CameraAnimatorBehaviour.cs" t="Include" />
         <e p="Editor" t="Include">
           <e p="BlobEditor.cs" t="Include" />
           <e p="BulletEditor.cs" t="Include" />
@@ -21,7 +21,6 @@
         <e p="Input" t="Include">
           <e p="InputMaster.cs" t="Include" />
         </e>
-        <e p="MeshUpdater.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AnimatorPathCreator.cs" t="Include" />
           <e p="Behaviours" t="Include">
@@ -35,11 +34,8 @@
             <e p="CableBridge.cs" t="Include" />
             <e p="RopeBridge.cs" t="Include" />
           </e>
-          <e p="EndPlatform" t="Include">
-            <e p="MoveEndPlatform.cs" t="Include" />
-            <e p="MoveEndPlatformIndividual.cs" t="Include" />
-          </e>
           <e p="Enemies" t="Include">
+            <e p="BlobBehaviour.cs" t="Include" />
             <e p="BulletBehaviour.cs" t="Include" />
             <e p="LaserBehaviour.cs" t="Include" />
             <e p="ShooterBehaviour.cs" t="Include" />
@@ -47,10 +43,14 @@
           </e>
           <e p="GenerateMesh.cs" t="Include" />
           <e p="HangedByCable.cs" t="Include" />
+          <e p="MeshUpdater.cs" t="Include" />
           <e p="RocketMovement.cs" t="Include" />
           <e p="Rope.cs" t="Include" />
           <e p="Utility" t="Include">
             <e p="AudioManager.cs" t="Include" />
+            <e p="Camera" t="Include">
+              <e p="DollyCameraBehaviour.cs" t="Include" />
+            </e>
             <e p="LevelLoader.cs" t="Include" />
             <e p="MathUtility.cs" t="Include" />
             <e p="Sound.cs" t="Include" />
