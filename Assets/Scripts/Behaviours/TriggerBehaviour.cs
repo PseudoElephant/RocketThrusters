@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class TriggerBehaviour : MonoBehaviour
 {
     // Parameters
-    [SerializeField] private UnityEvent triggerEvent;
+    [SerializeField] protected UnityEvent triggerEvent;
     public TriggerType type;
     public float time;
     public bool singleUse;
@@ -19,11 +19,13 @@ public class TriggerBehaviour : MonoBehaviour
     private Collider2D _collider;
     private List<Collider2D> _colliderCache = new List<Collider2D>();
     
-    private void Start()
+    public virtual void Start()
     {
         _collider = GetComponent<Collider2D>(); 
-     
+        
     }
+    
+  
 
     // Extra
     public enum TriggerType
@@ -38,7 +40,6 @@ public class TriggerBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
         if (_activated || collision.isTrigger || !_collider.IsTouchingLayers(layerMask)) { return; }
         _activated = true;
         switch (type)
@@ -50,7 +51,6 @@ public class TriggerBehaviour : MonoBehaviour
                 DelayedTriggerAction(collision);
                 break;
             case TriggerType.OnStayTrigger:
-                print("Entered Trigger");
                 OnStayTriggerAction(collision);
                 break;
         }

@@ -6,49 +6,84 @@ using UnityEngine;
 public class CameraAnimatorBehaviour : MonoBehaviour
 {
     // Parameters
-    private Animator _animator;
-    public CinemachineStateDrivenCamera _stateCamera;
-    public CinemachineVirtualCamera _zoomCamera;
-    public CinemachineVirtualCamera _defaultCamera;
-
-    // Constants
-    private const string Zoom = "isZoom";
-    private static readonly int IsZoom = Animator.StringToHash(Zoom);
+    public float zoomTime = 3f; 
+    public AnimationCurve curve;
+    private CinemachineVirtualCamera _zoomCamera;
+    
     
     void Start()
     {
-        _animator = GetComponent<Animator>();
+        _zoomCamera = GetComponent<CinemachineVirtualCamera>();
+       
     }
-
-    public void ZoomIn(int zoom)
+    
+    public void ZoomTo(float target)
     {
-        if (!_animator.GetBool(IsZoom))
+        StopAllCoroutines();
+        if (zoomTime == 0)
         {
-            //_zoomCamera.m_Lens.OrthographicSize = zoom;   
-            _animator.SetBool(IsZoom,true);
-           // StartCoroutine(SwapToDefault());
-          
+            _zoomCamera.m_Lens.OrthographicSize = target;
         }
         else
         {
-         //   StopAllCoroutines();
-         //   _defaultCamera.m_Lens.OrthographicSize = zoom;
-            _animator.SetBool(IsZoom,false);
+            StartCoroutine(Zooming(target));
         }
-            
-    }
-
-    IEnumerator Check()
-    {
-        yield return new WaitForSeconds(1);
-        _zoomCamera.m_Lens.OrthographicSize = 1;
-    }
-    IEnumerator SwapToDefault()
-    {
      
-        yield return new WaitForSeconds(_stateCamera.m_DefaultBlend.BlendTime+1f);
-        _defaultCamera.m_Lens.OrthographicSize = _zoomCamera.m_Lens.OrthographicSize;
-        _animator.SetBool(IsZoom,false);
+    }
+    public void ZoomTo(float target,float zt, AnimationCurve c)
+    {
+        StopAllCoroutines();
+        if (zoomTime == 0)
+        {
+            _zoomCamera.m_Lens.OrthographicSize = target;
+        }
+        else
+        {
+            StartCoroutine(Zooming(target,zt,c));
+        }
+     
     }
 
-}
+    IEnumerator Zooming(float target,float zt, AnimationCurve c)
+    {
+        // initial time in blend
+        float startTime = Time.time * Time.timeScale;
+        float endTime = startTime;
+        float durationInBlend = (endTime - startTime);
+        // Before Lerping
+        float initial = _zoomCamera.m_Lens.OrthographicSize;
+        while (_zoomCamera.m_Lens.OrthographicSize != target && durationInBlend < zt)
+        {
+            yield return new WaitForFixedUpdate();
+            // Animation Evaluated At Time T (Speed Multiplier)
+            float normalizedAnimationTime = c.Evaluate(Mathf.Clamp01(durationInBlend / zt ));
+            
+            _zoomCamera.m_Lens.OrthographicSize = Mathf.Lerp(initial, target, normalizedAnimationTime);
+            
+            endTime = Time.time * Time.timeScale;
+            durationInBlend = (endTime - startTime);
+        }
+    }
+    IEnumerator Zooming(float target)
+    {
+        // initial time in blend
+        float startTime = Time.time * Time.timeScale;
+        float endTime = startTime;
+        float durationInBlend = (endTime - startTime);
+        // Before Lerping
+        float initial = _zoomCamera.m_Lens.OrthographicSize;
+        while (_zoomCamera.m_Lens.OrthographicSize != target && durationInBlend < zoomTime)
+        {
+            yield return new WaitForFixedUpdate();
+            // Animation Evaluated At Time T (Speed Multiplier)
+            float normalizedAnimationTime = curve.Evaluate(Mathf.Clamp01(durationInBlend / zoomTime ));
+            
+            _zoomCamera.m_Lens.OrthographicSize = Mathf.Lerp(initial, target, normalizedAnimationTime);
+            
+            endTime = Time.time * Time.timeScale;
+            durationInBlend = (endTime - startTime);
+        }
+    }
+
+    
+    }
