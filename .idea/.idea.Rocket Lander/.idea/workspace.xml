@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -27,15 +30,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33028301-34ad-418f-94ca-32928268b109" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rocket Lander/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rocket Lander/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rocket Lander/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rocket Lander/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 3/Main Camera Profile.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 3/Main Camera Profile.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 3_Profiles.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 3_Profiles/Main Camera Profile.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 3_Profiles/Main Camera Profile.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/MathUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/MathUtility.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,13 +57,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/TriggerEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/SoftBodyCreation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MathUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/SoftBodyCreation.cs" />
         <option value="$PROJECT_DIR$/Assets/BlobBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/BlobEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/DollyCameraBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Camera/DollyCameraBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MathUtility.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -117,6 +114,7 @@
       <workItem from="1609453597228" duration="2640000" />
       <workItem from="1609573665878" duration="1012000" />
       <workItem from="1609634675903" duration="1736000" />
+      <workItem from="1609816588869" duration="500000" />
     </task>
     <servers />
   </component>
