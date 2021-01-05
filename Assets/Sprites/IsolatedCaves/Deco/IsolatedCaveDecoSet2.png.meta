@@ -1,0 +1,466 @@
+fileFormatVersion: 2
+guid: 12df32aca31bb4845a1e2fb1b2bcb70a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6632326487047248031
+    second: IsolatedCave_Structure_7
+  - first:
+      213: 3688640458396073058
+    second: IsolatedCave_Structure_8
+  - first:
+      213: -8275121470243902832
+    second: IsolatedCave_Stalactite_3
+  - first:
+      213: 3875643596055709996
+    second: IsolatedCave_Stalactite_4
+  - first:
+      213: -3163022818689233914
+    second: IsolatedCave_Rock_1
+  - first:
+      213: -6158281821902254130
+    second: IsolatedCave_Rock_2
+  - first:
+      213: -7295253294048451108
+    second: isolatedCave_WoodenPlankVertical_3
+  - first:
+      213: -1301551564935561838
+    second: IsolatedCave_Structure_9
+  - first:
+      213: -5179448282950732494
+    second: IsolatedCave_Stalactite_5
+  - first:
+      213: -598515970746263868
+    second: IsolatedCave_Structure_10
+  - first:
+      213: -6396283289195591919
+    second: IsolatedCave_Rock_3
+  - first:
+      213: -6693449922943436871
+    second: IsolatedCave_Bottles_1
+  - first:
+      213: -8033030982924159582
+    second: IsolatedCave_Bottles_2
+  - first:
+      213: 782358439101467345
+    second: IsolatedCave_Box_1
+  - first:
+      213: 5938668796685357566
+    second: IsolatedCave_WoodenPlanks_3
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IsolatedCave_Structure_7
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 4141
+        width: 1007
+        height: 1062
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f989dd6ecc1ca0c50800000000000000
+      internalID: 6632326487047248031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Structure_8
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 4020
+        width: 1353
+        height: 1311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26cf4d224fea03330800000000000000
+      internalID: 3688640458396073058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Stalactite_3
+      rect:
+        serializedVersion: 2
+        x: 3275
+        y: 4416
+        width: 81
+        height: 598
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a67e4cddcd82d80800000000000000
+      internalID: -8275121470243902832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Stalactite_4
+      rect:
+        serializedVersion: 2
+        x: 4628
+        y: 4500
+        width: 71
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c290bea015d09c530800000000000000
+      internalID: 3875643596055709996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Rock_1
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 3246
+        width: 228
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60cc29b318faa14d0800000000000000
+      internalID: -3163022818689233914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Rock_2
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 3167
+        width: 257
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf45ca9f43698aa0800000000000000
+      internalID: -6158281821902254130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: isolatedCave_WoodenPlankVertical_3
+      rect:
+        serializedVersion: 2
+        x: 3243
+        y: 2680
+        width: 120
+        height: 1309
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd56ebde7cd02ca90800000000000000
+      internalID: -7295253294048451108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Structure_9
+      rect:
+        serializedVersion: 2
+        x: 4203
+        y: 2813
+        width: 572
+        height: 1094
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d79236fb5ffede0800000000000000
+      internalID: -1301551564935561838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Stalactite_5
+      rect:
+        serializedVersion: 2
+        x: 5056
+        y: 2711
+        width: 86
+        height: 1070
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235f6328a37ee18b0800000000000000
+      internalID: -5179448282950732494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Structure_10
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1591
+        width: 574
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6554b45e4a1b7f0800000000000000
+      internalID: -598515970746263868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Rock_3
+      rect:
+        serializedVersion: 2
+        x: 2006
+        y: 1819
+        width: 209
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117cab8cc36db37a0800000000000000
+      internalID: -6396283289195591919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Bottles_1
+      rect:
+        serializedVersion: 2
+        x: 3107
+        y: 1651
+        width: 409
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7371d22c61c13a0800000000000000
+      internalID: -6693449922943436871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Bottles_2
+      rect:
+        serializedVersion: 2
+        x: 4516
+        y: 1746
+        width: 409
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a53911c1e0f48090800000000000000
+      internalID: -8033030982924159582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Box_1
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 432
+        width: 351
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da0ca1fade7bda00800000000000000
+      internalID: 782358439101467345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_WoodenPlanks_3
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 696
+        width: 3310
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef190216ec36a6250800000000000000
+      internalID: 5938668796685357566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
