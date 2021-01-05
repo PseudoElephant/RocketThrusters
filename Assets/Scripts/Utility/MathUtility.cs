@@ -38,24 +38,23 @@ namespace Utility
         }
         
         /// <summary>
-        /// Returns a unit vector angleDeg's from the x-axis.
+        /// Returns a unit vector angleDeg's from the y-axis.
         /// </summary>
         /// <param name="angleDeg"></param>
         /// <returns></returns>
         public static Vector3 NormDirFromAngle(float angleDeg)
         {
-            //TODO: Check this method for proper math 
             return new Vector3(-Mathf.Sin((angleDeg + 0f) * Mathf.Deg2Rad), Mathf.Cos((angleDeg + 0f) * Mathf.Deg2Rad), 0).normalized;
         }
         
         /// <summary>
-        /// Returns a unit vector angleDeg's from the x-axis.
+        /// Returns a unit vector angleDeg's from the y-axis.
         /// </summary>
         /// <param name="angleDeg"></param>
         /// <returns></returns>
         public static Vector2 NormDirFromAngle2D(float angleDeg)
         {
-            return new Vector2(Mathf.Sin((angleDeg + 0f) * Mathf.Deg2Rad), Mathf.Cos((angleDeg + 0f) * Mathf.Deg2Rad)).normalized;
+            return new Vector2(-Mathf.Sin((angleDeg + 0f) * Mathf.Deg2Rad), Mathf.Cos((angleDeg + 0f) * Mathf.Deg2Rad)).normalized;
         }
         
         /// <summary>
