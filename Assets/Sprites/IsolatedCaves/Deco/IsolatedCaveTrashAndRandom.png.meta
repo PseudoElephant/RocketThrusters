@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: b8ce7ccf6ce004dc68cd2ccc859789ac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2287622139828604808
+    second: IsolatedCave_Trash_1
+  - first:
+      213: 4858395371243605599
+    second: IsolatedCave_Trash_2
+  - first:
+      213: 638298077951435860
+    second: IsolatedCave_Trash_3
+  - first:
+      213: 3265261738589041824
+    second: IsolatedCave_Shovel_1
+  - first:
+      213: 5176601125902753405
+    second: IsolatedCave_PickAxe_1
+  - first:
+      213: 9185592638877124442
+    second: IsolatedCave_Trash_4
+  - first:
+      213: 6005932298986212122
+    second: IsolatedCave_Trash_5
+  - first:
+      213: 5247671241288016822
+    second: IsolatedCave_Trash_6
+  - first:
+      213: -4916515349928859934
+    second: IsolatedCave_Trash_7
+  - first:
+      213: 1810724777486952370
+    second: IsolatedCave_Trash_8
+  - first:
+      213: 900845427944314022
+    second: IsolatedCave_Trash_9
+  - first:
+      213: 6927400472144071861
+    second: IsolatedCave_Trash_10
+  - first:
+      213: 5613160538295742402
+    second: IsolatedCave_Trash_11
+  - first:
+      213: -6663627916120470319
+    second: IsolatedCave_Trash_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IsolatedCave_Trash_1
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 4379
+        width: 627
+        height: 627
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870723fb8cbb040e0800000000000000
+      internalID: -2287622139828604808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Trash_2
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 4411
+        width: 483
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e806969dc7c6340800000000000000
+      internalID: 4858395371243605599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Trash_3
+      rect:
+        serializedVersion: 2
+        x: 2554
+        y: 4414
+        width: 768
+        height: 445
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4542c1558b0bbd800800000000000000
+      internalID: 638298077951435860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Shovel_1
+      rect:
+        serializedVersion: 2
+        x: 3629
+        y: 4301
+        width: 302
+        height: 752
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4364b404a805d20800000000000000
+      internalID: 3265261738589041824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_PickAxe_1
+      rect:
+        serializedVersion: 2
+        x: 4222
+        y: 4251
+        width: 378
+        height: 653
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e12551c4bf6d740800000000000000
+      internalID: 5176601125902753405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Trash_4
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 3094
+        width: 1309
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57c6b376d7c97f70800000000000000
+      internalID: 9185592638877124442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Trash_5
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 3065
+        width: 1123
+        height: 603
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b4e1aea9b595350800000000000000
+      internalID: 6005932298986212122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Trash_6
+      rect:
+        serializedVersion: 2
+        x: 3806
+        y: 3105
+        width: 678
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3610bc03973d840800000000000000
+      internalID: 5247671241288016822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Trash_7
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1783
+        width: 655
+        height: 805
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e62cba865705cbb0800000000000000
+      internalID: -4916515349928859934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Trash_8
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 1827
+        width: 1288
+        height: 632
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7ab1c679cf02910800000000000000
+      internalID: 1810724777486952370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Trash_9
+      rect:
+        serializedVersion: 2
+        x: 3776
+        y: 1877
+        width: 931
+        height: 556
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4d722d422708c00800000000000000
+      internalID: 900845427944314022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Trash_10
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 786
+        width: 1590
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc4507c602132060800000000000000
+      internalID: 6927400472144071861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Trash_11
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 754
+        width: 1523
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cfab5015c3f5ed40800000000000000
+      internalID: 5613160538295742402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IsolatedCave_Trash_12
+      rect:
+        serializedVersion: 2
+        x: 3807
+        y: 728
+        width: 1328
+        height: 721
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc434837b90683a0800000000000000
+      internalID: -6663627916120470319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
