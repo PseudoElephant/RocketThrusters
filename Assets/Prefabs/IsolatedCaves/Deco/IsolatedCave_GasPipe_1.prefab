@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 312937327245004264}
   - component: {fileID: 7512609211678976675}
   - component: {fileID: 8982708477726205684}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: IsolatedCave_GasPipe_1
-  m_TagString: Untagged
+  m_TagString: Friendly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

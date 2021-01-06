@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1910993652867254754}
   - component: {fileID: 1910993652867254755}
   - component: {fileID: 1910993652867254752}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: IsolatedCave_Rock_2
-  m_TagString: Untagged
+  m_TagString: Friendly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
