@@ -6128,12 +6128,15 @@ PolygonCollider2D:
       - {x: 39.6939, y: -0.8001919}
       - {x: 45.16353, y: -1.9235603}
       - {x: 51.556816, y: -3.2986164}
-      - {x: 55.11821, y: -4.6422825}
-      - {x: 63.842182, y: -3.90402}
-      - {x: 72.84926, y: -8.457827}
-      - {x: 48.747692, y: -78.897385}
-      - {x: -70.38795, y: -92.307045}
-      - {x: -71.909164, y: -92.47826}
+      - {x: 55.118202, y: -4.642283}
+      - {x: 63.587303, y: -3.9255898}
+      - {x: 69.400475, y: -3.755907}
+      - {x: 76.2745, y: -6.3829765}
+      - {x: 49.494553, y: -76.873535}
+      - {x: 49.117714, y: -77.8512}
+      - {x: 48.724716, y: -78.89988}
+      - {x: -70.38765, y: -92.307014}
+      - {x: -71.90915, y: -92.47827}
       - {x: -74.78646, y: -92.80213}
 --- !u!114 &1128636017
 MonoBehaviour:
@@ -6420,7 +6423,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 63.64431, y: -4.9243393, z: 0}
+    - position: {x: 63.644302, y: -4.9243407, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -6430,7 +6433,17 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 71.62161, y: -8.957676, z: 0}
+    - position: {x: 69.22982, y: -4.761314, z: 0}
+      leftTangent: {x: 0, y: 0, z: 0}
+      rightTangent: {x: 0, y: 0, z: 0}
+      mode: 0
+      height: 1
+      bevelCutoff: 0
+      bevelSize: 0
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 74.98535, y: -6.96085, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -6523,8 +6536,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: f8225d29699b243849ee3c763002309e, type: 3}
   - {fileID: 21300000, guid: f8225d29699b243849ee3c763002309e, type: 3}
   m_LocalAABB:
-    m_Center: {x: -0.8924484, y: -38.294636, z: -0.00150005}
-    m_Extent: {x: 73.17844, y: 54.183628, z: 0.00150005}
+    m_Center: {x: 0.74741364, y: -38.29464, z: -0.00155005}
+    m_Extent: {x: 74.8183, y: 54.18363, z: 0.00155005}
 --- !u!114 &1141354868 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2604514052830220594, guid: 3170f04cf4f6cfa4580ef97f927849d3, type: 3}
