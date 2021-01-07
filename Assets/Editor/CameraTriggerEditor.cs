@@ -25,8 +25,6 @@ public class CameraTriggerEditor : TriggerEditor
             EditorGUILayout.PropertyField(serializedObject.FindProperty("useCustomBlend"),
                 new GUIContent("Custom Blend"));
             
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("cameraAnimator"),
-                new GUIContent("Camera Animator"));
             
             EditorGUILayout.PropertyField(serializedObject.FindProperty("targetZoom"), new GUIContent("Target Zoom"));
             if (camera.useCustomBlend)

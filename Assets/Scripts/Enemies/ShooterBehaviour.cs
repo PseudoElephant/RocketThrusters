@@ -33,6 +33,7 @@ public class ShooterBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SectionManager.instance.SetTarget(ref target);
         //Starting min/max angles
         StartCoroutine(ShootingRoutine());
         _targetTransform = target.GetComponent<Transform>();

@@ -40,6 +40,8 @@ public class BulletBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SectionManager.instance.SetTarget(ref _target);
+        
         _body = GetComponent<Rigidbody2D>();
         Invoke(nameof(Destroy),maxTime);
     }

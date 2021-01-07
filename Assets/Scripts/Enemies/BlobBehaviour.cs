@@ -20,12 +20,13 @@ public class BlobBehaviour : MonoBehaviour
     
     void Start()
     {
+        SectionManager.instance.SetTarget(ref target);
+        
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _sticky = GetComponent<Sticky>();
         _body = GetComponent<JelloBody>();
         _body.JelloCollisionEvent += ProcessCollisionEvent;
-
-
+        
     }
 
     

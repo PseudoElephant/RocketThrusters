@@ -1,13 +1,13 @@
-﻿using UnityEditor.Events;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
+
 
 namespace Behaviours
 {
     public class CameraTrigger : TriggerBehaviour
     {
         
-        public CameraAnimatorBehaviour cameraAnimator;
+        private CameraAnimatorBehaviour cameraAnimator;
         public bool useCustomBlend = true;
         public AnimationCurve zoomCurve;
         public float zoomTime;
@@ -15,7 +15,10 @@ namespace Behaviours
         public override void Start()
         {
             base.Start();
-            UnityEventTools.AddVoidPersistentListener(triggerEvent,SetCamera);
+            
+            triggerEvent.AddListener(SetCamera);
+            cameraAnimator = SectionManager.instance.defaultCamera.GetComponent<CameraAnimatorBehaviour>();
+
         }
         private void SetCamera()
         {
@@ -27,6 +30,8 @@ namespace Behaviours
             {
                 cameraAnimator.ZoomTo(targetZoom);
             }
+            
+            triggerEvent.AddListener(SetCamera);
         }
     }
 }

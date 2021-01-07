@@ -20,9 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b060c06-7002-4850-97b1-26dde03e9b81" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CameraAnimatorBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CameraAnimatorBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/CameraTriggerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CameraTriggerEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/LevelLoader.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Experimantal/LevelLoader.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CameraTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CameraTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/BlobBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/BlobBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/BulletBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/BulletBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Camera/CameraAnimatorBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Camera/CameraAnimatorBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/LevelLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/LevelLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,29 +45,21 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/6e/c57a44e7/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@4.1.4/Runtime/SpriteShapeController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/ed/6993de9d/LayerMask.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/bb/2668f7ee/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/701F6580-ABAD-44CF-B237-A543DCD0D94B/e9/c8b87057/Editor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ScenePartLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@4.1.4/Runtime/BezierUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/41/d71b8645/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Behaviours/CinemachineStateDrivenCamera.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimatorPathCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Behaviours/CinemachineBrain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@4.1.4/Runtime/SpriteShapeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/ed/6993de9d/LayerMask.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/41/d71b8645/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimatorPathCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Core/CinemachineBlend.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/BulletBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EndPlatform/MoveEndPlatformIndividual.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EndPlatform/MoveEndPlatform.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LaserBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ShooterBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BulletBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Test.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/LevelLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimatorPathCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/FloatingBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerBehaviour.cs" />
@@ -75,10 +78,8 @@
         <option value="$PROJECT_DIR$/Assets/Vendor/PathCreator/Core/Editor/Helper/PathHandle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/SpawnerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/ExplosiveBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BulletBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/ShooterV2Editor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterV2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/ShooterEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/GenerateMesh.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/SoftBodyCreation.cs" />
@@ -87,16 +88,29 @@
         <option value="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Demo/SpiffyDemoScene/Scripts/PullAndRelease.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MathUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/BlobEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/LaserEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Code/MeshLink/SpriteMeshLink.cs" />
         <option value="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Demo/StickyDemo/Scripts/Sticky.cs" />
         <option value="$PROJECT_DIR$/Assets/BlobBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/CameraConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/CameraTriggerEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/TriggerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/CameraAnimatorBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/ScenePartLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Camera/CameraAnimatorBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScenePartLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/CameraTriggerEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/MainCameraPersistance.cs" />
+        <option value="$PROJECT_DIR$/Assets/Persistance.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameSession.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/CameraTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SectionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LevelLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SectionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BlobBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BulletBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ScenePartLoader.cs" />
       </list>
     </option>
   </component>
@@ -121,10 +135,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="10816">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../RocketThruster2Dv2.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="10816" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -165,6 +187,7 @@
       <workItem from="1609541833679" duration="21219000" />
       <workItem from="1609732642594" duration="5763000" />
       <workItem from="1609778600359" duration="10073000" />
+      <workItem from="1609963467406" duration="13750000" />
     </task>
     <servers />
   </component>
