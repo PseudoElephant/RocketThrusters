@@ -1,5 +1,4 @@
 ﻿using System;
-using System.CodeDom;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Utility;
@@ -36,36 +35,48 @@ public class RocketMovement : MonoBehaviour
     private State _state = State.Alive;
     private Vector2 _normFloor;
     private ParticleSystem _thrustVFX;
+    private InputMaster _controls;
+    private bool _thrusting = false;
+    private float _movementDir;
     
     // Constants
     const float TrailOffset = 2.25f;
-    
-    private InputMaster controls;
 
-    private bool _thrusting = false;
-    private float _movementDir;
+    public static RocketMovement instance;
 
     private void Awake()
     {
-        controls = new InputMaster();
+        
+        // Singleton pattern
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        
+        // Control Set Up
+        _controls = new InputMaster();
         
         //Thrust
-        controls.Rocket.Thrust.started += ctx => _thrusting = true;
-        controls.Rocket.Thrust.canceled += ctx => _thrusting = false;
+        _controls.Rocket.Thrust.started += ctx => _thrusting = true;
+        _controls.Rocket.Thrust.canceled += ctx => _thrusting = false;
         
         //Rotate
-        controls.Rocket.Rotate.performed += ctx => _movementDir = ctx.ReadValue<float>();
-        controls.Rocket.Rotate.canceled += ctc => _movementDir = 0;
+        _controls.Rocket.Rotate.performed += ctx => _movementDir = ctx.ReadValue<float>();
+        _controls.Rocket.Rotate.canceled += ctc => _movementDir = 0;
     }
 
     private void OnEnable()
     {
-        controls.Enable();
+        _controls.Enable();
     }
 
     private void OnDisable()
     {
-        controls.Disable();
+        _controls.Disable();
     }
 
     private void FixedUpdate()
@@ -175,7 +186,7 @@ public class RocketMovement : MonoBehaviour
 
     private void Die()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SectionManager.instance.loader.ResetScene();
     }
 
     // // Input Layer (No Multilayer)

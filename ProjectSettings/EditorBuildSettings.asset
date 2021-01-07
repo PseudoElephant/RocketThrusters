@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SandBox.unity
-    guid: 354ae9f1040883742b0aa1b91a2a1378
+    path: Assets/Scenes/IsolatedCaves/Gameplay.unity
+    guid: 231db546dba61bd4ebe70f3ea1940fe3
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/IsolatedCaves/Level1 Test.unity
+    guid: 8ba1bd93d71f7e94badc442da9ff9178
+  - enabled: 1
+    path: Assets/Scenes/IsolatedCaves/Level2 Test.unity
+    guid: 2ccbdefc5b759b642ae01b549057d3a9
   m_configObjects: {}

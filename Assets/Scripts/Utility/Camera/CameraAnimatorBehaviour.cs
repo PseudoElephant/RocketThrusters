@@ -14,7 +14,8 @@ public class CameraAnimatorBehaviour : MonoBehaviour
     void Start()
     {
         _zoomCamera = GetComponent<CinemachineVirtualCamera>();
-       
+        _zoomCamera.Follow = RocketMovement.instance.gameObject.transform;
+
     }
     
     public void ZoomTo(float target)
