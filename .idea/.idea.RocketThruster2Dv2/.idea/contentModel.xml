@@ -14,6 +14,7 @@
           <e p="ExplosiveEditor.cs" t="Include" />
           <e p="FloatingEditor.cs" t="Include" />
           <e p="LaserEditor.cs" t="Include" />
+          <e p="SceneFieldEditor.cs" t="Include" />
           <e p="ShooterEditor.cs" t="Include" />
           <e p="SpawnerEditor.cs" t="Include" />
           <e p="TriggerEditor.cs" t="Include" />
@@ -56,6 +57,7 @@
             </e>
             <e p="LevelLoader.cs" t="Include" />
             <e p="MathUtility.cs" t="Include" />
+            <e p="SceneField.cs" t="Include" />
             <e p="ScenePartLoader.cs" t="Include" />
             <e p="SectionManager.cs" t="Include" />
             <e p="Sound.cs" t="Include" />

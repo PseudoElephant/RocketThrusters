@@ -352,6 +352,10 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 512
+  sceneAsset:
+    sceneAsset: {fileID: 102900000, guid: 8ba1bd93d71f7e94badc442da9ff9178, type: 3}
+    required: 1
+    buildIndex: 1
 --- !u!4 &840332193
 Transform:
   m_ObjectHideFlags: 0
@@ -455,6 +459,10 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 512
+  sceneAsset:
+    sceneAsset: {fileID: 102900000, guid: 2ccbdefc5b759b642ae01b549057d3a9, type: 3}
+    required: 1
+    buildIndex: 2
 --- !u!4 &1071926678
 Transform:
   m_ObjectHideFlags: 0
