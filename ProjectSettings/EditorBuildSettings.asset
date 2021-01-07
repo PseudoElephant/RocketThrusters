@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IsolatedCaves/Level2 Test.unity
     guid: 2ccbdefc5b759b642ae01b549057d3a9
+  - enabled: 1
+    path: Assets/Scenes/SandBox 1.unity
+    guid: f666be4128d8064459ac7c1c3bd9dcaa
   m_configObjects: {}
