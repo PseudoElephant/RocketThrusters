@@ -1,33 +1,30 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Utility;
 
 public class ScenePartLoader : MonoBehaviour
 {
 
     public LayerMask mask;
-    
+
+    public SceneField sceneAsset;
     // State 
     private bool _isLoaded;
     private bool _shouldLoad = false;
     private Collider2D _collider2D;
+    private int _framesDelay;
     
     // Start is called before the first frame update
     void Start()
     {
-        if (SceneManager.sceneCount > 0)
+        if (SceneManager.sceneCount > 0 && sceneAsset.BuildIndex < SceneManager.sceneCount)
         {
-            for (int i = 0; i < SceneManager.sceneCount; i++)
-            {
-                Scene scene = SceneManager.GetSceneAt(i);
-                // Should have the same name as the scene
-                if (scene.name == gameObject.name)
-                {
-                    _isLoaded = true;
-                }
-            }
+            // Should have the same name as the scene
+            _isLoaded = true;
         }
 
         _collider2D = GetComponent<Collider2D>();
@@ -38,6 +35,7 @@ public class ScenePartLoader : MonoBehaviour
         if (_collider2D.IsTouchingLayers(mask) && !_shouldLoad)
         {
             _shouldLoad = true;
+            StopAllCoroutines();
             StartCoroutine(TriggerCheck());
         }
     }
@@ -53,7 +51,12 @@ public class ScenePartLoader : MonoBehaviour
     
     IEnumerator TriggerCheck()
     {
-        yield return new WaitForFixedUpdate();
+        // Delay Trigger For Frames
+        for (int i = 0; i < _framesDelay; i++)
+        {
+            yield return new WaitForFixedUpdate();
+        }
+
         if (_shouldLoad)
         {
             
@@ -70,7 +73,7 @@ public class ScenePartLoader : MonoBehaviour
     {
         if (!_isLoaded)
         {
-            AsyncOperation operation =  SceneManager.LoadSceneAsync(gameObject.name, LoadSceneMode.Additive);
+            AsyncOperation operation =  SceneManager.LoadSceneAsync(sceneAsset.BuildIndex, LoadSceneMode.Additive);
             while (!operation.isDone)
             {
                 yield return null;
@@ -83,7 +86,7 @@ public class ScenePartLoader : MonoBehaviour
     {
         if (_isLoaded)
         {
-            AsyncOperation operation =  SceneManager.UnloadSceneAsync(gameObject.name);
+            AsyncOperation operation =  SceneManager.UnloadSceneAsync(sceneAsset.BuildIndex);
             while (!operation.isDone)
             {
                 yield return null;
