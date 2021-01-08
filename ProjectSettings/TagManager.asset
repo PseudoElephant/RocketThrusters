@@ -47,6 +47,12 @@ TagManager:
   - name: Background
     uniqueID: 3959345887
     locked: 0
+  - name: PostBackgound
+    uniqueID: 2811411985
+    locked: 0
+  - name: Ground
+    uniqueID: 1373920067
+    locked: 0
   - name: Foreground
     uniqueID: 2989447379
     locked: 0
