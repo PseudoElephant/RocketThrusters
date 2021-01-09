@@ -20,12 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b060c06-7002-4850-97b1-26dde03e9b81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/SceneFieldEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Editor/SceneFieldEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Shaders/Multipass.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Shaders/Multipass.shader.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraProfiles/Main Camera Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CameraProfiles/Main Camera Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/LaserEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/LaserEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectile Follow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectile Follow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rendering/New 2D Renderer Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Rendering/New 2D Renderer Data.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/IsolatedCaves/Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IsolatedCaves/Gameplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/ScenePartLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/ScenePartLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/IsolatedCaves/Level1 Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IsolatedCaves/Level1 Test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,25 +45,26 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/6e/c57a44e7/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@4.1.4/Runtime/SpriteShapeController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/ed/6993de9d/LayerMask.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/bb/2668f7ee/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@8.2.0/Runtime/UniversalRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/701F6580-ABAD-44CF-B237-A543DCD0D94B/e9/c8b87057/Editor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ScenePartLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@4.1.4/Runtime/BezierUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Behaviours/CinemachineStateDrivenCamera.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Behaviours/CinemachineBrain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@8.2.0/ShaderLibrary/Macros.hlsl" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.spriteshape@4.1.4/Runtime/SpriteShapeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/ed/6993de9d/LayerMask.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.1/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@8.2.0/ShaderLibrary/API/D3D11.hlsl" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@8.2.0/Shaders/2D/Include/LightingUtility.hlsl" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/41/d71b8645/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimatorPathCreator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Behaviours/CinemachineBrain.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.3/Runtime/Core/CinemachineBlend.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/SpawnerEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Sound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FloatingBehaviour.cs" />
@@ -78,7 +87,6 @@
         <option value="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Demo/SpiffyDemoScene/Scripts/PullAndRelease.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MathUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/BlobEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/LaserEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Code/MeshLink/SpriteMeshLink.cs" />
         <option value="$PROJECT_DIR$/Assets/Vendor/JelloPhysics/Demo/StickyDemo/Scripts/Sticky.cs" />
         <option value="$PROJECT_DIR$/Assets/BlobBehaviour.cs" />
@@ -103,6 +111,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SceneField.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/SceneFieldEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ScenePartLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/LaserBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/LaserEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Materials/Shaders/Multipass.shader" />
+        <option value="$PROJECT_DIR$/Assets/CameraSizeMapper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraSizeMapper.cs" />
       </list>
     </option>
   </component>
@@ -181,6 +194,8 @@
       <workItem from="1609778600359" duration="10073000" />
       <workItem from="1609963467406" duration="14406000" />
       <workItem from="1610046909437" duration="2132000" />
+      <workItem from="1610190405129" duration="3577000" />
+      <workItem from="1610219666926" duration="946000" />
     </task>
     <servers />
   </component>

@@ -13,7 +13,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3113875139092627869, guid: 6e153ed0bd873d64abc99297c8e3aeb3, type: 3}
       propertyPath: turnTresholdAngle
-      value: 10
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3113875139092627869, guid: 6e153ed0bd873d64abc99297c8e3aeb3, type: 3}
+      propertyPath: bulletType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3113875139092627871, guid: 6e153ed0bd873d64abc99297c8e3aeb3, type: 3}
       propertyPath: m_Name

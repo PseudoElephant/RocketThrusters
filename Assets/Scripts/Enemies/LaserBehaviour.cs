@@ -21,6 +21,8 @@ public class LaserBehaviour : MonoBehaviour
     public float LaserHitStrength;
     public LaserEmission EmissionType;
 
+    public LayerMask layerMask;
+
     public enum LaserEmission
     {
         ConstantEmission,
@@ -94,9 +96,9 @@ public class LaserBehaviour : MonoBehaviour
         float rot = (transform.rotation.eulerAngles.z + 90f) % 360 * Mathf.Deg2Rad;
         Vector2 direction = new Vector2(Mathf.Cos(rot), Mathf.Sin(rot));
 
-        RaycastHit2D hit = Physics2D.Raycast(TransformFirePoint.position, direction, MaxLength);
-
-        if(hit)
+        RaycastHit2D hit = Physics2D.Raycast(TransformFirePoint.position, direction, MaxLength,layerMask);
+        
+        if(hit && !hit.collider.isTrigger)
         {
             EndVFX.transform.localPosition = new Vector3(0, hit.distance - EndVFXOffset, 0);
             LineRenderer.SetPosition(1, new Vector3(0,hit.distance,0));

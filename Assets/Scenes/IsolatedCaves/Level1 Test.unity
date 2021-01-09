@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0227fdc016ce341dfa06c1576d8b84d3, type: 2}
+    - target: {fileID: 6996200372396991805, guid: f40810b6fbc3b674c9fee8699fc1e400, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6996200372396991807, guid: f40810b6fbc3b674c9fee8699fc1e400, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_WoodenPlank_1
@@ -236,7 +240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2327408886179375019, guid: f2009524b9c164572a768df16ed4770c, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2327408886179375019, guid: f2009524b9c164572a768df16ed4770c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -257,6 +261,10 @@ PrefabInstance:
     - target: {fileID: 2327408886179375020, guid: f2009524b9c164572a768df16ed4770c, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2327408886179375020, guid: f2009524b9c164572a768df16ed4770c, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2009524b9c164572a768df16ed4770c, type: 3}
@@ -342,6 +350,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 253497280}
     m_Modifications:
+    - target: {fileID: 7648862763459980764, guid: 22533628f4ae04cb5aa81a91964c7409, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7648862763459980769, guid: 22533628f4ae04cb5aa81a91964c7409, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_WoodenPlankVertical_1 (1)
@@ -451,6 +463,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6736182973035978203, guid: 8dabb4c464a0567489e27e59396cfa2e, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dabb4c464a0567489e27e59396cfa2e, type: 3}
 --- !u!1001 &120975308
@@ -463,6 +479,10 @@ PrefabInstance:
     - target: {fileID: 790729573418048216, guid: bf567d1a018cf4fd6a25dc55a14d0c3f, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_12 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 790729573418048216, guid: bf567d1a018cf4fd6a25dc55a14d0c3f, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 790729573418048221, guid: bf567d1a018cf4fd6a25dc55a14d0c3f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -494,7 +514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 790729573418048221, guid: bf567d1a018cf4fd6a25dc55a14d0c3f, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 790729573418048221, guid: bf567d1a018cf4fd6a25dc55a14d0c3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -582,6 +602,10 @@ PrefabInstance:
     - target: {fileID: 790729573418048216, guid: bf567d1a018cf4fd6a25dc55a14d0c3f, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_12 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 790729573418048216, guid: bf567d1a018cf4fd6a25dc55a14d0c3f, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 790729573418048221, guid: bf567d1a018cf4fd6a25dc55a14d0c3f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -710,6 +734,10 @@ PrefabInstance:
     - target: {fileID: 2618185065174034961, guid: 8f2c7254002c548cdb935cc1e78486d7, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_14 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618185065174034961, guid: 8f2c7254002c548cdb935cc1e78486d7, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2618185065174034964, guid: 8f2c7254002c548cdb935cc1e78486d7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -874,6 +902,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_6 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4330383536506928319, guid: f9c1fa1e0b6bc40d595fd6edb1adc7b4, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9c1fa1e0b6bc40d595fd6edb1adc7b4, type: 3}
 --- !u!1001 &185603481
@@ -982,7 +1014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5211027354222023907, guid: 466b5ff978996463393ebef9f90f6cce, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5211027354222023907, guid: 466b5ff978996463393ebef9f90f6cce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -999,6 +1031,10 @@ PrefabInstance:
     - target: {fileID: 5211027354222023908, guid: 466b5ff978996463393ebef9f90f6cce, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_13 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211027354222023908, guid: 466b5ff978996463393ebef9f90f6cce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 466b5ff978996463393ebef9f90f6cce, type: 3}
@@ -1189,6 +1225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IsolatedCave_WoodenPlanks_1
       objectReference: {fileID: 0}
+    - target: {fileID: 6992950498428975778, guid: 0c09546fdcb114bfdb62c075f168953c, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c09546fdcb114bfdb62c075f168953c, type: 3}
 --- !u!1 &253497279
@@ -1200,7 +1240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 253497280}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BigStructure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1377,7 +1417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 263285381}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AllPreviousShit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1526,7 +1566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 295307808}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FarRightStructure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1854,7 +1894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2327408886179375019, guid: f2009524b9c164572a768df16ed4770c, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2327408886179375019, guid: f2009524b9c164572a768df16ed4770c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1871,6 +1911,10 @@ PrefabInstance:
     - target: {fileID: 2327408886179375020, guid: f2009524b9c164572a768df16ed4770c, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_7 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2327408886179375020, guid: f2009524b9c164572a768df16ed4770c, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2009524b9c164572a768df16ed4770c, type: 3}
@@ -2081,6 +2125,10 @@ PrefabInstance:
     - target: {fileID: 5211027354222023908, guid: 466b5ff978996463393ebef9f90f6cce, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_13 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211027354222023908, guid: 466b5ff978996463393ebef9f90f6cce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 466b5ff978996463393ebef9f90f6cce, type: 3}
@@ -3312,6 +3360,78 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2513835639394337847, guid: aee0801c3e2c7224e9ca9d308ea759e8, type: 3}
   m_PrefabInstance: {fileID: 1627500466}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &589265159
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 589265161}
+  - component: {fileID: 589265160}
+  m_Layer: 0
+  m_Name: Point Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &589265160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589265159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.399
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Intensity: 1
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 00000000dfd2feeb11be92a7435be451d3582fb27f3fb10869b8e0251f7c6201
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 1
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 1
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 47.12
+  m_PointLightDistance: 1
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+--- !u!4 &589265161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589265159}
+  m_LocalRotation: {x: -0, y: -0, z: -0.029591793, w: 0.9995621}
+  m_LocalPosition: {x: 1.2, y: 15, z: 100}
+  m_LocalScale: {x: 0.48742, y: 0.48742, z: 0.48742}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &593312886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3322,6 +3442,10 @@ PrefabInstance:
     - target: {fileID: 7690740114277807794, guid: 71e886b8c5ce44f4eada717ad6ce6cbd, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7690740114277807794, guid: 71e886b8c5ce44f4eada717ad6ce6cbd, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7690740114277807799, guid: 71e886b8c5ce44f4eada717ad6ce6cbd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3596,6 +3720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_12
       objectReference: {fileID: 0}
+    - target: {fileID: 790729573418048216, guid: bf567d1a018cf4fd6a25dc55a14d0c3f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 790729573418048221, guid: bf567d1a018cf4fd6a25dc55a14d0c3f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -59.27553
@@ -3626,7 +3754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 790729573418048221, guid: bf567d1a018cf4fd6a25dc55a14d0c3f, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 790729573418048221, guid: bf567d1a018cf4fd6a25dc55a14d0c3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3960,7 +4088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7124892260520555888, guid: 218f58f32b0b84f179dfb822d999e9b1, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7124892260520555888, guid: 218f58f32b0b84f179dfb822d999e9b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3977,6 +4105,10 @@ PrefabInstance:
     - target: {fileID: 7124892260520555901, guid: 218f58f32b0b84f179dfb822d999e9b1, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124892260520555901, guid: 218f58f32b0b84f179dfb822d999e9b1, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 218f58f32b0b84f179dfb822d999e9b1, type: 3}
@@ -4206,7 +4338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5211027354222023907, guid: 466b5ff978996463393ebef9f90f6cce, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5211027354222023907, guid: 466b5ff978996463393ebef9f90f6cce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4223,6 +4355,10 @@ PrefabInstance:
     - target: {fileID: 5211027354222023908, guid: 466b5ff978996463393ebef9f90f6cce, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211027354222023908, guid: 466b5ff978996463393ebef9f90f6cce, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 466b5ff978996463393ebef9f90f6cce, type: 3}
@@ -4314,6 +4450,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_14
       objectReference: {fileID: 0}
+    - target: {fileID: 2618185065174034961, guid: 8f2c7254002c548cdb935cc1e78486d7, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2618185065174034964, guid: 8f2c7254002c548cdb935cc1e78486d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.6657257
@@ -4344,7 +4484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2618185065174034964, guid: 8f2c7254002c548cdb935cc1e78486d7, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 2618185065174034964, guid: 8f2c7254002c548cdb935cc1e78486d7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4373,7 +4513,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 887490412}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: StructureTopLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4519,6 +4659,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0227fdc016ce341dfa06c1576d8b84d3, type: 2}
+    - target: {fileID: 6996200372396991805, guid: f40810b6fbc3b674c9fee8699fc1e400, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6996200372396991807, guid: f40810b6fbc3b674c9fee8699fc1e400, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_WoodenPlank_1
@@ -4535,6 +4679,10 @@ PrefabInstance:
     - target: {fileID: 7370385637794414249, guid: 9addf44abcc0046e2b79a86b6f4468ba, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370385637794414249, guid: 9addf44abcc0046e2b79a86b6f4468ba, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7370385637794414254, guid: 9addf44abcc0046e2b79a86b6f4468ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4566,7 +4714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7370385637794414254, guid: 9addf44abcc0046e2b79a86b6f4468ba, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7370385637794414254, guid: 9addf44abcc0046e2b79a86b6f4468ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4593,6 +4741,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 253497280}
     m_Modifications:
+    - target: {fileID: 6996200372396991794, guid: f40810b6fbc3b674c9fee8699fc1e400, type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6996200372396991804, guid: f40810b6fbc3b674c9fee8699fc1e400, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.9799976
@@ -4653,6 +4805,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0227fdc016ce341dfa06c1576d8b84d3, type: 2}
+    - target: {fileID: 6996200372396991805, guid: f40810b6fbc3b674c9fee8699fc1e400, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6996200372396991807, guid: f40810b6fbc3b674c9fee8699fc1e400, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_WoodenPlank_1
@@ -4923,7 +5079,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1015339898}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FarRightObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4960,6 +5116,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 253497280}
     m_Modifications:
+    - target: {fileID: 7648862763459980764, guid: 22533628f4ae04cb5aa81a91964c7409, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7648862763459980769, guid: 22533628f4ae04cb5aa81a91964c7409, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_WoodenPlankVertical_1 (2)
@@ -5123,7 +5283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3203000603974766612, guid: f9c1fa1e0b6bc40d595fd6edb1adc7b4, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3203000603974766612, guid: f9c1fa1e0b6bc40d595fd6edb1adc7b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5152,6 +5312,10 @@ PrefabInstance:
     - target: {fileID: 4330383536506928319, guid: f9c1fa1e0b6bc40d595fd6edb1adc7b4, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4330383536506928319, guid: f9c1fa1e0b6bc40d595fd6edb1adc7b4, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9c1fa1e0b6bc40d595fd6edb1adc7b4, type: 3}
@@ -5698,6 +5862,10 @@ PrefabInstance:
     - target: {fileID: 4330383536506928319, guid: f9c1fa1e0b6bc40d595fd6edb1adc7b4, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_6 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4330383536506928319, guid: f9c1fa1e0b6bc40d595fd6edb1adc7b4, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9c1fa1e0b6bc40d595fd6edb1adc7b4, type: 3}
@@ -7047,7 +7215,7 @@ Transform:
   m_LocalScale: {x: 74.375, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1343951059
 PrefabInstance:
@@ -7133,7 +7301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6612613761655594665, guid: 1f58ee3254dc74354b96d5969f5c01e7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2920.0676
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6612613761655594665, guid: 1f58ee3254dc74354b96d5969f5c01e7, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7451,6 +7619,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0227fdc016ce341dfa06c1576d8b84d3, type: 2}
+    - target: {fileID: 6420906797269309877, guid: 0f1f1e8f8aef44174bd5dbed157ac7ec, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6420906797269309879, guid: 0f1f1e8f8aef44174bd5dbed157ac7ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.9700012
@@ -7516,6 +7688,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 253497280}
     m_Modifications:
+    - target: {fileID: 7648862763459980764, guid: 22533628f4ae04cb5aa81a91964c7409, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7648862763459980769, guid: 22533628f4ae04cb5aa81a91964c7409, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_WoodenPlankVertical_1
@@ -7742,7 +7918,7 @@ Transform:
   - {fileID: 1128636015}
   - {fileID: 2046785831}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1476337855 stripped
 Transform:
@@ -8073,6 +8249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_13 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5211027354222023908, guid: 466b5ff978996463393ebef9f90f6cce, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 466b5ff978996463393ebef9f90f6cce, type: 3}
 --- !u!1001 &1649294992
@@ -8150,7 +8330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1671460944}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BigStructure2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8248,6 +8428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_14
       objectReference: {fileID: 0}
+    - target: {fileID: 2618185065174034961, guid: 8f2c7254002c548cdb935cc1e78486d7, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2618185065174034964, guid: 8f2c7254002c548cdb935cc1e78486d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.525726
@@ -8278,7 +8462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2618185065174034964, guid: 8f2c7254002c548cdb935cc1e78486d7, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2618185065174034964, guid: 8f2c7254002c548cdb935cc1e78486d7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8317,6 +8501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_10
       objectReference: {fileID: 0}
+    - target: {fileID: 7690740114277807794, guid: 71e886b8c5ce44f4eada717ad6ce6cbd, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7690740114277807799, guid: 71e886b8c5ce44f4eada717ad6ce6cbd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -63.257534
@@ -8347,7 +8535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7690740114277807799, guid: 71e886b8c5ce44f4eada717ad6ce6cbd, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7690740114277807799, guid: 71e886b8c5ce44f4eada717ad6ce6cbd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8966,7 +9154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6612613761655594665, guid: 1f58ee3254dc74354b96d5969f5c01e7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3928.626
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6612613761655594665, guid: 1f58ee3254dc74354b96d5969f5c01e7, type: 3}
       propertyPath: m_LocalRotation.x
@@ -9032,7 +9220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1818293654}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stalactites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9864,6 +10052,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0227fdc016ce341dfa06c1576d8b84d3, type: 2}
+    - target: {fileID: 6736182973035978203, guid: 8dabb4c464a0567489e27e59396cfa2e, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dabb4c464a0567489e27e59396cfa2e, type: 3}
 --- !u!4 &1929454111 stripped
@@ -10467,6 +10659,14 @@ PrefabInstance:
     - target: {fileID: 5495368569511371744, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
       propertyPath: m_Parameters.colorGradient.key1.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495368569511371744, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1373920067
+      objectReference: {fileID: 0}
+    - target: {fileID: 5495368569511371744, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5495368569511371745, guid: 6ebaa3ba27a95934281f9fc04acd7475, type: 3}
       propertyPath: perlinNoise
@@ -11263,6 +11463,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0227fdc016ce341dfa06c1576d8b84d3, type: 2}
+    - target: {fileID: 8406966401464038922, guid: 64119809a41604c20aa535d01d75f59d, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64119809a41604c20aa535d01d75f59d, type: 3}
 --- !u!4 &2063836700 stripped
@@ -11279,7 +11483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2093045545}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11305,7 +11509,7 @@ Transform:
   - {fileID: 295307808}
   - {fileID: 1818293654}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2104834489
 PrefabInstance:
@@ -11317,6 +11521,10 @@ PrefabInstance:
     - target: {fileID: 2618185065174034961, guid: 8f2c7254002c548cdb935cc1e78486d7, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_14 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618185065174034961, guid: 8f2c7254002c548cdb935cc1e78486d7, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2618185065174034964, guid: 8f2c7254002c548cdb935cc1e78486d7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11485,7 +11693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6583569295410133384, guid: c6b40118413084305b3b5e8593f022b4, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6583569295410133384, guid: c6b40118413084305b3b5e8593f022b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11506,6 +11714,10 @@ PrefabInstance:
     - target: {fileID: 6583569295410133387, guid: c6b40118413084305b3b5e8593f022b4, type: 3}
       propertyPath: m_Name
       value: IsolatedCave_Stalactite_11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583569295410133387, guid: c6b40118413084305b3b5e8593f022b4, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6b40118413084305b3b5e8593f022b4, type: 3}

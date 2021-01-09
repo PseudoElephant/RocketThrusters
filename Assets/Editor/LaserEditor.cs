@@ -58,6 +58,7 @@ public class LaserEditor : Editor
         {
             EditorGUILayout.PropertyField(serializedObject.FindProperty("MaxLength"), new GUIContent("Max Length"));
             EditorGUILayout.PropertyField(serializedObject.FindProperty("LaserHitStrength"), new GUIContent("Strength"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("layerMask"), new GUIContent("Mask"));
             EditorGUILayout.Separator();
         }
 
@@ -82,12 +83,13 @@ public class LaserEditor : Editor
     private void UpdateLaser(LaserBehaviour laser)
     {
         if (laser.LineRenderer == null) return;
+        
         laser.LineRenderer.SetPosition(1, new Vector3(0, laser.MaxLength, 0));
         float rot = (laser.transform.rotation.eulerAngles.z + 90f) % 360 * Mathf.Deg2Rad;
         Vector2 direction = new Vector2(Mathf.Cos(rot), Mathf.Sin(rot));
-        RaycastHit2D hit = Physics2D.Raycast(laser.TransformFirePoint.position, direction, laser.MaxLength);
+        RaycastHit2D hit = Physics2D.Raycast(laser.TransformFirePoint.position, direction, laser.MaxLength,laser.layerMask);
 
-        if (hit)
+        if(hit && !hit.collider.isTrigger)
         {
             laser.LineRenderer.SetPosition(1, new Vector3(0, hit.distance, 0));
         }

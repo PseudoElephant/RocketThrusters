@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 4251221574726993879}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7002481, y: 0.48010626, z: 1}
+  m_LocalScale: {x: 0.70024806, y: 0.48010626, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -51,7 +51,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bacb2ee6533b64073b892dd82966410f, type: 2}
+  - {fileID: 2100000, guid: 0227fdc016ce341dfa06c1576d8b84d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
+  m_DrawMode: 1
   m_Size: {x: 5.720247, y: 10.94}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -103,7 +103,7 @@ PolygonCollider2D:
     oldSize: {x: 5.720247, y: 10.94}
     newSize: {x: 5.720247, y: 10.94}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:

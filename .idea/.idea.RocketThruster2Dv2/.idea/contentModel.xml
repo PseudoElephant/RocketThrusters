@@ -22,6 +22,11 @@
         <e p="Input" t="Include">
           <e p="InputMaster.cs" t="Include" />
         </e>
+        <e p="Materials" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="Multipass.shader" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="AnimatorPathCreator.cs" t="Include" />
           <e p="Behaviours" t="Include">
@@ -39,6 +44,7 @@
             <e p="RopeBridge.cs" t="Include" />
             <e p="Weight.cs" t="Include" />
           </e>
+          <e p="CameraSizeMapper.cs" t="Include" />
           <e p="Enemies" t="Include">
             <e p="BlobBehaviour.cs" t="Include" />
             <e p="BulletBehaviour.cs" t="Include" />
