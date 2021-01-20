@@ -19,6 +19,7 @@
           <e p="SpawnerEditor.cs" t="Include" />
           <e p="TriggerEditor.cs" t="Include" />
         </e>
+        <e p="FallingStalactite.cs" t="Include" />
         <e p="Input" t="Include">
           <e p="InputMaster.cs" t="Include" />
         </e>
