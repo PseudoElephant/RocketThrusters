@@ -11,7 +11,7 @@ public class CheckpointBehaviour : MonoBehaviour
     
     private bool active = false;
     public Transform spawnPosition;
-    private const int MAXLength = 30; 
+    private const int MAXLength = 60; 
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +21,7 @@ public class CheckpointBehaviour : MonoBehaviour
         {
             print("Checkpoint Loaded");
             active = true;
-            LoadCheckPoint();
+            //LoadCheckPoint();
         }
     }
 
@@ -38,6 +38,7 @@ public class CheckpointBehaviour : MonoBehaviour
         RaycastHit2D hit;
         Vector2 pos = transform.position;
         hit = Physics2D.Raycast(pos, Vector3.up, MAXLength,  detectMask);
+        
 
         if (hit)
         {

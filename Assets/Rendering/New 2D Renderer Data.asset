@@ -32,10 +32,10 @@ MonoBehaviour:
     customBlendFactors:
       multiplicative: 0.01
       additive: 0.17
-  - name: Blend Style 2
+  - name: Add
     maskTextureChannel: 0
     renderTextureScale: 1
-    blendMode: 1
+    blendMode: 0
     customBlendFactors:
       multiplicative: 0
       additive: 0

@@ -33,7 +33,7 @@ public class ScenePartLoader : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (_collider2D.IsTouchingLayers(mask) && !_shouldLoad && _isLoaded)
+        if (_collider2D.IsTouchingLayers(mask) && !_shouldLoad)
         {
             print(_isLoaded);
             _shouldLoad = true;
@@ -42,9 +42,9 @@ public class ScenePartLoader : MonoBehaviour
         }
     }
     
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other)     
     {
-        if (!_collider2D.IsTouchingLayers(mask)  && _shouldLoad && !_isLoaded)
+        if (!_collider2D.IsTouchingLayers(mask)  && _shouldLoad)
         {
             _shouldLoad = false;
             StartCoroutine(TriggerCheck());

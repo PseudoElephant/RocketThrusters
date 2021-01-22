@@ -110,7 +110,7 @@ public class RocketMovement : MonoBehaviour
 
         StartTrail();
         // Loads position
-        //LoadCheckPointPosition();
+        LoadCheckPointPosition();
     }
     
     private void OnTriggerEnter2D(Collider2D other)

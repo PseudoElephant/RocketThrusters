@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 855415568633015390}
   - component: {fileID: 855415568633015391}
   m_Layer: 10
-  m_Name: Particle System
+  m_Name: p1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -222,7 +222,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 2
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.38118133, g: 0.28846562, b: 0.6886792, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -284,8 +284,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 5
-      minScalar: 4
+      scalar: 6
+      minScalar: 5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1480,9 +1480,9 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -6189289526238714443, guid: e8e02ae82e06c954a98920c3c35a557b, type: 3}
-    - sprite: {fileID: -7699328018653931357, guid: e8e02ae82e06c954a98920c3c35a557b, type: 3}
-    - sprite: {fileID: -186343322299716006, guid: e8e02ae82e06c954a98920c3c35a557b, type: 3}
+    - sprite: {fileID: -6485053255456837468, guid: 58ddda3e3edcd434a8e0df8324974b5b, type: 3}
+    - sprite: {fileID: 4005474689669433880, guid: 58ddda3e3edcd434a8e0df8324974b5b, type: 3}
+    - sprite: {fileID: -6593835581868950137, guid: 58ddda3e3edcd434a8e0df8324974b5b, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -3812,7 +3812,7 @@ ParticleSystem:
     radiusScale: 1
   SubModule:
     serializedVersion: 2
-    enabled: 0
+    enabled: 1
     subEmitters:
     - serializedVersion: 3
       emitter: {fileID: 0}

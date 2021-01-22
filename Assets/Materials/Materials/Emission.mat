@@ -42,7 +42,7 @@ Material:
     m_Floats:
     - _EnableExternalAlpha: 0
     m_Colors:
-    - Color_C522ACDF: {r: 1.0581846, g: 1.0478582, b: 1.0322292, a: 1}
+    - Color_C522ACDF: {r: 1.0592737, g: 1.0537277, b: 1.03709, a: 1}
     - Color_D0D0B657: {r: 0.1411765, g: 0.145098, b: 0.1529412, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
