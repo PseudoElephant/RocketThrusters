@@ -68,5 +68,18 @@ namespace Utility
             int tmp = a >> b;
             return (tmp & 1) == 1;
         }
+
+        public static float[] VectorToFloatArray(Vector3 vector)
+        {
+            float[] v = new float[3];
+            for (int i = 0; i < 3; i++)
+                v[i] = vector[i];
+            return v;
+        }
+        
+        public static Vector3 ArrayToVector3(float[] vector)
+        {
+            return new Vector3(vector[0],vector[1],vector[2]);
+        }
     }
 }

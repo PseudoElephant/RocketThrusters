@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="CheckpointBehaviour.cs" t="Include" />
         <e p="Editor" t="Include">
           <e p="BlobEditor.cs" t="Include" />
           <e p="BulletEditor.cs" t="Include" />
@@ -46,6 +47,7 @@
             <e p="ShooterBehaviour.cs" t="Include" />
             <e p="SoftBodyCreation.cs" t="Include" />
           </e>
+          <e p="FallingStalactite.cs" t="Include" />
           <e p="GenerateMesh.cs" t="Include" />
           <e p="MeshUpdater.cs" t="Include" />
           <e p="RocketMovement.cs" t="Include" />
@@ -55,8 +57,13 @@
               <e p="CameraAnimatorBehaviour.cs" t="Include" />
               <e p="DollyCameraBehaviour.cs" t="Include" />
             </e>
+            <e p="DataClasses" t="Include">
+              <e p="PersistentGameData.cs" t="Include" />
+            </e>
+            <e p="GameSession.cs" t="Include" />
             <e p="LevelLoader.cs" t="Include" />
             <e p="MathUtility.cs" t="Include" />
+            <e p="SaveSystem.cs" t="Include" />
             <e p="SceneField.cs" t="Include" />
             <e p="ScenePartLoader.cs" t="Include" />
             <e p="SectionManager.cs" t="Include" />

@@ -14,11 +14,14 @@ public class ExplosiveBehaviour : MonoBehaviour
 
     public GameObject ExplosionParticles;
 
+    // Cache
     private CircleCollider2D _proximityTrigger;
     private ExplosionStage _explosionStage;
     private CircleCollider2D _explosionCollider;
     private float _timeBeforeDestroyingParticles;
-
+    private SpriteRenderer _radialView;
+    private bool _blink;
+    private float _blinkTime = 0.2f;
     
     public enum ExplosionType
     {
@@ -38,6 +41,8 @@ public class ExplosiveBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _radialView = GetComponentsInChildren<SpriteRenderer>()[1];
+        UpdateRadialView();
         //Init Some Vars
         _explosionCollider = GetComponent<CircleCollider2D>();
         _explosionCollider.radius = ExplosionRadius;
@@ -49,6 +54,7 @@ public class ExplosiveBehaviour : MonoBehaviour
         if(Type == ExplosionType.TimeDetonated)
         {
             StartCoroutine(StartExplosion());
+           
         } else if (Type == ExplosionType.ProximityTriggered)
         {
             _proximityTrigger.radius = ProximityActivationRadius;
@@ -60,6 +66,16 @@ public class ExplosiveBehaviour : MonoBehaviour
         }
     }
 
+
+    // Updates radial view radius
+    private void UpdateRadialView()
+    {
+       
+            Bounds b = _radialView.sprite.bounds;
+            _radialView.gameObject.transform.localScale /= ((b.max - b.min).x / (ProximityActivationRadius*2)) * _radialView.gameObject.transform.localScale.x;
+
+        
+    }
     // Update is called once per frame
     void Update()
     {
@@ -71,8 +87,12 @@ public class ExplosiveBehaviour : MonoBehaviour
         switch (_explosionStage)
         {
             case ExplosionStage.FuseActivated:
+                // Changle look on fuse
+                if (!_blink)
+                    StartCoroutine(Blink());
                 break;
             case ExplosionStage.Exploding:
+                _blink = false;
                 break;
             case ExplosionStage.Dead:
                 break;
@@ -97,6 +117,25 @@ public class ExplosiveBehaviour : MonoBehaviour
         _explosionCollider.enabled = false;
     }
 
+    private IEnumerator Blink()
+    {
+        float t = 0;
+        _blink = true;
+        while (_blink)
+        {
+            Color start = _radialView.color;
+            Color end = _radialView.color == Color.red ? new Color(1,0,0,0) : Color.red;
+            for (int i = 0; i < 20; i++)
+            {
+                t = ((_blinkTime / 20.0f)*(i+1))/_blinkTime;
+                yield return new WaitForSeconds( (_blinkTime / 20.0f));
+                _radialView.color = Color.Lerp(start, end,t);
+                print(t);
+            }
+        }
+        
+    }
+    
     private IEnumerator DestroyParticles()
     {
         yield return new WaitForSecondsRealtime(_timeBeforeDestroyingParticles);
@@ -124,6 +163,7 @@ public class ExplosiveBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if(collision.CompareTag("Player"))
         {
             // Delete if rocket

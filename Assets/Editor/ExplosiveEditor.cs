@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEditor;
 
 [CustomEditor (typeof(ExplosiveBehaviour))]
@@ -22,6 +23,9 @@ public class ExplosiveEditor : Editor
         {
             Handles.color = Color.blue;
             Handles.DrawWireArc(explosive.transform.position, Vector3.forward, Vector3.up, 360, explosive.ProximityActivationRadius);
+            SpriteRenderer sp = explosive.GetComponentsInChildren<SpriteRenderer>()[1];
+            if (sp.sprite.rect.width*explosive.gameObject.transform.localScale.x != explosive.ProximityActivationRadius*2);
+                UpdateRadialView(sp,explosive.ProximityActivationRadius);
         }
     }
 
@@ -91,5 +95,12 @@ public class ExplosiveEditor : Editor
 
         //Apply All Changes
         serializedObject.ApplyModifiedProperties();
+    }
+    
+    private void UpdateRadialView(SpriteRenderer radialView,float proximityActivationRadius)
+    {
+        Bounds b = radialView.sprite.bounds;
+        radialView.gameObject.transform.localScale /= ((b.max - b.min).x / (proximityActivationRadius*2))*radialView.gameObject.transform.localScale.x;
+        
     }
 }

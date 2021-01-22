@@ -25,6 +25,7 @@ public class ScenePartLoader : MonoBehaviour
         {
             // Should have the same name as the scene
             _isLoaded = true;
+            
         }
 
         _collider2D = GetComponent<Collider2D>();
@@ -34,13 +35,14 @@ public class ScenePartLoader : MonoBehaviour
     {
         if (_collider2D.IsTouchingLayers(mask) && !_shouldLoad)
         {
+            print(_isLoaded);
             _shouldLoad = true;
             StopAllCoroutines();
             StartCoroutine(TriggerCheck());
         }
     }
     
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other)     
     {
         if (!_collider2D.IsTouchingLayers(mask)  && _shouldLoad)
         {
