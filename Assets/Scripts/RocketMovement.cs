@@ -67,6 +67,20 @@ public class RocketMovement : MonoBehaviour
         //Rotate
         _controls.Rocket.Rotate.performed += ctx => _movementDir = ctx.ReadValue<float>();
         _controls.Rocket.Rotate.canceled += ctc => _movementDir = 0;
+
+     
+    }
+
+    
+    private void LoadCheckPointPosition()
+    {
+        print(GameSession.Instance.Data);
+        if (GameSession.Instance.Data == null) return;
+        transform.position =(Vector2) MathUtility.ArrayToVector3(GameSession.Instance.Data.playerPosition);
+        
+        // re center camera
+        SectionManager.instance.defaultCamera.gameObject.SetActive(false);
+        SectionManager.instance.defaultCamera.gameObject.SetActive(true);
     }
 
     private void OnEnable()
@@ -95,6 +109,8 @@ public class RocketMovement : MonoBehaviour
         _nose = GetComponentInChildren<CapsuleCollider2D>();
 
         StartTrail();
+        // Loads position
+        //LoadCheckPointPosition();
     }
     
     private void OnTriggerEnter2D(Collider2D other)
@@ -186,7 +202,7 @@ public class RocketMovement : MonoBehaviour
 
     private void Die()
     {
-        SectionManager.instance.loader.ResetScene();
+      GameSession.Instance.ReloadSceneFromCheckpoint();
     }
 
     // // Input Layer (No Multilayer)
