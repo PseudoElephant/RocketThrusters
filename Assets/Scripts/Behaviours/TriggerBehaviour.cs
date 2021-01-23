@@ -124,7 +124,6 @@ public class TriggerBehaviour : MonoBehaviour
     {
         
         yield return new WaitForSecondsRealtime(time);
-        print("Exit Trigger");
         triggerEvent.Invoke();
         // Check if we can deactivate trigger
         CanRunAgain();

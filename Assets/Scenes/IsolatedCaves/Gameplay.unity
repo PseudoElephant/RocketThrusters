@@ -510,11 +510,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2604514052830220593, guid: 3170f04cf4f6cfa4580ef97f927849d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 411.2
+      value: 379.7
       objectReference: {fileID: 0}
     - target: {fileID: 2604514052830220593, guid: 3170f04cf4f6cfa4580ef97f927849d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 213
+      value: 234.7
       objectReference: {fileID: 0}
     - target: {fileID: 2604514052830220593, guid: 3170f04cf4f6cfa4580ef97f927849d3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -585,6 +585,10 @@ PrefabInstance:
       propertyPath: thrustPush
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 276760472, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
+      propertyPath: useCheckpointSystem
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 626612049676657107, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_Color.g
       value: 0.9411765
@@ -601,6 +605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RocketHolder
       objectReference: {fileID: 0}
+    - target: {fileID: 3288813374665978311, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5822125812978479225, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -611,11 +619,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6759820513864990740, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 213.3
+      value: 235
       objectReference: {fileID: 0}
     - target: {fileID: 6759820513864990740, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 421.5
+      value: 390
       objectReference: {fileID: 0}
     - target: {fileID: 6759820513864990740, guid: e33081c65a7d2544ea8e47450f367c28, type: 3}
       propertyPath: m_LocalPosition.z

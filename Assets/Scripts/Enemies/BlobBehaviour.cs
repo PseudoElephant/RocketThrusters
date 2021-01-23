@@ -49,10 +49,6 @@ public class BlobBehaviour : MonoBehaviour
             
           
         }
-        else
-        {
-            print("Routine Cancelled");
-        }
         _canAttack = true;
 
       

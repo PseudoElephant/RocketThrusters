@@ -21,11 +21,14 @@ public class ScenePartLoader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SceneManager.sceneCount > 0 && sceneAsset.BuildIndex < SceneManager.sceneCount)
+        // Check if scene is loaded
+        for (int i = 0; i < SceneManager.sceneCount; i++)
         {
-            // Should have the same name as the scene
-            _isLoaded = true;
-            
+            if (SceneManager.GetSceneAt(i).buildIndex == sceneAsset.BuildIndex)
+            {
+                _isLoaded = true;
+            }
+
         }
 
         _collider2D = GetComponent<Collider2D>();
@@ -33,9 +36,8 @@ public class ScenePartLoader : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (_collider2D.IsTouchingLayers(mask) && !_shouldLoad)
+        if (_collider2D.IsTouchingLayers(mask) && !_shouldLoad && !_isLoaded)
         {
-            print(_isLoaded);
             _shouldLoad = true;
             StopAllCoroutines();
             StartCoroutine(TriggerCheck());
@@ -44,7 +46,7 @@ public class ScenePartLoader : MonoBehaviour
     
     private void OnTriggerExit2D(Collider2D other)     
     {
-        if (!_collider2D.IsTouchingLayers(mask)  && _shouldLoad)
+        if (!_collider2D.IsTouchingLayers(mask)  && _shouldLoad && _isLoaded)
         {
             _shouldLoad = false;
             StartCoroutine(TriggerCheck());

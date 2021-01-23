@@ -15,11 +15,8 @@ public class CheckpointBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        print(MathUtility.VectorToFloatArray(spawnPosition.position)[0]);
-        print(GameSession.Instance.Data?.playerPosition[0]);
         if (GameSession.Instance.Data?.playerPosition[0] == MathUtility.VectorToFloatArray(spawnPosition.position)[0] && GameSession.Instance.Data?.playerPosition[1] == MathUtility.VectorToFloatArray(spawnPosition.position)[1])
         {
-            print("Checkpoint Loaded");
             active = true;
             //LoadCheckPoint();
         }
