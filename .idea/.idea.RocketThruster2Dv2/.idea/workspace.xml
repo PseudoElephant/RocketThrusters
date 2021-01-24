@@ -23,10 +23,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CheckpointBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CheckpointBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/IsolatedCaves/Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IsolatedCaves/Gameplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/IsolatedCaves/Level1 Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IsolatedCaves/Level1 Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/IsolatedCaves/Level2 Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IsolatedCaves/Level2 Test.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/ScenePartLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/ScenePartLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,9 +105,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MathUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameSession.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SaveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/CheckpointBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ScenePartLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/CheckpointBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -195,7 +194,8 @@
       <workItem from="1610838468444" duration="3943000" />
       <workItem from="1611182075988" duration="710000" />
       <workItem from="1611276980545" duration="9461000" />
-      <workItem from="1611340635007" duration="835000" />
+      <workItem from="1611340635007" duration="1670000" />
+      <workItem from="1611429128559" duration="3617000" />
     </task>
     <servers />
   </component>

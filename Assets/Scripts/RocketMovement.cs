@@ -8,6 +8,13 @@ using UnityEngine.InputSystem;
 
 public class RocketMovement : MonoBehaviour
 {
+    
+    // EDITOR ONLY
+    #if UNITY_EDITOR
+        [Header("EDITOR ONLY")] [SerializeField]
+        private bool useCheckpointSystem = true;
+    #endif
+    
     // Parameters
     [Header("Rocket Movement")]
     [SerializeField] private float rotationValue;
@@ -74,7 +81,6 @@ public class RocketMovement : MonoBehaviour
     
     private void LoadCheckPointPosition()
     {
-        print(GameSession.Instance.Data);
         if (GameSession.Instance.Data == null) return;
         transform.position =(Vector2) MathUtility.ArrayToVector3(GameSession.Instance.Data.playerPosition);
         
@@ -109,8 +115,14 @@ public class RocketMovement : MonoBehaviour
         _nose = GetComponentInChildren<CapsuleCollider2D>();
 
         StartTrail();
+        
+        
         // Loads position
-        LoadCheckPointPosition();
+        #if UNITY_EDITOR
+            if (useCheckpointSystem) LoadCheckPointPosition();
+        #else
+            LoadCheckPointPosition();
+        #endif
     }
     
     private void OnTriggerEnter2D(Collider2D other)
@@ -170,7 +182,6 @@ public class RocketMovement : MonoBehaviour
                 break;
             case "EndZone":
                 _state = State.Transcending;
-                print("End Level");
                 break;
             default:
                 // Feet Touching

@@ -130,7 +130,6 @@ public class ExplosiveBehaviour : MonoBehaviour
                 t = ((_blinkTime / 20.0f)*(i+1))/_blinkTime;
                 yield return new WaitForSeconds( (_blinkTime / 20.0f));
                 _radialView.color = Color.Lerp(start, end,t);
-                print(t);
             }
         }
         
