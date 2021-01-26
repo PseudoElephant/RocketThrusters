@@ -20,12 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b060c06-7002-4850-97b1-26dde03e9b81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/OptionsMenu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/OptionsMenu.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RocketThruster2Dv2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CheckpointBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CheckpointBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/IsolatedCaves/Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IsolatedCaves/Gameplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/ScenePartLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/ScenePartLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CheckpointBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CheckpointBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Rope.cs" />
-        <option value="$PROJECT_DIR$/Assets/Weight.cs" />
-        <option value="$PROJECT_DIR$/Assets/Vendor/PathCreator/Core/Editor/Helper/PathHandle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/SpawnerBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/ShooterV2Editor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/ShooterV2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/ShooterEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/GenerateMesh.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/SoftBodyCreation.cs" />
         <option value="$PROJECT_DIR$/Assets/MeshUpdater.cs" />
@@ -108,6 +103,13 @@
         <option value="$PROJECT_DIR$/Assets/CheckpointBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ScenePartLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RocketMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FirstButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/Menu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/OptionsMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MenuBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenu.cs" />
       </list>
     </option>
   </component>
@@ -196,6 +198,7 @@
       <workItem from="1611276980545" duration="9461000" />
       <workItem from="1611340635007" duration="1670000" />
       <workItem from="1611429128559" duration="3617000" />
+      <workItem from="1611694934335" duration="7151000" />
     </task>
     <servers />
   </component>
