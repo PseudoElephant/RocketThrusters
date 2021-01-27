@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/IsolatedCaves/Menu.unity
+    guid: 83b7bd942e21fe744a9bb93dc0f602bb
+  - enabled: 1
     path: Assets/Scenes/IsolatedCaves/Gameplay.unity
     guid: 231db546dba61bd4ebe70f3ea1940fe3
   - enabled: 1
