@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Utility;
@@ -27,6 +28,9 @@ public class RocketMovement : MonoBehaviour
     [SerializeField] private GameObject thrustVfXprefab;
 
     [SerializeField] private LayerMask groundMask;
+
+    [SerializeField] private int halfTurnCooldown;
+    
     // Cache
     private Rigidbody2D _myRigidBody;
     private AudioSource _audioSource;
@@ -45,7 +49,8 @@ public class RocketMovement : MonoBehaviour
     private InputMaster _controls;
     private bool _thrusting = false;
     private float _movementDir;
-    
+    private bool _halfTurnInProgress = false;
+
     // Constants
     const float TrailOffset = 2.25f;
 
@@ -75,9 +80,45 @@ public class RocketMovement : MonoBehaviour
         _controls.Rocket.Rotate.performed += ctx => _movementDir = ctx.ReadValue<float>();
         _controls.Rocket.Rotate.canceled += ctc => _movementDir = 0;
 
-     
+        //180 Flip
+        _controls.Rocket.HalfTurn.performed += ctx => HalfTurn();
     }
 
+    private void HalfTurn()
+    {
+        if (!_halfTurnInProgress && !_inPlatform)
+        {
+            //Cooldown For Move
+            _halfTurnInProgress = true;
+            StartCoroutine(HalfTurnCooldown());
+            
+            //Actually Rotate Player
+            
+        }
+    }
+
+    IEnumerator HalfTurnCooldown()
+    {
+        Vector2 dVelocity = _myRigidBody.velocity/(halfTurnCooldown*2);
+        
+        for (int i = 0; i < halfTurnCooldown; i++)
+        {
+            //Rotate Rocket
+            transform.Rotate(Vector3.forward, 180f / halfTurnCooldown);
+            _myRigidBody.velocity -= dVelocity;
+            yield return new WaitForFixedUpdate();
+        }
+        //Slow down rocket
+        // _myRigidBody.velocity = Vector2.zero;
+        _myRigidBody.AddRelativeForce(Vector3.up * (thrustPush));
+
+        for (int i = 0; i < 10; i++)
+        {
+            yield return new WaitForFixedUpdate();
+        }
+
+        _halfTurnInProgress = false;
+    }
     
     private void LoadCheckPointPosition()
     {
@@ -219,7 +260,7 @@ public class RocketMovement : MonoBehaviour
     // // Input Layer (No Multilayer)
     private void Rotate(float dir)
     {
-        if (_state != State.Alive) { return; } 
+        if (_state != State.Alive) { return; } //TODO: Add a bool specifically for half turn and rotation since it needs a bit more cooldown for it to properly rotate 180 without any effects of the input
         
         // Freeze before getting control
         _myRigidBody.freezeRotation = true;
@@ -289,7 +330,11 @@ public class RocketMovement : MonoBehaviour
         if (_thrusting)
         {
             float forceToAdd = thrustPush;
-            _myRigidBody.AddRelativeForce(Vector3.up*forceToAdd);
+
+            if (!_halfTurnInProgress)
+            {
+                _myRigidBody.AddRelativeForce(Vector3.up * forceToAdd);
+            }
 
             if (!_audioSource.isPlaying)
             {

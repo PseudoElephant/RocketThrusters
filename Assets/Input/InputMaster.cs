@@ -33,6 +33,14 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""HalfTurn"",
+                    ""type"": ""Button"",
+                    ""id"": ""1f3c8d29-7b4f-4c74-83b9-3b397592dc35"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -211,6 +219,28 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""action"": ""Rotate"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e2d65f25-079c-4ed0-80a3-32caf04d29b9"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HalfTurn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""77df751e-09e1-4f89-abbe-48373f960563"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HalfTurn"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -244,6 +274,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
         m_Rocket = asset.FindActionMap("Rocket", throwIfNotFound: true);
         m_Rocket_Thrust = m_Rocket.FindAction("Thrust", throwIfNotFound: true);
         m_Rocket_Rotate = m_Rocket.FindAction("Rotate", throwIfNotFound: true);
+        m_Rocket_HalfTurn = m_Rocket.FindAction("HalfTurn", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -295,12 +326,14 @@ public class @InputMaster : IInputActionCollection, IDisposable
     private IRocketActions m_RocketActionsCallbackInterface;
     private readonly InputAction m_Rocket_Thrust;
     private readonly InputAction m_Rocket_Rotate;
+    private readonly InputAction m_Rocket_HalfTurn;
     public struct RocketActions
     {
         private @InputMaster m_Wrapper;
         public RocketActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
         public InputAction @Thrust => m_Wrapper.m_Rocket_Thrust;
         public InputAction @Rotate => m_Wrapper.m_Rocket_Rotate;
+        public InputAction @HalfTurn => m_Wrapper.m_Rocket_HalfTurn;
         public InputActionMap Get() { return m_Wrapper.m_Rocket; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -316,6 +349,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @Rotate.started -= m_Wrapper.m_RocketActionsCallbackInterface.OnRotate;
                 @Rotate.performed -= m_Wrapper.m_RocketActionsCallbackInterface.OnRotate;
                 @Rotate.canceled -= m_Wrapper.m_RocketActionsCallbackInterface.OnRotate;
+                @HalfTurn.started -= m_Wrapper.m_RocketActionsCallbackInterface.OnHalfTurn;
+                @HalfTurn.performed -= m_Wrapper.m_RocketActionsCallbackInterface.OnHalfTurn;
+                @HalfTurn.canceled -= m_Wrapper.m_RocketActionsCallbackInterface.OnHalfTurn;
             }
             m_Wrapper.m_RocketActionsCallbackInterface = instance;
             if (instance != null)
@@ -326,6 +362,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @Rotate.started += instance.OnRotate;
                 @Rotate.performed += instance.OnRotate;
                 @Rotate.canceled += instance.OnRotate;
+                @HalfTurn.started += instance.OnHalfTurn;
+                @HalfTurn.performed += instance.OnHalfTurn;
+                @HalfTurn.canceled += instance.OnHalfTurn;
             }
         }
     }
@@ -352,5 +391,6 @@ public class @InputMaster : IInputActionCollection, IDisposable
     {
         void OnThrust(InputAction.CallbackContext context);
         void OnRotate(InputAction.CallbackContext context);
+        void OnHalfTurn(InputAction.CallbackContext context);
     }
 }
